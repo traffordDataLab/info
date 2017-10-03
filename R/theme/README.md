@@ -50,3 +50,6 @@ ggsave("religion.svg", dpi = 300, scale = 1.5)
 ggsave("religion.pdf", device = cairo_pdf, scale = 1.2, width = 6, height = 6)
 ``` 
 
+<br />
+
+<img src="https://github.com/traffordDataLab/information/blob/master/R/theme/example.png" width="500">
