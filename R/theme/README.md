@@ -20,6 +20,9 @@ theme_set(theme_lab())
 
 ### An example 
 ``` r
+# load packages
+library(ggplot2) ; library(tidyverse) ; library(scales)
+
 # load some data
 df <- data.frame(
   religion = c("Christian", "Buddhist", "Hindu", "Jewish", "Muslim", "Sikh", "Other Religion", "No Religion", "Not Stated"),
