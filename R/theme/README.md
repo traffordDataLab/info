@@ -8,7 +8,7 @@ library(ggplot2)
 
 **2. Provide a source path to the URL containing the custom theme**
 ``` r
-source("https://raw.githubusercontent.com/traffordDataLab/information/master/R/theme/ggplot2_theme_lab.R")
+source("https://raw.githubusercontent.com/traffordDataLab/information/master/R/theme/theme_lab.R")
 ```
 
 **3. Run theme_set() to override the current theme with the Trafford Data Lab theme**
