@@ -56,4 +56,4 @@ ggsave("religion.pdf", device = cairo_pdf, scale = 1.2, width = 6, height = 6)
 
 <br />
 
-<img src="https://github.com/traffordDataLab/information/blob/master/R/theme/rligion.png" width="500">
+<img src="https://github.com/traffordDataLab/information/blob/master/R/theme/religion.png" width="500">
