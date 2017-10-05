@@ -49,8 +49,8 @@ plot + theme_lab() +
         axis.text.y = element_text(hjust = 0))
 
 # save as png, svg or pdf
-ggsave("religion.png", dpi = 300, scale = 1.8)
-ggsave("religion.svg", dpi = 300, scale = 1.5)
+ggsave("religion.png", dpi = 300, scale = 1)
+ggsave("religion.svg", dpi = 300, scale = 1)
 ggsave("religion.pdf", device = cairo_pdf, scale = 1.2, width = 6, height = 6)
 ``` 
 
