@@ -45,7 +45,8 @@ plot <- df %>%
 
 # style with the Trafford Data Lab theme and tweak
 plot + theme_lab() +
-  theme(panel.grid.major.y = element_blank())
+  theme(panel.grid.major.y = element_blank(),
+        axis.text.y = element_text(hjust = 0))
 
 # save as png, svg or pdf
 ggsave("religion.png", dpi = 300, scale = 1.8)
