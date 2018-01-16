@@ -1,4 +1,4 @@
-## Burglary
+## Burglary ##
 
 library(tidyverse); library(ggplot2); library(forcats); library(tibble); library(svglite)
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
@@ -81,8 +81,8 @@ fig3 <- df %>%
 
 ggplot(fig3, aes(rate, area_name)) +
   geom_segment(aes(x = 0, y = area_name, xend = rate, yend = area_name), color = "#f0f0f0") +
-  geom_point(colour = "#fc6721", size = 6) +
-  geom_text(aes(label = rate, fontface = "bold"), color = "white", size = 2.5) + 
+  geom_point(colour = "#fc6721", size = 4) +
+  geom_text(aes(label = rate, fontface = "bold"), color = "white", size = 1.5) + 
   labs(x = "Crimes per 1,000 residents", y = NULL,
        title = NULL,
        caption = "Source: data.police.uk  |  @traffordDataLab") +
@@ -90,6 +90,6 @@ ggplot(fig3, aes(rate, area_name)) +
   theme(panel.grid.major = element_blank(),
         axis.text.y = element_text(hjust = 0))
 
-ggsave(file = "burglary/outputs/fig3.svg", width = 6, height = 8)
-ggsave(file = "burglary/outputs/fig3.png", width = 6, height = 8)
+ggsave(file = "burglary/outputs/fig3.svg", width = 6, height = 6)
+ggsave(file = "burglary/outputs/fig3.png", width = 6, height = 6)
 write_csv(fig3, "burglary/outputs/fig3.csv")
