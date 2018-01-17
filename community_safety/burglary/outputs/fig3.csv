@@ -1,23 +1,23 @@
-area_name,n,total_pop,rate
-Brooklands,16,10692,1.5
-Hale Barns,11,10109,1.1
-Altrincham,12,12521,1
-Stretford,11,11451,1
-Ashton upon Mersey,8,10066,0.8
-Clifford,8,12199,0.7
-Hale Central,7,10767,0.7
-Longford,9,12304,0.7
-Priory,8,11426,0.7
-Village,8,10912,0.7
-Gorse Hill,8,12422,0.6
-Trafford,137,234673,0.6
-Bowdon,4,9536,0.4
-Broadheath,6,13894,0.4
-Timperley,5,11242,0.4
-Bucklow-St Martins,3,10482,0.3
-Davyhulme East,3,9739,0.3
-Flixton,3,10804,0.3
-Sale Moor,3,10723,0.3
-St Mary's,2,11895,0.2
-Davyhulme West,1,10042,0.1
-Urmston,1,11447,0.1
+area_name,n,area_code,households,rate
+Brooklands,16,E05000823,4269,3.7
+Hale Barns,11,E05000830,3809,2.9
+Altrincham,12,E05000819,5105,2.4
+Stretford,11,E05000836,4718,2.3
+Ashton upon Mersey,8,E05000820,4147,1.9
+Longford,9,E05000832,4686,1.9
+Village,8,E05000839,4523,1.8
+Clifford,8,E05000825,4688,1.7
+Hale Central,7,E05000831,4181,1.7
+Gorse Hill,8,E05000829,5107,1.6
+Priory,8,E05000833,4894,1.6
+Trafford,137,E08000009,94484,1.4
+Broadheath,6,E05000822,5150,1.2
+Timperley,5,E05000837,4275,1.2
+Bowdon,4,E05000821,3725,1.1
+Davyhulme East,3,E05000826,3953,0.8
+Bucklow-St Martins,3,E05000824,4423,0.7
+Flixton,3,E05000828,4586,0.7
+Sale Moor,3,E05000835,4418,0.7
+St Mary's,2,E05000834,5024,0.4
+Davyhulme West,1,E05000827,4000,0.2
+Urmston,1,E05000838,4803,0.2
