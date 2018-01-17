@@ -4,8 +4,8 @@ library(tidyverse); library(ggplot2); library(forcats); library(tibble); library
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
 
 # load crime data
-df <- read_csv("data/crime_data.csv") %>% 
-  filter(category == "Burglary")
+df <- read_csv("data/burglary.csv")
+
 # load ONS mid-year population estimates (2016)
 pop <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/mid-year_pop_estimates_2016/ONS_mid-year_population_estimates_2016.csv") %>% 
   filter(lad16nm == "Trafford") %>% 
@@ -30,9 +30,9 @@ ggplot(fig1, aes(month, n)) +
   theme(panel.grid.major.x = element_blank(),
         axis.text.x  = element_text(angle = 90))
 
-ggsave(file = "burglary/outputs/fig1.svg", width = 6, height = 3)
-ggsave(file = "burglary/outputs/fig1.png", width = 6, height = 3)
-write_csv(fig1, "burglary/outputs/fig1.csv")
+ggsave(file = "outputs/fig1.svg", width = 6, height = 3)
+ggsave(file = "outputs/fig1.png", width = 6, height = 3)
+write_csv(fig1, "outputs/fig1.csv")
 
 # ------------------------------------------
 
@@ -61,9 +61,9 @@ ggplot(data = time_series, aes(month, value)) +
         panel.spacing = unit(2, "lines"),
         strip.text.y = element_text(angle = 0, vjust = 1, hjust = 0))
 
-ggsave(file = "burglary/outputs/fig2.svg", width = 6, height = 5)
-ggsave(file = "burglary/outputs/fig2.png", width = 6, height = 5)
-write_csv(fig2, "burglary/outputs/fig2.csv")
+ggsave(file = "outputs/fig2.svg", width = 6, height = 5)
+ggsave(file = "outputs/fig2.png", width = 6, height = 5)
+write_csv(fig2, "outputs/fig2.csv")
 
 # ------------------------------------------
 
@@ -90,6 +90,6 @@ ggplot(fig3, aes(rate, area_name)) +
   theme(panel.grid.major = element_blank(),
         axis.text.y = element_text(hjust = 0))
 
-ggsave(file = "burglary/outputs/fig3.svg", width = 6, height = 6)
-ggsave(file = "burglary/outputs/fig3.png", width = 6, height = 6)
-write_csv(fig3, "burglary/outputs/fig3.csv")
+ggsave(file = "outputs/fig3.svg", width = 6, height = 6)
+ggsave(file = "outputs/fig3.png", width = 6, height = 6)
+write_csv(fig3, "outputs/fig3.csv")

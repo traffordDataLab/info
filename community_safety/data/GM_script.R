@@ -1,17 +1,17 @@
-## Load Trafford crime data
+## Load Greater Manchester crime data
 
 # load necessary packages
 library(sf) ; library(tidyverse) ; library(zoo)
 # load necessary functions
 source("https://github.com/traffordDataLab/assets/raw/master/rfunctions/crime_data.R")
-# load Trafford boundary with 500m buffer and simplify
-trafford <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/local_authority/2016/trafford_local_authority_full_resolution.geojson") %>% 
+# load Greater Manchester boundary
+gm <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/combined_authority/2017/GM_combined_authority_full_resolution.geojson") %>% 
   st_transform(27700) %>%
   st_buffer(dist = 500) %>%
   st_simplify(preserveTopology = TRUE, dTolerance = 100) %>% 
   st_transform(4326)
 # extract polygon coordinates
-coords <- get_coords(x = trafford)
+coords <- get_coords(x = gm)
 # select a range of months
 periods <- format(seq(as.Date("2014-12-01"), length = 36, by = "months"), "%Y-%m")
 # run the get_crimes() function
