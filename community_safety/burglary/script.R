@@ -128,3 +128,35 @@ ggplot(sf_df) +
 ggsave(file = "outputs/plots/fig4.svg", width = 6, height = 6)
 ggsave(file = "outputs/plots/fig4.png", width = 6, height = 6)
 write_csv(fig4, "outputs/data/fig4.csv")
+
+
+# ------------------------------------------
+
+# Proportion of total crime (excluding Anti-social behvaiour incidents)
+fig5 <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_recorded_crime/data/trafford.csv") %>% 
+  filter(month == "2017-11-01" & category != "Anti-social behaviour") %>% 
+  group_by(area_name, category) %>%
+  summarise(n = n()) %>%
+  ungroup() %>%
+  group_by(area_name) %>%
+  arrange(desc(n)) %>%
+  mutate(percent = round(n/sum(n)*100, 0)) %>% 
+  filter(category == "Burglary") %>% 
+  arrange(desc(percent)) %>% 
+  ungroup() %>% 
+  mutate(area_name = factor(area_name, levels = area_name))
+
+ggplot(fig5, aes(area_name, percent)) +
+  geom_col(fill = "#fc6721", alpha = 0.8, show.legend = FALSE) +
+  #geom_text(aes(label = paste0(percent, '%')), colour = "#ffffff", size = 3, hjust = 1.1) +
+  scale_y_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 35), expand = c(0,0)) +
+  coord_flip() +
+  labs(x = NULL, y = NULL,
+       caption = "Source: data.police.uk  |  @traffordDataLab") + 
+  theme_lab() +
+  theme(panel.grid.major.y = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+
+ggsave(file = "outputs/plots/fig5.svg", width = 6, height = 6)
+ggsave(file = "outputs/plots/fig5.png", width = 6, height = 6)
+write_csv(fig5, "outputs/data/fig5.csv")
