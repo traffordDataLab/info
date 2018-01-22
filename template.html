@@ -27,51 +27,211 @@
             </div>
 
             <div class="main">
-                <h1>Page title</h1>
+                <h1>Title</h1>
+                <p>Opening paragraph.</p>
 
-                <h3>Sub headings</h3>
-                <p>
-                    Content within paragraphs.
-                </p>
-
-                <!-- example of single column layout -->
-                <div class="singleColumn">
-
-                </div>
-                <!-- end example of single column layout -->
-
-                <!-- example of double column layout for 2 visualisations -->
-                <div class="doubleColumn">
-                    <div>
-
-                    </div>
-                    <div>
-
-                    </div>
-                </div>
-                <!-- end example of double column layout for 2 visualisations -->
-
-                <!-- example of double column layout for visualisation and text -->
-                <div class="doubleColumnImgTxt">
-                    <div>
-
-                    </div>
-                    <div>
-                        <p></p>
-                    </div>
-                </div>
-                <!-- end example of double column layout for visualisation and text -->
-
-                <!-- example of double column layout for text and visualisation -->
+                <!-- Double column layout - text | visualisation ### PREFERRED ### -->
+                <h3>Subheading</h3>
                 <div class="doubleColumnTxtImg">
                     <div>
-                        <p></p>
+                        <p>Paragraph describing section.</p>
                     </div>
                     <div>
-
+                        <h5>Figure n: Title of figure</h5>
+                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                        <span class="download">Download: <a href="output/figures/fig.png">Data</a> | <a href="output/data/fig.csv">Image</a> | <a href="R/fig.R">R code</a></span>
                     </div>
                 </div>
-                <!-- end example of double column layout for text and visualisation -->
+
+                <br />
+
+                <!-- Double column layout - visualisation | text -->
+                <h3>Subheading</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <h5>Figure n: Title of figure</h5>
+                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                        <span class="download">Download: <a href="output/figures/fig.png">Data</a> | <a href="output/data/fig.csv">Image</a> | <a href="R/fig.R">R code</a></span>
+                    </div>
+                    <div>
+                        <p>Paragraph describing section.</p>
+                    </div>
+                </div>
+
+                <br />
+
+                <!-- Double column layout - newspaper style (could contain any combination of text and visualisation content in any order)-->
+                <h3>Subheading</h3>
+                <div class="doubleColumn">
+                    <div>
+                        <p>Column 1 text.</p>
+                    </div>
+                    <div>
+                        <p>Column 2 text.</p>
+                    </div>
+                </div>
+
+                <br />
+
+                <!-- Single column layout -->
+                <h3>Subheading</h3>
+                <div class="singleColumn">
+                    <p>Paragraph describing section.</p>
+                    <h5>Figure n: Title of figure</h5>
+                    <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                    <span class="download">Download: <a href="output/figures/fig.png">Data</a> | <a href="output/data/fig.csv">Image</a> | <a href="R/fig.R">R code</a></span>
+                </div>
+
+                <!-- Data table example (can be used in any of the content layout options above) -->
+                <h5>Table Heading/Title</h5>
+                <table class="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Trafford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Greater Manchester</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Altrincham</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ashton upon Mersey</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bowdon</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Broadheath</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Brooklands</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bucklow-St Martins</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Clifford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Davyhulme East</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Davyhulme West</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Flixton</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gorse Hill</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hale Barns</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hale Central</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Longford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Priory</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sale Moor</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>St Mary's</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Stretford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Timperley</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Urmston</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Village</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="endNotes">
+                    <h3>Notes</h3>
+                    <p>Paragraphs containing notes about the page</p>
+
+                    <div>
+                        <h3>References</h3>
+                        <p>Reference 1</p>
+                        <p>Reference 2</p>
+                        <p>Reference 3</p>
+                    </div>
+
+                    <h3>Data sources</h3>
+                    <ul>
+                        <li>Source 1: <a href="" target="_blank">source 1 link</a></li>
+                        <li>Source 2: <a href="" target="_blank">source 2 link</a></li>
+                        <li>Source 3: <a href="" target="_blank">source 3 link</a></li>
+                    </ul>
+                </div>
 
             </div>
 
