@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
-        <title>Trafford Data Lab: TEMPLATE</title>
+        <title>Trafford Data Lab: Bicycle theft</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
         <meta charset="UTF-8"/>
 
@@ -27,209 +27,90 @@
             </div>
 
             <div class="main">
-                <h1>Title</h1>
-                <p>Opening paragraph.</p>
+                <h1>Bicycle theft</h1>
+                <p>The <a href="https://www.legislation.gov.uk/ukpga/1968/60/section/1" target="_blank">offence of bicycle theft</a> involves the theft or taking of a pedal cycle theft without consent.</p>
 
-                <!-- Double column layout - text | visualisation ### PREFERRED ### -->
-                <h3>Subheading</h3>
+                <h3>Bicycle thefts last month</h3>
                 <div class="doubleColumnTxtImg">
                     <div>
-                        <p>Paragraph describing section.</p>
+                        <p>There were 33 bicycle theft offences recorded by Greater Manchester Police in Trafford during November 2017. This is 7 fewer crimes than the same month last year.</p>
                     </div>
                     <div>
-                        <h5>Figure n: Title of figure</h5>
-                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
-                        <span class="download">Download: <a href="output/data/fig.csv" target="_blank">Data</a> | <a href="output/figures/fig.png" target="_blank">Image</a> | <a href="R/fig.R" target="_blank">R code</a></span>
+                        <h5>Figure 1: Count of bicycle theft by month in Trafford</h5>
+                        <object type="image/svg+xml" data="output/figures/fig1.svg"></object>
+                        <span class="download">Download: <a href="output/data/fig1.csv" target="_blank">Data</a> | <a href="output/figures/fig1.png" target="_blank">Image</a> | <a href="R/fig1.R" target="_blank">R code</a></span>
                     </div>
                 </div>
 
                 <br />
 
-                <!-- Double column layout - visualisation | text -->
-                <h3>Subheading</h3>
-                <div class="doubleColumnImgTxt">
+                <h3>Bicycle thefts over the last 3 years</h3>
+                <div class="doubleColumnTxtImg">
                     <div>
-                        <h5>Figure n: Title of figure</h5>
-                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
-                        <span class="download">Download: <a href="output/data/fig.csv" target="_blank">Data</a> | <a href="output/figures/fig.png" target="_blank">Image</a> | <a href="R/fig.R" target="_blank">R code</a></span>
+                        <p>Bicycle theft has hovered between 12 and 53 offences over the last 36 months. The overall trend is relatively flat with clear seasonal peaks during the warmer summer months.</p>
                     </div>
                     <div>
-                        <p>Paragraph describing section.</p>
-                    </div>
-                </div>
-
-                <br />
-
-                <!-- Double column layout - newspaper style (could contain any combination of text and visualisation content in any order)-->
-                <h3>Subheading</h3>
-                <div class="doubleColumn">
-                    <div>
-                        <p>Column 1 text.</p>
-                    </div>
-                    <div>
-                        <p>Column 2 text.</p>
+                        <h5>Figure 2: Bicycle thefts in Trafford, 2015-2017</h5>
+                        <object type="image/svg+xml" data="output/figures/fig2.svg"></object>
+                        <span class="download">Download: <a href="output/data/fig2.csv" target="_blank">Data</a> | <a href="output/figures/fig2.png" target="_blank">Image</a> | <a href="R/fig12.R" target="_blank">R code</a></span>
                     </div>
                 </div>
 
                 <br />
 
-                <!-- Single column layout -->
-                <h3>Subheading</h3>
-                <div class="singleColumn">
-                    <p>Paragraph describing section.</p>
-                    <h5>Figure n: Title of figure</h5>
-                    <object type="image/svg+xml" data="output/figures/fig.svg"></object>
-                    <span class="download">Download: <a href="output/data/fig.csv" target="_blank">Data</a> | <a href="output/figures/fig.png" target="_blank">Image</a> | <a href="R/fig.R" target="_blank">R code</a></span>
+                <h3>Bicycle theft rates</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>There were approximately 0.1 bicycle thefts recorded for every 1,000 Trafford residents during November 2017. However, there is some variation in rates of bicycle theft between wards. Altrincham ward recorded the highest rate of bicycle theft with 0.8 offences per 1,000 residents.</p>
+                    </div>
+                    <div>
+                        <h5>Figure 3: Rates of bicycle theft in Trafford's wards</h5>
+                        <object type="image/svg+xml" data="output/figures/fig3.svg"></object>
+                        <span class="download">Download: <a href="output/data/fig3.csv" target="_blank">Data</a> | <a href="output/figures/fig3.png" target="_blank">Image</a> | <a href="R/fig3.R" target="_blank">R code</a></span>
+                    </div>
                 </div>
 
-                <!-- Data table example (can be used in any of the content layout options above) -->
-                <h5>Table Heading/Title</h5>
-                <table class="dataTable">
-                    <thead>
-                        <tr>
-                            <th>Column 1</th>
-                            <th>Column 2</th>
-                            <th>Column 3</th>
-                        </tr>
-                    </thead>
-                    <tfoot>
-                        <tr>
-                            <td>Trafford</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Greater Manchester</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tfoot>
-                    <tbody>
-                        <tr>
-                            <td>Altrincham</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Ashton upon Mersey</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Bowdon</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Broadheath</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Brooklands</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Bucklow-St Martins</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Clifford</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Davyhulme East</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Davyhulme West</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Flixton</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Gorse Hill</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Hale Barns</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Hale Central</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Longford</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Priory</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Sale Moor</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>St Mary's</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Stretford</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Timperley</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Urmston</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                        <tr>
-                            <td>Village</td>
-                            <td></td>
-                            <td></td>
-                        </tr>
-                    </tbody>
-                </table>
+                <h3>Location quotient</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>The location quotient (Brantingham & Brantingham 1997) provides a measure of the difference between the rate of crime in a ward and the rate of crime for the whole of Trafford. A location quotient of 1.0 indicates that a ward has a proportional share of crime whilst a value greater than 1 indicates a disproportionate share.</p>
+                        <p>Figure 4 shows that Altrincham ward recorded around 4 times the rate of bicycle theft during November 2017 as Trafford as a whole.</p>
+                    </div>
+                    <div>
+                        <h5>Figure 4: Bicycle theft location quotient, November 2017</h5>
+                        <object type="image/svg+xml" data="output/figures/fig4.svg"></object>
+                        <span class="download">Download: <a href="output/data/fig4.csv" target="_blank">Data</a> | <a href="output/figures/fig4.png" target="_blank">Image</a> | <a href="R/fig4.R" target="_blank">R code</a></span>
+                    </div>
+                </div>
 
+                <h3>Bicycle theft as a proportion of all crime</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>Bicycle theft offences accounted for 7% of recorded crime in Altrincham ward during November 2017 and 2% in Trafford overall.</p>
+                    </div>
+                    <div>
+                        <h5>Figure 5: Bicycle theft as a proportion of total offences*, November 2017</h5>
+                        <object type="image/svg+xml" data="output/figures/fig5.svg"></object>
+                        <span class="download">*not including incidents of anti-social behaviour
+                        <br />
+                        <br />
+                        Download: <a href="output/data/fig5.csv" target="_blank">Data</a> | <a href="output/figures/fig5.png" target="_blank">Image</a> | <a href="R/fig5.R" target="_blank">R code</a></span>
+                    </div>
+                </div>
 
                 <div class="endNotes">
                     <h3>Notes</h3>
-                    <p>Paragraphs containing notes about the page</p>
+                    <p>Bicycle theft rates have been calculated using the number of residents in each area. This is an imperfect denominator because it doesn't reflect the actual number of targets: bicycles</p>
 
                     <div>
                         <h3>References</h3>
-                        <p>Reference 1</p>
-                        <p>Reference 2</p>
-                        <p>Reference 3</p>
+                        <p>Brantingham, P.L. and Brantingham, P.J. (1998). Mapping crime for analytic purposes: location quotients, counts and rates. In D. Weisburd and T. McEwen, eds, Crime Mapping and Crime Prevention, 263-288. Monsey, NY: Criminal Justice Press.</p>
                     </div>
 
                     <h3>Data sources</h3>
                     <ul>
-                        <li>Source 1: <a href="" target="_blank">source 1 link</a></li>
-                        <li>Source 2: <a href="" target="_blank">source 2 link</a></li>
-                        <li>Source 3: <a href="" target="_blank">source 3 link</a></li>
+                        <li>Greater Manchester Police recorded crime: <a href="https://data.police.uk/data/" target="_blank">data.police.uk</a> | <a href="https://github.com/traffordDataLab/open_data/tree/master/police_recorded_crime" target="_blank">traffordDataLab/open_data</a></li>
+                        <li>Mid-year population estimates (2016): <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/wardlevelmidyearpopulationestimatesexperimental" target="_blank">ONS</a>| <a href="https://github.com/traffordDataLab/open_data/tree/master/mid-year_pop_estimates_2016" target="_blank">traffordDataLab/open_data</a></li>
                     </ul>
                 </div>
 

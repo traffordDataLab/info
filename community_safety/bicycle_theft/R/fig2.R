@@ -15,6 +15,8 @@ count <- df %>% group_by(month) %>% count()
 ts_crime <- ts(count$n, start = c(2014, 12), end = c(2017, 11), frequency = 12)
 ts_decomp = stl(ts_crime, "periodic")
 plot(ts_decomp)
+min(count$n)
+max(count$n)
 
 results <- data.frame(
   month = seq(as.Date("2014-12-01"), by = "month", length.out = 36),
@@ -24,17 +26,18 @@ results <- data.frame(
   mutate(type = factor(type, levels = c("Observed", "Trend")))
 
 # plot data ---------------------------
-ggplot(data = results, aes(month, value)) +
-  geom_line(colour = "#fc6721", size = 1) + 
+ggplot(data = results, aes(month, value, colour = type, group = type)) +
+  geom_line(size = 1) + 
+  scale_colour_manual(values = c("#fc6721", "#757575")) +
   scale_x_date(date_labels = "%b-%y", date_breaks = "3 month", expand = c(0,0)) +
   scale_y_continuous(position = "right", limits = c(0, 70)) + # change axis limits
-  labs(x = NULL, y = NULL,
+  labs(x = NULL, y = NULL, colour = NULL,
        caption = "Source: data.police.uk  |  @traffordDataLab") +
-  facet_grid(type ~ ., scales = "free", switch = "y") +
   theme_lab() +
   theme(axis.text.x  = element_text(angle = 90),
         panel.spacing = unit(2, "lines"),
-        strip.text.y = element_text(angle = 0, vjust = 1, hjust = 0))
+        strip.text.y = element_text(angle = 0, vjust = 1, hjust = 0),
+        legend.position = "top")
 
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig2.svg", width = 6, height = 5)
