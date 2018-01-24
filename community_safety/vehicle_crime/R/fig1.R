@@ -1,4 +1,4 @@
-## Violent crime and sexual offences: Count of violence and sexual offences in Trafford by month ##
+## Vehicle crime: Count of violence and sexual offences in Trafford by month ##
 
 # load R packages  ---------------------------
 library(tidyverse); library(ggplot2); library(svglite)
@@ -8,7 +8,7 @@ source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme
 
 # load data  ---------------------------
 df <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_recorded_crime/data/trafford.csv") %>% 
-  filter(category == "Violence and sexual offences")
+  filter(category == "Vehicle crime")
 
 # manipulate data ---------------------------
 results <- df %>% 

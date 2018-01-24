@@ -1,4 +1,4 @@
-## Violence and sexual offences: proportion of total crime (excluding ASB) ##
+## Vehicle crime: proportion of total crime (excluding ASB) ##
 
 # load R packages  ---------------------------
 library(tidyverse); library(ggplot2); library(svglite)
@@ -17,7 +17,7 @@ gm <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
   arrange(desc(n)) %>%
   mutate(area_name = "Greater Manchester", 
          percent = round(n/sum(n)*100, 0)) %>% 
-  filter(category == "Violence and sexual offences") %>% 
+  filter(category == "Vehicle crime") %>% 
   arrange(desc(percent)) %>% 
   select(area_name, category, n, percent)
 
@@ -28,7 +28,7 @@ trafford <- df %>%
   arrange(desc(n)) %>%
   mutate(area_name = "Trafford", 
          percent = round(n/sum(n)*100, 0)) %>% 
-  filter(category == "Violence and sexual offences") %>% 
+  filter(category == "Vehicle crime") %>% 
   arrange(desc(percent)) %>% 
   select(area_name, category, n, percent)
 
@@ -40,19 +40,19 @@ results <- df %>%
   group_by(area_name) %>%
   arrange(desc(n)) %>%
   mutate(percent = round(n/sum(n)*100, 0)) %>% 
-  filter(category == "Violence and sexual offences") %>% 
+  filter(category == "Vehicle crime") %>% 
   arrange(desc(percent)) %>% 
   ungroup() %>% 
   mutate(area_name = factor(area_name, levels = area_name)) %>% 
-  add_row(area_name = "Trafford", category = "Violence and sexual offences", n = trafford$n, percent = trafford$percent) %>% 
-  add_row(area_name = "Greater Manchester", category = "Violence and sexual offences", n = gm$n, percent = gm$percent)
+  add_row(area_name = "Trafford", category = "Vehicle crime", n = trafford$n, percent = trafford$percent) %>% 
+  add_row(area_name = "Greater Manchester", category = "Vehicle crime", n = gm$n, percent = gm$percent)
 
 # plot data ---------------------------
 ggplot(results, aes(percent, area_name)) +
   geom_segment(aes(x = 0, y = area_name, xend = percent, yend = area_name), color = "#f0f0f0") +
   geom_point(colour = "#fc6721", size = 4) +
   geom_text(aes(label = paste0(percent, "%"), fontface = "bold"), color = "white", size = 2) + 
-  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 50), expand = c(0,0)) + # adjust limits
+  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 20), expand = c(0,0)) + # adjust limits
   labs(x = "percentage of all crime", y = NULL,
        title = NULL,
        caption = "Source: data.police.uk  |  @traffordDataLab") +
