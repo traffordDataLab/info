@@ -35,7 +35,7 @@ sf_df <- left_join(sf, results, by = "area_code") # merge with ward attribute ta
 ggplot(sf_df) +
   geom_sf(aes(fill = lq), colour = "white") +
   scale_fill_gradientn(colours = c("#feedde","#fdbe85","#fd8d3c","#e6550d","#a63603"), na.value = "#f0f0f0") +
-  labs(x = NULL, y = NULL, title = NULL, fill = 'Burglay\nlocation\nquotient',
+  labs(x = NULL, y = NULL, title = NULL, fill = 'Burglary\nlocation\nquotient',
        caption = "Source: data.police.uk  |  @traffordDataLab") +
   theme_lab() +
   theme(axis.text = element_blank())

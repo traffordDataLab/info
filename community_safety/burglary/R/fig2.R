@@ -15,8 +15,9 @@ count <- df %>% group_by(month) %>% count()
 ts_crime <- ts(count$n, start = c(2014, 12), end = c(2017, 11), frequency = 12)
 ts_decomp = stl(ts_crime, "periodic")
 plot(ts_decomp)
-min(count$n)
-max(count$n)
+min(count$n) # lowest count
+max(count$n) # highest count
+ts_decomp$time.series[,1] # seasonality
 
 results <- data.frame(
   month = seq(as.Date("2014-12-01"), by = "month", length.out = 36),
