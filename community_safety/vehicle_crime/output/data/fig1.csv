@@ -1,14 +1,14 @@
 month,category,area_code,area_name,n
-2016-11-01,Robbery,E08000009,Trafford,126
-2016-12-01,Robbery,E08000009,Trafford,147
-2017-01-01,Robbery,E08000009,Trafford,147
-2017-02-01,Robbery,E08000009,Trafford,115
-2017-03-01,Robbery,E08000009,Trafford,113
-2017-04-01,Robbery,E08000009,Trafford,80
-2017-05-01,Robbery,E08000009,Trafford,134
-2017-06-01,Robbery,E08000009,Trafford,122
-2017-07-01,Robbery,E08000009,Trafford,131
-2017-08-01,Robbery,E08000009,Trafford,187
-2017-09-01,Robbery,E08000009,Trafford,116
-2017-10-01,Robbery,E08000009,Trafford,135
-2017-11-01,Robbery,E08000009,Trafford,105
+2016-11-01,Vehicle crime,E08000009,Trafford,126
+2016-12-01,Vehicle crime,E08000009,Trafford,147
+2017-01-01,Vehicle crime,E08000009,Trafford,147
+2017-02-01,Vehicle crime,E08000009,Trafford,115
+2017-03-01,Vehicle crime,E08000009,Trafford,113
+2017-04-01,Vehicle crime,E08000009,Trafford,80
+2017-05-01,Vehicle crime,E08000009,Trafford,134
+2017-06-01,Vehicle crime,E08000009,Trafford,122
+2017-07-01,Vehicle crime,E08000009,Trafford,131
+2017-08-01,Vehicle crime,E08000009,Trafford,187
+2017-09-01,Vehicle crime,E08000009,Trafford,116
+2017-10-01,Vehicle crime,E08000009,Trafford,135
+2017-11-01,Vehicle crime,E08000009,Trafford,105

@@ -32,6 +32,6 @@ ggsave(file = "output/figures/fig1.svg", width = 6, height = 3)
 ggsave(file = "output/figures/fig1.png", width = 6, height = 3)
 
 results %>% 
-  mutate(category = "Robbery", area_code = "E08000009", area_name = "Trafford") %>% 
+  mutate(category = "Vehicle crime", area_code = "E08000009", area_name = "Trafford") %>% 
   select(month, category, area_code, area_name, n) %>% 
   write_csv("output/data/fig1.csv")
