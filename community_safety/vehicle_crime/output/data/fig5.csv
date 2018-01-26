@@ -1,23 +1,23 @@
-area_name,category,n,percent
-Brooklands,Vehicle crime,8,17
-Timperley,Vehicle crime,4,16
-Hale Barns,Vehicle crime,7,15
-Urmston,Vehicle crime,7,13
-Gorse Hill,Vehicle crime,13,11
-Hale Central,Vehicle crime,6,10
-Village,Vehicle crime,6,9
-Bowdon,Vehicle crime,3,9
-Sale Moor,Vehicle crime,5,8
-Clifford,Vehicle crime,5,6
-Ashton upon Mersey,Vehicle crime,4,6
-Davyhulme East,Vehicle crime,7,5
-Stretford,Vehicle crime,6,5
-St Mary's,Vehicle crime,3,5
-Flixton,Vehicle crime,2,5
-Altrincham,Vehicle crime,5,4
-Bucklow-St Martins,Vehicle crime,4,4
-Longford,Vehicle crime,4,4
-Broadheath,Vehicle crime,3,4
-Priory,Vehicle crime,3,3
-Trafford,Vehicle crime,105,7
-Greater Manchester,Vehicle crime,2785,10
+month,category,area_code,area_name,n,percent
+2017-11-01,Vehicle crime,E05000823,Brooklands,8,17
+2017-11-01,Vehicle crime,E05000837,Timperley,4,16
+2017-11-01,Vehicle crime,E05000830,Hale Barns,7,15
+2017-11-01,Vehicle crime,E05000838,Urmston,7,13
+2017-11-01,Vehicle crime,E05000829,Gorse Hill,13,11
+2017-11-01,Vehicle crime,E05000831,Hale Central,6,10
+2017-11-01,Vehicle crime,E05000839,Village,6,9
+2017-11-01,Vehicle crime,E05000821,Bowdon,3,9
+2017-11-01,Vehicle crime,E05000835,Sale Moor,5,8
+2017-11-01,Vehicle crime,E05000825,Clifford,5,6
+2017-11-01,Vehicle crime,E05000820,Ashton upon Mersey,4,6
+2017-11-01,Vehicle crime,E05000826,Davyhulme East,7,5
+2017-11-01,Vehicle crime,E05000836,Stretford,6,5
+2017-11-01,Vehicle crime,E05000834,St Mary's,3,5
+2017-11-01,Vehicle crime,E05000828,Flixton,2,5
+2017-11-01,Vehicle crime,E05000819,Altrincham,5,4
+2017-11-01,Vehicle crime,E05000824,Bucklow-St Martins,4,4
+2017-11-01,Vehicle crime,E05000832,Longford,4,4
+2017-11-01,Vehicle crime,E05000822,Broadheath,3,4
+2017-11-01,Vehicle crime,E05000833,Priory,3,3
+2017-11-01,Vehicle crime,E08000009,Trafford,105,7
+2017-11-01,Vehicle crime,E47000001,Greater Manchester,2785,10

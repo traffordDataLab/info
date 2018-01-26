@@ -1,24 +1,24 @@
-area_name,category,n,percent
-Davyhulme West,Violence and sexual offences,19,45
-Flixton,Violence and sexual offences,16,43
-Sale Moor,Violence and sexual offences,28,42
-Village,Violence and sexual offences,28,40
-St Mary's,Violence and sexual offences,25,40
-Hale Central,Violence and sexual offences,24,38
-Broadheath,Violence and sexual offences,28,37
-Stretford,Violence and sexual offences,46,36
-Longford,Violence and sexual offences,35,35
-Ashton upon Mersey,Violence and sexual offences,23,35
-Hale Barns,Violence and sexual offences,16,35
-Gorse Hill,Violence and sexual offences,39,32
-Bucklow-St Martins,Violence and sexual offences,29,32
-Altrincham,Violence and sexual offences,39,29
-Clifford,Violence and sexual offences,25,29
-Urmston,Violence and sexual offences,15,27
-Bowdon,Violence and sexual offences,8,25
-Priory,Violence and sexual offences,22,23
-Brooklands,Violence and sexual offences,11,23
-Timperley,Violence and sexual offences,5,20
-Davyhulme East,Violence and sexual offences,26,19
-Trafford,Violence and sexual offences,507,32
-Greater Manchester,Violence and sexual offences,8644,30
+month,category,area_code,area_name,n,percent
+2017-11-01,Violence and sexual offences,E05000827,Davyhulme West,19,45
+2017-11-01,Violence and sexual offences,E05000828,Flixton,16,43
+2017-11-01,Violence and sexual offences,E05000835,Sale Moor,28,42
+2017-11-01,Violence and sexual offences,E05000839,Village,28,40
+2017-11-01,Violence and sexual offences,E05000834,St Mary's,25,40
+2017-11-01,Violence and sexual offences,E05000831,Hale Central,24,38
+2017-11-01,Violence and sexual offences,E05000822,Broadheath,28,37
+2017-11-01,Violence and sexual offences,E05000836,Stretford,46,36
+2017-11-01,Violence and sexual offences,E05000832,Longford,35,35
+2017-11-01,Violence and sexual offences,E05000820,Ashton upon Mersey,23,35
+2017-11-01,Violence and sexual offences,E05000830,Hale Barns,16,35
+2017-11-01,Violence and sexual offences,E05000829,Gorse Hill,39,32
+2017-11-01,Violence and sexual offences,E05000824,Bucklow-St Martins,29,32
+2017-11-01,Violence and sexual offences,E05000819,Altrincham,39,29
+2017-11-01,Violence and sexual offences,E05000825,Clifford,25,29
+2017-11-01,Violence and sexual offences,E05000838,Urmston,15,27
+2017-11-01,Violence and sexual offences,E05000821,Bowdon,8,25
+2017-11-01,Violence and sexual offences,E05000833,Priory,22,23
+2017-11-01,Violence and sexual offences,E05000823,Brooklands,11,23
+2017-11-01,Violence and sexual offences,E05000837,Timperley,5,20
+2017-11-01,Violence and sexual offences,E05000826,Davyhulme East,26,19
+2017-11-01,Violence and sexual offences,E08000009,Trafford,507,32
+2017-11-01,Violence and sexual offences,E47000001,Greater Manchester,8644,30

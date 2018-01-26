@@ -1,15 +1,15 @@
-area_name,n,population,rate,lq
-Longford,7,12304,0.6,2.78
-Priory,4,11426,0.4,1.71
-Sale Moor,3,10723,0.3,1.37
-Altrincham,3,12521,0.2,1.17
-Clifford,3,12199,0.2,1.2
-Davyhulme East,2,9739,0.2,1
-Gorse Hill,2,12422,0.2,0.79
-St Mary's,2,11895,0.2,0.82
-Stretford,2,11451,0.2,0.85
-Broadheath,1,13894,0.1,0.35
-Bucklow-St Martins,1,10482,0.1,0.47
-Hale Barns,1,10109,0.1,0.48
-Hale Central,1,10767,0.1,0.45
-Urmston,1,11447,0.1,0.43
+month,category,area_code,area_name,n,population,rate,lq
+2017-11-01,Robbery,E05000832,Longford,7,12304,0.6,2.78
+2017-11-01,Robbery,E05000833,Priory,4,11426,0.4,1.71
+2017-11-01,Robbery,E05000835,Sale Moor,3,10723,0.3,1.37
+2017-11-01,Robbery,E05000819,Altrincham,3,12521,0.2,1.17
+2017-11-01,Robbery,E05000825,Clifford,3,12199,0.2,1.2
+2017-11-01,Robbery,E05000826,Davyhulme East,2,9739,0.2,1
+2017-11-01,Robbery,E05000829,Gorse Hill,2,12422,0.2,0.79
+2017-11-01,Robbery,E05000834,St Mary's,2,11895,0.2,0.82
+2017-11-01,Robbery,E05000836,Stretford,2,11451,0.2,0.85
+2017-11-01,Robbery,E05000822,Broadheath,1,13894,0.1,0.35
+2017-11-01,Robbery,E05000824,Bucklow-St Martins,1,10482,0.1,0.47
+2017-11-01,Robbery,E05000830,Hale Barns,1,10109,0.1,0.48
+2017-11-01,Robbery,E05000831,Hale Central,1,10767,0.1,0.45
+2017-11-01,Robbery,E05000838,Urmston,1,11447,0.1,0.43

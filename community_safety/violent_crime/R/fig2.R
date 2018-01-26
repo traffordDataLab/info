@@ -43,5 +43,10 @@ ggplot(data = results, aes(month, value, colour = type, group = type)) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig2.svg", width = 6, height = 5)
 ggsave(file = "output/figures/fig2.png", width = 6, height = 5)
-write_csv(spread(results, type, value) %>% rename(observed = Observed, trend = Trend), 
-          "output/data/fig2.csv")
+
+results %>% 
+  spread(type, value) %>% 
+  rename(observed = Observed, trend = Trend) %>% 
+  mutate(category = "Violence and sexual offences", area_code = "E08000009", area_name = "Trafford") %>% 
+  select(month, category, area_code, area_name, observed, trend) %>% 
+  write_csv("output/data/fig2.csv")

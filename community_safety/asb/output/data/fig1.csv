@@ -1,14 +1,14 @@
-month,n
-2016-11-01,398
-2016-12-01,388
-2017-01-01,340
-2017-02-01,376
-2017-03-01,434
-2017-04-01,473
-2017-05-01,437
-2017-06-01,436
-2017-07-01,362
-2017-08-01,398
-2017-09-01,321
-2017-10-01,397
-2017-11-01,317
+month,category,area_code,area_name,n
+2016-11-01,Anti-social behaviour,E08000009,Trafford,398
+2016-12-01,Anti-social behaviour,E08000009,Trafford,388
+2017-01-01,Anti-social behaviour,E08000009,Trafford,340
+2017-02-01,Anti-social behaviour,E08000009,Trafford,376
+2017-03-01,Anti-social behaviour,E08000009,Trafford,434
+2017-04-01,Anti-social behaviour,E08000009,Trafford,473
+2017-05-01,Anti-social behaviour,E08000009,Trafford,437
+2017-06-01,Anti-social behaviour,E08000009,Trafford,436
+2017-07-01,Anti-social behaviour,E08000009,Trafford,362
+2017-08-01,Anti-social behaviour,E08000009,Trafford,398
+2017-09-01,Anti-social behaviour,E08000009,Trafford,321
+2017-10-01,Anti-social behaviour,E08000009,Trafford,397
+2017-11-01,Anti-social behaviour,E08000009,Trafford,317

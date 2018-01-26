@@ -1,17 +1,17 @@
-area_name,n,population,rate
-Longford,7,12304,0.6
-Priory,4,11426,0.4
-Sale Moor,3,10723,0.3
-Altrincham,3,12521,0.2
-Clifford,3,12199,0.2
-Davyhulme East,2,9739,0.2
-Gorse Hill,2,12422,0.2
-St Mary's,2,11895,0.2
-Stretford,2,11451,0.2
-Broadheath,1,13894,0.1
-Bucklow-St Martins,1,10482,0.1
-Hale Barns,1,10109,0.1
-Hale Central,1,10767,0.1
-Urmston,1,11447,0.1
-Trafford,33,234673,0.1
-Greater Manchester,647,2782141,0.2
+month,category,area_code,area_name,n,population,rate
+2017-11-01,Robbery,E05000832,Longford,7,12304,0.6
+2017-11-01,Robbery,E05000833,Priory,4,11426,0.4
+2017-11-01,Robbery,E05000835,Sale Moor,3,10723,0.3
+2017-11-01,Robbery,E05000819,Altrincham,3,12521,0.2
+2017-11-01,Robbery,E05000825,Clifford,3,12199,0.2
+2017-11-01,Robbery,E05000826,Davyhulme East,2,9739,0.2
+2017-11-01,Robbery,E05000829,Gorse Hill,2,12422,0.2
+2017-11-01,Robbery,E05000834,St Mary's,2,11895,0.2
+2017-11-01,Robbery,E05000836,Stretford,2,11451,0.2
+2017-11-01,Robbery,E05000822,Broadheath,1,13894,0.1
+2017-11-01,Robbery,E05000824,Bucklow-St Martins,1,10482,0.1
+2017-11-01,Robbery,E05000830,Hale Barns,1,10109,0.1
+2017-11-01,Robbery,E05000831,Hale Central,1,10767,0.1
+2017-11-01,Robbery,E05000838,Urmston,1,11447,0.1
+2017-11-01,Robbery,E08000009,Trafford,33,234673,0.1
+2017-11-01,Robbery,E47000001,Greater Manchester,647,2782141,0.2

@@ -22,8 +22,7 @@ ts_decomp$time.series[,1] # seasonality
 results <- data.frame(
   month = seq(as.Date("2014-12-01"), by = "month", length.out = 36),
   Observed = as.vector(ts_crime),
-  Trend = ts_decomp$time.series[,2]
-) %>% gather(type, value, -month) %>% 
+  Trend = ts_decomp$time.series[,2]) %>% gather(type, value, -month) %>% 
   mutate(type = factor(type, levels = c("Observed", "Trend")))
 
 # plot data ---------------------------
@@ -43,5 +42,10 @@ ggplot(data = results, aes(month, value, colour = type, group = type)) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig2.svg", width = 6, height = 5)
 ggsave(file = "output/figures/fig2.png", width = 6, height = 5)
-write_csv(spread(results, type, value) %>% rename(observed = Observed, trend = Trend), 
-          "output/data/fig2.csv")
+
+results %>% 
+  spread(type, value) %>% 
+  rename(observed = Observed, trend = Trend) %>% 
+  mutate(category = "Anti-social behaviour", area_code = "E08000009", area_name = "Trafford") %>% 
+  select(month, category, area_code, area_name, observed, trend) %>% 
+  write_csv("output/data/fig2.csv")

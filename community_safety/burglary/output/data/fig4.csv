@@ -1,22 +1,22 @@
-area_name,n,households,rate,lq
-Brooklands,16,4269,3.7,2.53
-Hale Barns,11,3809,2.9,1.95
-Altrincham,12,5105,2.4,1.59
-Stretford,11,4718,2.3,1.57
-Clifford,10,4688,2.1,1.44
-Ashton upon Mersey,8,4147,1.9,1.3
-Longford,9,4686,1.9,1.3
-Village,8,4523,1.8,1.19
-Hale Central,7,4181,1.7,1.13
-Gorse Hill,8,5107,1.6,1.06
-Priory,8,4894,1.6,1.1
-Broadheath,6,5150,1.2,0.79
-Timperley,5,4275,1.2,0.79
-Bowdon,4,3725,1.1,0.72
-Bucklow-St Martins,4,4423,0.9,0.61
-Davyhulme East,3,3953,0.8,0.51
-Flixton,3,4586,0.7,0.44
-Sale Moor,3,4418,0.7,0.46
-St Mary's,2,5024,0.4,0.27
-Davyhulme West,1,4000,0.2,0.17
-Urmston,1,4803,0.2,0.14
+month,category,area_code,area_name,n,households,rate,lq
+2017-11-01,Burglary,E05000823,Brooklands,16,4269,3.7,2.53
+2017-11-01,Burglary,E05000830,Hale Barns,11,3809,2.9,1.95
+2017-11-01,Burglary,E05000819,Altrincham,12,5105,2.4,1.59
+2017-11-01,Burglary,E05000836,Stretford,11,4718,2.3,1.57
+2017-11-01,Burglary,E05000825,Clifford,10,4688,2.1,1.44
+2017-11-01,Burglary,E05000820,Ashton upon Mersey,8,4147,1.9,1.3
+2017-11-01,Burglary,E05000832,Longford,9,4686,1.9,1.3
+2017-11-01,Burglary,E05000839,Village,8,4523,1.8,1.19
+2017-11-01,Burglary,E05000831,Hale Central,7,4181,1.7,1.13
+2017-11-01,Burglary,E05000829,Gorse Hill,8,5107,1.6,1.06
+2017-11-01,Burglary,E05000833,Priory,8,4894,1.6,1.1
+2017-11-01,Burglary,E05000822,Broadheath,6,5150,1.2,0.79
+2017-11-01,Burglary,E05000837,Timperley,5,4275,1.2,0.79
+2017-11-01,Burglary,E05000821,Bowdon,4,3725,1.1,0.72
+2017-11-01,Burglary,E05000824,Bucklow-St Martins,4,4423,0.9,0.61
+2017-11-01,Burglary,E05000826,Davyhulme East,3,3953,0.8,0.51
+2017-11-01,Burglary,E05000828,Flixton,3,4586,0.7,0.44
+2017-11-01,Burglary,E05000835,Sale Moor,3,4418,0.7,0.46
+2017-11-01,Burglary,E05000834,St Mary's,2,5024,0.4,0.27
+2017-11-01,Burglary,E05000827,Davyhulme West,1,4000,0.2,0.17
+2017-11-01,Burglary,E05000838,Urmston,1,4803,0.2,0.14

@@ -1,24 +1,24 @@
-area_name,n,population,rate
-Gorse Hill,36,12422,2.9
-Bucklow-St Martins,29,10482,2.8
-Village,24,10912,2.2
-Priory,23,11426,2
-Longford,23,12304,1.9
-Bowdon,16,9536,1.7
-Stretford,17,11451,1.5
-Altrincham,18,12521,1.4
-Davyhulme East,13,9739,1.3
-Broadheath,16,13894,1.2
-Timperley,12,11242,1.1
-Urmston,12,11447,1
-Ashton upon Mersey,9,10066,0.9
-Brooklands,10,10692,0.9
-Clifford,11,12199,0.9
-Hale Central,10,10767,0.9
-Hale Barns,8,10109,0.8
-St Mary's,10,11895,0.8
-Davyhulme West,7,10042,0.7
-Sale Moor,7,10723,0.7
-Flixton,6,10804,0.6
-Trafford,317,234673,1.4
-Greater Manchester,5414,2782141,1.9
+month,category,area_code,area_name,n,population,rate
+2017-11-01,Anti-social behaviour,E05000829,Gorse Hill,36,12422,2.9
+2017-11-01,Anti-social behaviour,E05000824,Bucklow-St Martins,29,10482,2.8
+2017-11-01,Anti-social behaviour,E05000839,Village,24,10912,2.2
+2017-11-01,Anti-social behaviour,E05000833,Priory,23,11426,2
+2017-11-01,Anti-social behaviour,E05000832,Longford,23,12304,1.9
+2017-11-01,Anti-social behaviour,E05000821,Bowdon,16,9536,1.7
+2017-11-01,Anti-social behaviour,E05000836,Stretford,17,11451,1.5
+2017-11-01,Anti-social behaviour,E05000819,Altrincham,18,12521,1.4
+2017-11-01,Anti-social behaviour,E05000826,Davyhulme East,13,9739,1.3
+2017-11-01,Anti-social behaviour,E05000822,Broadheath,16,13894,1.2
+2017-11-01,Anti-social behaviour,E05000837,Timperley,12,11242,1.1
+2017-11-01,Anti-social behaviour,E05000838,Urmston,12,11447,1
+2017-11-01,Anti-social behaviour,E05000820,Ashton upon Mersey,9,10066,0.9
+2017-11-01,Anti-social behaviour,E05000823,Brooklands,10,10692,0.9
+2017-11-01,Anti-social behaviour,E05000825,Clifford,11,12199,0.9
+2017-11-01,Anti-social behaviour,E05000831,Hale Central,10,10767,0.9
+2017-11-01,Anti-social behaviour,E05000830,Hale Barns,8,10109,0.8
+2017-11-01,Anti-social behaviour,E05000834,St Mary's,10,11895,0.8
+2017-11-01,Anti-social behaviour,E05000827,Davyhulme West,7,10042,0.7
+2017-11-01,Anti-social behaviour,E05000835,Sale Moor,7,10723,0.7
+2017-11-01,Anti-social behaviour,E05000828,Flixton,6,10804,0.6
+2017-11-01,Anti-social behaviour,E08000009,Trafford,317,234673,1.4
+2017-11-01,Anti-social behaviour,E47000001,Greater Manchester,5414,2782141,1.9

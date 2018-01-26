@@ -22,7 +22,7 @@ gm <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
   select(area_name, category, n, percent)
 
 trafford <- df %>% 
-  filter(month >= "2017-11-01" & category != "Anti-social behaviour") %>% 
+  filter(month == "2017-11-01" & category != "Anti-social behaviour") %>% 
   group_by(category) %>%
   summarise(n = n()) %>% 
   arrange(desc(n)) %>%
@@ -34,18 +34,18 @@ trafford <- df %>%
 
 results <- df %>% 
   filter(month == "2017-11-01" & category != "Anti-social behaviour") %>% 
-  group_by(area_name, category) %>%
+  group_by(area_code, area_name, category) %>%
   summarise(n = n()) %>%
   ungroup() %>%
-  group_by(area_name) %>%
+  group_by(area_code, area_name) %>%
   arrange(desc(n)) %>%
   mutate(percent = round(n/sum(n)*100, 0)) %>% 
   filter(category == "Bicycle theft") %>% 
   arrange(desc(percent)) %>% 
   ungroup() %>% 
   mutate(area_name = factor(area_name, levels = area_name)) %>% 
-  add_row(area_name = "Trafford", category = "Bicycle theft", n = trafford$n, percent = trafford$percent) %>% 
-  add_row(area_name = "Greater Manchester", category = "Bicycle theft", n = gm$n, percent = gm$percent)
+  add_row(area_code = "E08000009", area_name = "Trafford", category = "Bicycle theft", n = trafford$n, percent = trafford$percent) %>% 
+  add_row(area_code = "E47000001", area_name = "Greater Manchester", category = "Bicycle theft", n = gm$n, percent = gm$percent)
 
 # plot data ---------------------------
 ggplot(results, aes(percent, area_name)) +
@@ -63,4 +63,8 @@ ggplot(results, aes(percent, area_name)) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig5.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig5.png", width = 6, height = 6)
-write_csv(results, "output/data/fig5.csv")
+
+results %>% 
+  mutate(month = "2017-11-01") %>% 
+  select(month, category, area_code, area_name, n, percent) %>% 
+  write_csv("output/data/fig5.csv")

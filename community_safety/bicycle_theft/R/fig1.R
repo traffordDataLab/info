@@ -1,4 +1,4 @@
-## Bicycle theft: Count of bicycle theft in Trafford by month ##
+## Bicycle theft: count in Trafford by month ##
 
 # load R packages  ---------------------------
 library(tidyverse); library(ggplot2); library(svglite)
@@ -14,7 +14,7 @@ df <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
 results <- df %>% 
   filter(month >= "2016-11-01") %>% 
   group_by(month) %>% 
-  count() 
+  count()
 
 # plot data ---------------------------
 ggplot(results, aes(month, n)) +
@@ -30,4 +30,8 @@ ggplot(results, aes(month, n)) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig1.svg", width = 6, height = 3)
 ggsave(file = "output/figures/fig1.png", width = 6, height = 3)
-write_csv(results, "output/data/fig1.csv")
+
+results %>% 
+  mutate(category = "Bicycle theft", area_code = "E08000009", area_name = "Trafford") %>% 
+  select(month, category, area_code, area_name, n) %>% 
+  write_csv("output/data/fig1.csv")

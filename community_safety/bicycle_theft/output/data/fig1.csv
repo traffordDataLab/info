@@ -1,14 +1,14 @@
-month,n
-2016-11-01,40
-2016-12-01,24
-2017-01-01,24
-2017-02-01,20
-2017-03-01,30
-2017-04-01,29
-2017-05-01,39
-2017-06-01,53
-2017-07-01,51
-2017-08-01,36
-2017-09-01,31
-2017-10-01,32
-2017-11-01,33
+month,category,area_code,area_name,n
+2016-11-01,Bicycle theft,E08000009,Trafford,40
+2016-12-01,Bicycle theft,E08000009,Trafford,24
+2017-01-01,Bicycle theft,E08000009,Trafford,24
+2017-02-01,Bicycle theft,E08000009,Trafford,20
+2017-03-01,Bicycle theft,E08000009,Trafford,30
+2017-04-01,Bicycle theft,E08000009,Trafford,29
+2017-05-01,Bicycle theft,E08000009,Trafford,39
+2017-06-01,Bicycle theft,E08000009,Trafford,53
+2017-07-01,Bicycle theft,E08000009,Trafford,51
+2017-08-01,Bicycle theft,E08000009,Trafford,36
+2017-09-01,Bicycle theft,E08000009,Trafford,31
+2017-10-01,Bicycle theft,E08000009,Trafford,32
+2017-11-01,Bicycle theft,E08000009,Trafford,33

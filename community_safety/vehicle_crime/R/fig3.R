@@ -1,4 +1,4 @@
-## Vehicle crime: rate of bicycle theft by ward ##
+## Vehicle crime: rate by ward ##
 
 # load R packages  ---------------------------
 library(tidyverse); library(ggplot2); library(svglite)
@@ -53,4 +53,8 @@ ggplot(results, aes(rate, area_name)) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig3.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
-write_csv(select(results, -area_code), "output/data/fig3.csv")
+
+results %>% 
+  mutate(month = "2017-11-01", category = "Vehicle crime") %>% 
+  select(month, category, area_code, area_name, n, population, rate) %>% 
+  write_csv("output/data/fig3.csv")

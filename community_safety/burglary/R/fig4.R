@@ -43,4 +43,8 @@ ggplot(sf_df) +
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig4.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig4.png", width = 6, height = 6)
-write_csv(select(results, -area_code), "output/data/fig4.csv")
+
+results %>% 
+  mutate(month = "2017-11-01", category = "Burglary") %>% 
+  select(month, category, area_code, area_name, n, households, rate, lq) %>% 
+  write_csv("output/data/fig4.csv")
