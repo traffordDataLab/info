@@ -20,5 +20,5 @@ month,category,area_code,area_name,n,households,rate
 2017-11-01,Burglary,E05000834,St Mary's,2,5024,0.4
 2017-11-01,Burglary,E05000827,Davyhulme West,1,4000,0.2
 2017-11-01,Burglary,E05000838,Urmston,1,4803,0.2
-2017-11-01,Burglary,NA,Trafford,140,NA,1.5
-2017-11-01,Burglary,NA,Greater Manchester,2772,NA,2.5
+2017-11-01,Burglary,E08000009,Trafford,140,94484,1.5
+2017-11-01,Burglary,E47000001,Greater Manchester,2772,1128066,2.5

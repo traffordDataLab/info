@@ -28,8 +28,9 @@ results <- df %>%
   mutate(rate = round((n/households)*1000,1)) %>% 
   arrange(desc(rate)) %>%
   mutate(area_name = factor(area_name, levels = area_name)) %>% 
-  add_row(area_name = "Trafford", n = sum(.$n), rate = round((n/94484)*1000,1)) %>% 
-  add_row(area_name = "Greater Manchester", n = gm, rate = round((n/1128066)*1000,1))
+  add_row(area_name = "Trafford", n = sum(.$n), area_code = "E08000009", households = households[households$area_name == "Trafford", ]$households, rate = round((n/households)*1000,1)) %>% 
+  add_row(area_name = "Greater Manchester", n = gm, area_code = "E47000001", households = households[households$area_name == "Greater Manchester (Met County)", ]$households, rate = round((n/households)*1000,1)) %>% 
+  select(area_code, area_name, everything())
 
 # plot data ---------------------------
 ggplot(results, aes(rate, area_name)) +
@@ -49,5 +50,5 @@ ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
 
 results %>% 
   mutate(month = "2017-11-01", category = "Burglary") %>% 
-  select(month, category, area_code, area_name, n, households, rate) %>% 
+  select(month, category, area_code, area_name, n, households, rate) %>% View()
   write_csv("output/data/fig3.csv")
