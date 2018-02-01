@@ -1,4 +1,4 @@
-## Population: population pyramid for wards ##
+## Population: old-age dependency ratio ##
 
 # load R packages  ---------------------------
 library(tidyverse) ; library(readxl) ; library(ggplot2)
@@ -31,28 +31,38 @@ population <- do.call("rbind", list(males, females)) %>%
   mutate(age = as.integer(age))
 rm(url, males, females)
 
-# plot data ---------------------------
-ggplot() +
-  geom_bar(aes(age, n, group = gender, fill = gender), stat = "identity", 
-           filter(population, age != 90 & gender == "Female"), alpha = 0.8) +
-  geom_bar(aes(age, -n, group = gender, fill = gender), stat = "identity", 
-           filter(population, age != 90 & gender == "Male"), alpha = 0.8) +
-  scale_y_continuous(labels = abs, limits = max(population$n) * c(-1,1)) +
-  scale_fill_manual(values = c("#d8b365", "#5ab4ac")) +
-  guides(fill = guide_legend(keywidth = 4, keyheight = 0.1, reverse = TRUE)) +
-  coord_flip() +
-  facet_wrap(~area_name, ncol = 7, strip.position = "top")  + 
-  labs(x = "age", y = "population", 
-       title = "Mid-2016 ward level population estimates for Trafford",
-       caption = "Source: ONS  |  @traffordDataLab", fill = NULL) +
-  theme_lab() +
-  theme(panel.spacing = unit(0.2, "lines"),
-        axis.text.x = element_text(size = 8, hjust = 1),
-        axis.text.y = element_text(size = 8),
-        axis.ticks = element_blank(),
-        plot.title = element_text(hjust = 0.02),
-        strip.text = element_text(size = 8, face = "bold", angle = 0, hjust = 0.5, vjust = 1),
-        legend.position = "bottom")
+population$ageband <- cut(population$age,
+                          breaks = c(15,65,120),
+                          labels = c("15-64","65+"),
+                          right = FALSE)
 
-ggsave(file = "output/figures/fig2.svg", width = 10, height = 6)
-ggsave(file = "output/figures/fig2.png", width = 10, height = 6)
+results <- population %>% 
+  filter(!is.na(ageband)) %>% 
+  group_by(area_code, area_name, ageband) %>% 
+  summarise(n = sum(n)) %>% 
+  ungroup() %>%
+  group_by(area_code) %>% 
+  select(area_code, area_name, ageband, n) %>% 
+  spread(ageband, n) %>% 
+  mutate(ratio = round((`65+`/`15-64`)*100,0)) %>% 
+  arrange(desc(ratio)) %>%  ungroup() %>%
+  mutate(area_name = factor(area_name, levels = area_name))
+
+# plot data ---------------------------
+ggplot(results, aes(ratio, area_name)) +
+  geom_segment(aes(x = 0, y = area_name, xend = ratio, yend = area_name), color = "#f0f0f0") +
+  geom_point(colour = "#fc6721", size = 4) +
+  geom_text(aes(label = paste0(ratio, "%"), fontface = "bold"), color = "white", size = 2) + 
+  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 50), expand = c(0,0)) + # adjust limits
+  labs(x = NULL, y = NULL,
+       title = NULL,
+       caption = "Source: ONS  |  @traffordDataLab") +
+  theme_lab() + 
+  theme(panel.grid.major = element_blank(),
+        axis.text.y = element_text(hjust = 0))
+
+# save plot / data  ---------------------------
+ggsave(file = "output/figures/fig3.svg", width = 6, height = 6)
+ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
+
+write_csv(results, "output/data/fig3.csv")

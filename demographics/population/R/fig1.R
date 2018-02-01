@@ -1,56 +1,55 @@
-## Population: population pyramid for Trafford ##
+## Population: population pyramid for Trafford by single year ##
 
 # load R packages  ---------------------------
-library(tidyverse) ; library(readxl) ; library(ggplot2)
+library(tidyverse) ; library(stringr) ; library(forcats) ; library(ggplot2)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
 
 # load data ---------------------------
-# ward level mid-year population estimates (2016)
-url <- "https://www.ons.gov.uk/file?uri=/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/wardlevelmidyearpopulationestimatesexperimental/mid2016sape19dt8/sape19dt8mid2016ward2016syoaestimatesunformatted.zip"
-download.file(url, dest = "output/data/sape19dt8mid2016ward2016syoaestimatesunformatted.zip")
-unzip("output/data/sape19dt8mid2016ward2016syoaestimatesunformatted.zip", exdir = "output/data")
-file.remove("output/data/sape19dt8mid2016ward2016syoaestimatesunformatted.zip")
-
-males <- read_xls("output/data/SAPE19DT8-mid-2016-ward-2016-syoa-estimates-unformatted.xls", sheet = 3, skip = 3) %>% 
-  filter(`Local Authority` == "Trafford") %>% 
-  rename(`90` = `90+`) %>% 
-  mutate(gender = "Male") %>% 
-  select(area_code = `Ward Code 1`, area_name = `Ward Name 1`, gender, everything(), -`Local Authority`)
-females <- read_xls("output/data/SAPE19DT8-mid-2016-ward-2016-syoa-estimates-unformatted.xls", sheet = 4, skip = 3) %>% 
-  filter(`Local Authority` == "Trafford") %>% 
-  rename(`90` = `90+`) %>% 
-  mutate(gender = "Female") %>% 
-  select(area_code = `Ward Code 1`, area_name = `Ward Name 1`, gender, everything(), -`Local Authority`)
+df <- read_csv("http://www.nomisweb.co.uk/api/v01/dataset/NM_2002_1.data.csv?geography=1879048225&date=latestMINUS10,latest&gender=1,2&age=101...191&measures=20100&select=date_name,geography_name,geography_code,gender_name,age_name,measures_name,obs_value,obs_status_name")
 
 # manipulate data  ---------------------------
-population <- do.call("rbind", list(males, females)) %>% 
-  select(-`All Ages`) %>% 
-  gather(age, n, -area_code, -area_name, -gender) %>% 
-  mutate(age = as.integer(age)) %>% 
-  group_by(gender, age) %>% 
-  summarise(n = sum(n))
-rm(url, males, females)
-
+results <- df %>% 
+  select(year = DATE_NAME, area_code = GEOGRAPHY_CODE, area_name = GEOGRAPHY_NAME, 
+         gender = GENDER_NAME, age = AGE_NAME, n = OBS_VALUE) %>% 
+  mutate(age = str_replace_all(age, "Age.", ""),
+         age = str_trim(age),
+         age = fct_recode(age, "90" = "90+"),
+         age = factor(age, levels = c(0:90))) %>% 
+  group_by(year, gender, age) %>% 
+  summarise(n = sum(n)) %>% 
+  group_by(year) %>% 
+  mutate(percent = round(n/sum(n)*100, 1))
+  
 # plot data  ---------------------------
 ggplot() +
   geom_bar(aes(age, n, group = gender, fill = gender), stat = "identity", 
-           filter(population, age != 90 & gender == "Female"), alpha = 0.8) +
+           filter(results, year == "2016" & gender == "Female"), alpha = 0.6) +
   geom_bar(aes(age, -n, group = gender, fill = gender), stat = "identity", 
-           filter(population, age != 90 & gender == "Male"), alpha = 0.8) +
-  scale_y_continuous(labels = abs, limits = max(population$n) * c(-1,1)) +
-  scale_fill_manual(values = c("#d8b365", "#5ab4ac")) +
-  guides(fill = guide_legend(keywidth = 4, keyheight = 0.1, reverse = TRUE)) +
+           filter(results, year == "2016" & gender == "Male"), alpha = 0.6) +
+  geom_line(aes(age, n, group = gender), stat = "identity", 
+            filter(results, year == "2006" & gender == "Female"), size = 1, colour = "#d8b365", alpha = 1) +
+  geom_line(aes(age, -n, group = gender), stat = "identity", 
+            filter(results, year == "2006" & gender == "Male"), size = 1, colour = "#5ab4ac", alpha = 1) +
+  scale_x_discrete(breaks = seq(0, 90, by = 5), labels = c(seq(0, 85, by = 5), "90+")) +
+  scale_y_continuous(labels = abs, limits = max(results$n) * c(-1,1), breaks = seq(-1500, 1500, by = 500)) +
+  scale_fill_manual(values = c("#d8b365", "#5ab4ac"), labels = c("Female", "Male")) +
   coord_flip() +
-  labs(x = "age", y = "population", 
-       caption = "Source: ONS  |  @traffordDataLab", fill = NULL) +
+  labs(x = NULL, y = NULL, 
+       subtitle = "male  female",
+       caption = "Source: ONS  |  @traffordDataLab") +
   theme_lab() +
-  theme(axis.text.x = element_text(size = 8, hjust = 1),
-        axis.text.y = element_text(size = 8),
+  theme(panel.grid.major.y = element_blank(),
+        axis.text.x = element_text(size = 9, hjust = 1),
+        axis.text.y = element_text(size = 9),
         axis.ticks = element_blank(),
-        plot.title = element_text(hjust = 0.02),
-        legend.position = "bottom")
+        plot.subtitle = element_text(hjust = 0.5, size = 9),
+        legend.position = "none")
 
-ggsave(file = "output/figures/fig1.svg", width = 6, height = 6)
-ggsave(file = "output/figures/fig1.png", width = 6, height = 6)
+# save plot / data  ---------------------------
+ggsave(file = "output/figures/fig1.svg", width = 6, height = 7)
+ggsave(file = "output/figures/fig1.png", width = 6, height = 7)
+
+write_csv(results, "output/data/fig1.csv")
+
