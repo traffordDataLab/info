@@ -1,7 +1,7 @@
-## Population: old-age dependency ratio ##
+## Population: median age by ward ##
 
 # load R packages  ---------------------------
-library(tidyverse) ; library(readxl) ; library(ggplot2)
+library(tidyverse) ; library(readxl) ; library(sf) ; library(ggplot2) 
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
@@ -24,6 +24,16 @@ females <- read_xls("output/data/SAPE19DT8-mid-2016-ward-2016-syoa-estimates-unf
   mutate(gender = "Female") %>% 
   select(area_code = `Ward Code 1`, area_name = `Ward Name 1`, gender, everything(), -`Local Authority`)
 
+# load geospatial data  ---------------------------
+sf <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/ward/2017/trafford_ward_generalised.geojson") %>% 
+  st_as_sf(crs = 4326, coords = c("long", "lat")) %>% 
+  select(-lon, -lat)
+
+lookup <- read_csv("https://github.com/traffordDataLab/spatial_data/raw/master/lookups/ward_abbreviations.csv") %>% 
+  select(-area_name)
+
+sf <- left_join(sf, lookup, by = "area_code")
+
 # manipulate data  ---------------------------
 population <- bind_rows(males, females) %>% 
   select(-`All Ages`) %>% 
@@ -31,38 +41,29 @@ population <- bind_rows(males, females) %>%
   mutate(age = as.integer(age))
 rm(url, males, females)
 
-population$ageband <- cut(population$age,
-                          breaks = c(15,65,120),
-                          labels = c("15-64","65+"),
-                          right = FALSE)
-
 results <- population %>% 
-  filter(!is.na(ageband)) %>% 
-  group_by(area_code, area_name, ageband) %>% 
+  group_by(area_code, age) %>%
   summarise(n = sum(n)) %>% 
-  ungroup() %>%
-  group_by(area_code) %>% 
-  select(area_code, area_name, ageband, n) %>% 
-  spread(ageband, n) %>% 
-  mutate(ratio = round((`65+`/`15-64`)*100,0)) %>% 
-  arrange(desc(ratio)) %>%  ungroup() %>%
-  mutate(area_name = factor(area_name, levels = area_name))
+  summarise(median_age = age[max(which(cumsum(n)/sum(n) <= 0.5))]) %>%
+  arrange(median_age) 
+
+sf_df <- left_join(sf, results, by = "area_code")
 
 # plot data ---------------------------
-ggplot(results, aes(ratio, area_name)) +
-  geom_segment(aes(x = 0, y = area_name, xend = ratio, yend = area_name), color = "#f0f0f0") +
-  geom_point(colour = "#fc6721", size = 4) +
-  geom_text(aes(label = paste0(ratio, "%"), fontface = "bold"), color = "white", size = 2) + 
-  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 50), expand = c(0,0)) + # adjust limits
-  labs(x = NULL, y = NULL,
-       title = NULL,
+ggplot(sf_df) +
+  geom_sf(aes(fill = median_age), colour = "white") +
+  geom_text(aes(lon, lat, label = area_abbr), size = 2.5, color = "#212121") +
+  scale_fill_gradientn(colours = c("#feedde","#fdbe85","#fd8d3c","#e6550d","#a63603"), na.value = "#f0f0f0") +
+  labs(x = NULL, y = NULL, title = NULL, fill = 'Median\nage',
        caption = "Source: ONS  |  @traffordDataLab") +
-  theme_lab() + 
-  theme(panel.grid.major = element_blank(),
-        axis.text.y = element_text(hjust = 0))
+  theme_lab() +
+  theme(axis.text = element_blank())
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig3.svg", width = 6, height = 6)
-ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
+ggsave(file = "output/figures/fig2.svg", width = 6, height = 6)
+ggsave(file = "output/figures/fig2.png", width = 6, height = 6)
 
-write_csv(results, "output/data/fig3.csv")
+sf_df %>% 
+  select(-lat, -lon) %>% 
+  st_set_geometry(value = NULL) %>% 
+  write_csv("output/data/fig2.csv")

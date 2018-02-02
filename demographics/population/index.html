@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en-GB">
     <head>
-        <title>Trafford Data Lab: TEMPLATE</title>
+        <title>Trafford Data Lab: population</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
         <meta charset="UTF-8"/>
 
@@ -29,104 +29,44 @@
             <div class="main">
                 <h1>Population</h1>
                 <p>According to ONS population estimates for mid-2016, the population of Trafford is 234,673.
-                    51.1% (119,819) of the populatiuon are female and 48.9% (114,854) male.</p>
+                    This is an increase of 8% (17,304 people) over the last 10 years.
+                    51.1% (119,819) of the population are female and 48.9% (114,854) are male.</p>
 
                 <!-- Double column layout - text | visualisation ### PREFERRED ### -->
-                <h3>Age-sex distribution</h3>
+                <h3>Age-gender distribution</h3>
                 <div class="doubleColumnTxtImg">
                     <div>
-                        <p>Figure 1 is a population pyramid which shows the age-sex distribution of Trafford's population.
+                        <p>Figure 1 is a population pyramid which shows the age-gender distribution of Trafford's population in 2006 (line) and 2016 (bar).
+                            The base of the distribution is much wider in 2016 than 2006 indicating an increase in the birth rate over the last ten years.
+                            The proportion of adults between the ages of 20 and 40 has remained significantly less than those in the 40-60 year old age groups.
+                            The bulge in the middle has shifted upwards as those in their thirties have grown into their forties.
+                            The number of older residents has also increased over the last ten years with the top of the distribution widening slightly.
                         </p>
+                        <p>Population pyramids for each of Trafford's wards using mid-2016 estimates has been visualised in <a href="http://www.trafforddatalab.io/info/demographics/population/output/figures/pyramids.svg" target="_blank">this linked chart</a>.</p>
                     </div>
                     <div>
-                        <h5>Figure 1: Trafford population pyramid, mid-2016</h5>
+                        <h5>Figure 1: Trafford population pyramid, 2006 and 2016</h5>
                         <object type="image/svg+xml" data="output/figures/fig1.svg"></object>
-                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig1.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig1.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig1.R" target="_blank">R code</a></span>
                     </div>
                 </div>
 
                 <br />
 
-                <br />
-                <div>
-                <h5>Table 1: Population estimates and projections for Trafford by broad age group</h5>
-                 <table class="dataTable">
-                     <thead>
-                         <tr>
-                             <th></th>
-                             <th>0 to 15 years (%)</th>
-                             <th>16 to 64 years (%)</th>
-                             <th>Aged 65 and over (%)</th>
-                         </tr>
-                     <tbody>
-                         <tr>
-                             <td>1995</td>
-                             <td>20.8</td>
-                             <td>63.1</td>
-                             <td>16.1</td>
-                         </tr>
-                         <tr>
-                             <td>2000</td>
-                             <td>20.4</td>
-                             <td>63.4</td>
-                             <td>16.1</td>
-                         </tr>
-                         <tr>
-                             <td>2005</td>
-                             <td>20.1</td>
-                             <td>63.8</td>
-                             <td>16.1</td>
-                         </tr>
-                         <tr>
-                             <td>2010</td>
-                             <td>20.1</td>
-                             <td>63.9</td>
-                             <td>16.0</td>
-                         </tr>
-                         <tr>
-                             <td>2015</td>
-                             <td>20.7</td>
-                             <td>62.2</td>
-                             <td>17.0</td>
-                         </tr>
-                         <tr>
-                             <td>2016</td>
-                             <td>21.0</td>
-                             <td>61.9</td>
-                             <td>17.2</td>
-                         </tr>
-                         <tr>
-                             <td>2020</td>
-                             <td>21.1</td>
-                             <td>61.4</td>
-                             <td>17.5</td>
-                         </tr>
-                         <tr>
-                             <td>2025</td>
-                             <td>20.8</td>
-                             <td>60.6</td>
-                             <td>18.6</td>
-                         </tr>
-                         <tr>
-                             <td>2030</td>
-                             <td>20.3</td>
-                             <td>59.4</td>
-                             <td>20.3</td>
-                         </tr>
-                         <tr>
-                             <td>2035</td>
-                             <td>19.9</td>
-                             <td>58.4</td>
-                             <td>21.7</td>
-                         </tr>
-                     </tbody>
-                 </table>
-                 <br />
-                 <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/tab1.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/tab1.R" target="_blank">R code</a></span>
+                <h3>Median age</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>The median age in Trafford is 39 years old but varies between ward.
+                        Clifford residents have the youngest median age at 32 years and Bowdon the oldest at 46 years.</p>
+                    </div>
+                    <div>
+                        <h5>Figure 2: Median age, mid-2016</h5>
+                        <object type="image/svg+xml" data="output/figures/fig2.svg"></object>
+                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig2.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig2.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig2.R" target="_blank">R code</a></span>
+                    </div>
                 </div>
 
                 <br />
-
                 <h3>Old-age dependency ratios</h3>
                 <div class="doubleColumnTxtImg">
                     <div>
@@ -137,34 +77,111 @@
                     <div>
                         <h5>Figure 3: Old age dependency ratio, mid-2016</h5>
                         <object type="image/svg+xml" data="output/figures/fig3.svg"></object>
-                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig3.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig3.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig3.R" target="_blank">R code</a></span>
+                    </div>
+                </div>
+
+                <br />
+                <h3>Population projections</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>
+                            Table 1 presents population projections for broad age groups in Trafford until 2035.
+                            The number of residents aged under 15 is expected to remain fairly stable with the number aged 65 years and over likely to increase by 4.5%.
+                        </p>
+                    </div>
+                    <div>
+                        <h5>Table 1: Population estimates and projections for Trafford by broad age group</h5>
+                         <table class="dataTable">
+                             <thead>
+                                 <tr>
+                                     <th></th>
+                                     <th>0 to 15 years (%)</th>
+                                     <th>16 to 64 years (%)</th>
+                                     <th>Aged 65 and over (%)</th>
+                                 </tr>
+                             <tbody>
+                                 <tr>
+                                     <td>1995</td>
+                                     <td>20.8</td>
+                                     <td>63.1</td>
+                                     <td>16.1</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2000</td>
+                                     <td>20.4</td>
+                                     <td>63.4</td>
+                                     <td>16.1</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2005</td>
+                                     <td>20.1</td>
+                                     <td>63.8</td>
+                                     <td>16.1</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2010</td>
+                                     <td>20.1</td>
+                                     <td>63.9</td>
+                                     <td>16.0</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2015</td>
+                                     <td>20.7</td>
+                                     <td>62.2</td>
+                                     <td>17.0</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2016</td>
+                                     <td>21.0</td>
+                                     <td>61.9</td>
+                                     <td>17.2</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2020</td>
+                                     <td>21.1</td>
+                                     <td>61.4</td>
+                                     <td>17.5</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2025</td>
+                                     <td>20.8</td>
+                                     <td>60.6</td>
+                                     <td>18.6</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2030</td>
+                                     <td>20.3</td>
+                                     <td>59.4</td>
+                                     <td>20.3</td>
+                                 </tr>
+                                 <tr>
+                                     <td>2035</td>
+                                     <td>19.9</td>
+                                     <td>58.4</td>
+                                     <td>21.7</td>
+                                 </tr>
+                             </tbody>
+                         </table>
+                         <br />
+                         <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/tab1.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/tab1.R" target="_blank">R code</a></span>
                     </div>
                 </div>
 
                 <br />
 
-
                 <div class="endNotes">
                     <h3>Notes</h3>
-                    <p>Paragraphs containing notes about the page</p>
-
-                    <div>
-                        <h3>References</h3>
-                        <p>Reference 1</p>
-                        <p>Reference 2</p>
-                        <p>Reference 3</p>
-                    </div>
+                    <p><strong>Ward abbreviations:</strong> Altrincham (ALT); Ashton upon Mersey (AOM); Bowdon (BOW); Broadheath (BRD); Brooklands (BRK); Bucklow-St Martins (BSM); Clifford (CLF); Davyhulme East (DVE); Davyhulme West (DVW); Flixton (FLX); Gorse Hill (GOH); Hale Barns (HBN); Hale Central (HCT); Longford (LFD); Priory (PRI);	St Mary's (STM); Sale Moor (SLM); Stretford (STR); Timperley (TMP); Urmston (URM); Village (VLG)</p>
 
                     <h3>Data sources</h3>
                     <ul>
-                        <li>Office for National Statistics: <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates/datasets/wardlevelmidyearpopulationestimatesexperimental" target="_blank">Mid-year population estimates, 2016</a></li>
-                        <li>Source 2: <a href="" target="_blank">source 2 link</a></li>
-                        <li>Source 3: <a href="" target="_blank">source 3 link</a></li>
+                        <li>Office for National Statistics: <a href="https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates" target="_blank">Mid-year population estimates, 2016</a></li>
                     </ul>
 
                     <span class="hideOnPDF">
                         <br />
-                        <p><a href="http://www.trafforddatalab.io/info/.../.../.pdf" target="_blank"><span class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></span> view as PDF</a></p>
+                        <p><a href="http://www.trafforddatalab.io/info/demographics/population/population.pdf" target="_blank"><span class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></span> view as PDF</a></p>
                     </span>
                 </div>
 

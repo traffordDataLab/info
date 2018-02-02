@@ -48,8 +48,8 @@ ggplot() +
         legend.position = "none")
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig1.svg", width = 6, height = 7)
-ggsave(file = "output/figures/fig1.png", width = 6, height = 7)
+ggsave(file = "output/figures/fig1.svg", width = 5, height = 5)
+ggsave(file = "output/figures/fig1.png", width = 5, height = 5)
 
 write_csv(results, "output/data/fig1.csv")
 
