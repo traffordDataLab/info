@@ -1,24 +1,24 @@
 month,category,area_code,area_name,n,percent
-2017-11-01,Burglary,E05000823,Brooklands,16,33
-2017-11-01,Burglary,E05000830,Hale Barns,11,24
-2017-11-01,Burglary,E05000837,Timperley,5,20
-2017-11-01,Burglary,E05000820,Ashton upon Mersey,8,12
-2017-11-01,Burglary,E05000821,Bowdon,4,12
-2017-11-01,Burglary,E05000825,Clifford,10,11
-2017-11-01,Burglary,E05000839,Village,8,11
-2017-11-01,Burglary,E05000831,Hale Central,7,11
-2017-11-01,Burglary,E05000819,Altrincham,12,9
-2017-11-01,Burglary,E05000836,Stretford,11,9
-2017-11-01,Burglary,E05000832,Longford,9,9
-2017-11-01,Burglary,E05000833,Priory,8,8
-2017-11-01,Burglary,E05000822,Broadheath,6,8
-2017-11-01,Burglary,E05000828,Flixton,3,8
-2017-11-01,Burglary,E05000829,Gorse Hill,8,7
-2017-11-01,Burglary,E05000835,Sale Moor,3,5
-2017-11-01,Burglary,E05000824,Bucklow-St Martins,4,4
-2017-11-01,Burglary,E05000834,St Mary's,2,3
-2017-11-01,Burglary,E05000826,Davyhulme East,3,2
-2017-11-01,Burglary,E05000827,Davyhulme West,1,2
-2017-11-01,Burglary,E05000838,Urmston,1,2
-2017-11-01,Burglary,E08000009,Trafford,140,9
-2017-11-01,Burglary,E47000001,Greater Manchester,2772,10
+2017-12-01,Burglary,E05000830,Hale Barns,15,28
+2017-12-01,Burglary,E05000823,Brooklands,8,27
+2017-12-01,Burglary,E05000839,Village,12,20
+2017-12-01,Burglary,E05000837,Timperley,5,17
+2017-12-01,Burglary,E05000820,Ashton upon Mersey,7,16
+2017-12-01,Burglary,E05000834,St Mary's,9,15
+2017-12-01,Burglary,E05000821,Bowdon,6,14
+2017-12-01,Burglary,E05000831,Hale Central,7,13
+2017-12-01,Burglary,E05000822,Broadheath,10,12
+2017-12-01,Burglary,E05000819,Altrincham,10,9
+2017-12-01,Burglary,E05000832,Longford,7,9
+2017-12-01,Burglary,E05000833,Priory,8,8
+2017-12-01,Burglary,E05000824,Bucklow-St Martins,6,7
+2017-12-01,Burglary,E05000838,Urmston,4,7
+2017-12-01,Burglary,E05000828,Flixton,2,7
+2017-12-01,Burglary,E05000836,Stretford,5,6
+2017-12-01,Burglary,E05000829,Gorse Hill,8,5
+2017-12-01,Burglary,E05000826,Davyhulme East,7,5
+2017-12-01,Burglary,E05000835,Sale Moor,3,5
+2017-12-01,Burglary,E05000825,Clifford,4,4
+2017-12-01,Burglary,E05000827,Davyhulme West,2,4
+2017-12-01,Burglary,E08000009,Trafford,145,10
+2017-12-01,Burglary,E47000001,Greater Manchester,2451,9

@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+    <head>
+        <title>Trafford Data Lab: TEMPLATE</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+        <meta charset="UTF-8"/>
+
+        <link rel="stylesheet" href="http://www.trafforddatalab.io/css/labBase.css"/>
+        <link rel="stylesheet" href="http://www.trafforddatalab.io/css/labWebsite.css"/>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"/>
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"/>
+    </head>
+    <body>
+        <div class="container">
+            <div class="header">
+                <a href="http://www.trafforddatalab.io/index.html"><img src="https://trafforddatalab.github.io/assets/logo/trafforddatalab_logo.svg" alt="Trafford Data Lab" width="93" border="0" class="traffordDataLabLogo"/></a>
+
+                <h2 class="hideContent">Main Menu</h2>   <!-- Menu heading displayed only if we don't have CSS enabled -->
+                <ul class="navbar noBulletPoints">
+                    <li class="hideContent"><a href="http://www.trafforddatalab.io/index.html">Home</a></li>   <!-- Home link displayed only if we don't have CSS enabled -->
+                    <li class="menuItem"><a href="http://www.trafforddatalab.io/info.html">Info</a></li>
+                    <li class="menuItem"><a href="http://www.trafforddatalab.io/maps.html">Maps</a></li>
+                    <li class="menuItem"><a href="http://www.trafforddatalab.io/projects.html">Projects</a></li>
+                    <li class="menuItem"><a href="http://www.trafforddatalab.io/data.html">Data</a></li>
+                    <li class="menuItem"><a href="http://www.trafforddatalab.io/about.html">About</a></li>
+                </ul>
+            </div>
+
+            <div class="main">
+                <h1>Title</h1>
+                <p>Opening paragraph.</p>
+
+                <!-- Double column layout - text | visualisation ### PREFERRED ### -->
+                <h3>Subheading</h3>
+                <div class="doubleColumnTxtImg">
+                    <div>
+                        <p>Paragraph describing section.</p>
+                    </div>
+                    <div>
+                        <h5>Figure n: Title of figure</h5>
+                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                    </div>
+                </div>
+
+                <br />
+
+                <!-- Double column layout - visualisation | text -->
+                <h3>Subheading</h3>
+                <div class="doubleColumnImgTxt">
+                    <div>
+                        <h5>Figure n: Title of figure</h5>
+                        <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                        <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                    </div>
+                    <div>
+                        <p>Paragraph describing section.</p>
+                    </div>
+                </div>
+
+                <br />
+
+                <!-- Double column layout - newspaper style (could contain any combination of text and visualisation content in any order)-->
+                <h3>Subheading</h3>
+                <div class="doubleColumn">
+                    <div>
+                        <p>Column 1 text.</p>
+                    </div>
+                    <div>
+                        <p>Column 2 text.</p>
+                    </div>
+                </div>
+
+                <br />
+
+                <!-- Single column layout -->
+                <h3>Subheading</h3>
+                <div class="singleColumn">
+                    <p>Paragraph describing section.</p>
+                    <h5>Figure n: Title of figure</h5>
+                    <object type="image/svg+xml" data="output/figures/fig.svg"></object>
+                    <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                </div>
+
+                <!-- Data table example (can be used in any of the content layout options above) -->
+                <h5>Table Heading/Title</h5>
+                <table class="dataTable">
+                    <thead>
+                        <tr>
+                            <th>Column 1</th>
+                            <th>Column 2</th>
+                            <th>Column 3</th>
+                        </tr>
+                    </thead>
+                    <tfoot>
+                        <tr>
+                            <td>Trafford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Greater Manchester</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tfoot>
+                    <tbody>
+                        <tr>
+                            <td>Altrincham</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Ashton upon Mersey</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bowdon</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Broadheath</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Brooklands</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Bucklow-St Martins</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Clifford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Davyhulme East</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Davyhulme West</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Flixton</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Gorse Hill</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hale Barns</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Hale Central</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Longford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Priory</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Sale Moor</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>St Mary's</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Stretford</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Timperley</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Urmston</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                        <tr>
+                            <td>Village</td>
+                            <td></td>
+                            <td></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+
+                <div class="endNotes">
+                    <h3>Notes</h3>
+                    <p>Paragraphs containing notes about the page</p>
+
+                    <div>
+                        <h3>References</h3>
+                        <p>Reference 1</p>
+                        <p>Reference 2</p>
+                        <p>Reference 3</p>
+                    </div>
+
+                    <h3>Data sources</h3>
+                    <ul>
+                        <li>Source 1: <a href="" target="_blank">source 1 link</a></li>
+                        <li>Source 2: <a href="" target="_blank">source 2 link</a></li>
+                        <li>Source 3: <a href="" target="_blank">source 3 link</a></li>
+                    </ul>
+
+                    <span class="hideOnPDF">
+                        <br />
+                        <p><a href="http://www.trafforddatalab.io/info/.../.../.pdf" target="_blank"><span class="fa fa-file-pdf-o fa-2x" aria-hidden="true"></span> view as PDF</a></p>
+                    </span>
+                </div>
+
+            </div>
+
+            <div class="footer">
+                <div class="leftFooter">
+                    <div class="logoMedia">
+                        <span class="hideContent">Visit us on </span>
+                        <a class="linkMedia" href="https://twitter.com/traffordDataLab"><span class="fa fa-twitter-square"></span><span class="hideContent">Twitter</span></a>
+                        <span class="hideContent"> and </span>
+                        <a class="linkMedia" href="https://github.com/traffordDataLab"><span class="fa fa-github"></span><span class="hideContent">Github<br /></span></a>
+                    </div>
+                    <div class="license">Released under <a class="footerLink" href="http://www.nationalarchives.gov.uk/doc/open-government-licence/version/3/">Open Government Licence</a></div>
+                </div>
+                <div class="rightFooter">
+                    <a href="http://www.trafford.gov.uk"><img class="logoTrafford" src="http://www.trafforddatalab.io/images/trafford_council_logo_black_on_white_100px.png" alt="Trafford Council" border="0"/></a>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>

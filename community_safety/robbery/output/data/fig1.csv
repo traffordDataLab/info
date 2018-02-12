@@ -1,5 +1,4 @@
 month,category,area_code,area_name,n
-2016-11-01,Robbery,E08000009,Trafford,21
 2016-12-01,Robbery,E08000009,Trafford,27
 2017-01-01,Robbery,E08000009,Trafford,19
 2017-02-01,Robbery,E08000009,Trafford,22
@@ -12,3 +11,4 @@ month,category,area_code,area_name,n
 2017-09-01,Robbery,E08000009,Trafford,40
 2017-10-01,Robbery,E08000009,Trafford,28
 2017-11-01,Robbery,E08000009,Trafford,33
+2017-12-01,Robbery,E08000009,Trafford,35

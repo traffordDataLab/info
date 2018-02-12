@@ -1,7 +1,7 @@
 ## Vehicle crime: time series with trend ##
 
 # load R packages  ---------------------------
-library(tidyverse); library(ggplot2); library(svglite)
+library(tidyverse); library(lubridate); library(ggplot2); library(svglite)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
@@ -12,7 +12,10 @@ df <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
 
 # manipulate data ---------------------------
 count <- df %>% group_by(month) %>% count()
-ts_crime <- ts(count$n, start = c(2014, 12), end = c(2017, 11), frequency = 12)
+ts_crime <- ts(count$n, 
+               start = c(min(year(df$month)) , min(month(df$month))), 
+               end = c(max(year(df$month)) , max(month(df$month))), 
+               frequency = 12)
 ts_decomp <- stl(ts_crime, "periodic")
 plot(ts_decomp)
 min(count$n) # lowest count
@@ -20,7 +23,7 @@ max(count$n) # highest count
 ts_decomp$time.series[,1] # seasonality
 
 results <- data.frame(
-  month = seq(as.Date("2014-12-01"), by = "month", length.out = 36),
+  month = seq(as.Date(min(df$month)), by = "month", length.out = 36),
   Observed = as.vector(ts_crime),
   Trend = ts_decomp$time.series[,2]
 ) %>% gather(type, value, -month) %>% 

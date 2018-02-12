@@ -24,7 +24,7 @@ sf <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/ward/2
 
 # manipulate data ---------------------------
 results <- df %>% 
-  filter(month == "2017-11-01") %>% 
+  filter(month == max(df$month)) %>% 
   group_by(area_name) %>% 
   count() %>% 
   ungroup() %>% 
@@ -39,17 +39,28 @@ sf_df <- left_join(sf, results, by = "area_code") # merge with ward attribute ta
 # plot data ---------------------------
 ggplot(sf_df) +
   geom_sf(aes(fill = lq), colour = "white") +
-  scale_fill_gradientn(colours = c("#feedde","#fdbe85","#fd8d3c","#e6550d","#a63603"), na.value = "#f0f0f0") +
-  labs(x = NULL, y = NULL, title = NULL, fill = 'Vehicle crime\nlocation\nquotient',
+  scale_fill_gradientn(colours = c("#feedde","#fdbe85","#fd8d3c","#e6550d","#a63603"), 
+                       na.value = "#f0f0f0",
+                       guide = guide_legend(keyheight = unit(3, units = "mm"), 
+                                            keywidth=unit(12, units = "mm"), 
+                                            label.position = "bottom", 
+                                            title.position = 'top', 
+                                            nrow = 1)) +
+  labs(x = NULL, y = NULL, title = NULL, fill = 'Vehicle crime\nlocation quotient',
        caption = "Source: data.police.uk  |  @traffordDataLab") +
   theme_lab() +
-  theme(axis.text = element_blank())
+  theme(plot.margin = unit(c(0.5,0,1,0), "cm"),
+        axis.text = element_blank(),
+        plot.caption = element_text(margin = margin(t = 55)),
+        legend.position = c(0.1,-0.05),
+        legend.title = element_text(size = 10),
+        legend.text = element_text(size = 9))
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig4.svg", width = 6, height = 6)
-ggsave(file = "output/figures/fig4.png", width = 6, height = 6)
+ggsave(file = "output/figures/fig4.svg", width = 8, height = 6)
+ggsave(file = "output/figures/fig4.png", width = 8, height = 6)
 
 results %>% 
-  mutate(month = "2017-11-01", category = "Vehicle crime") %>% 
+  mutate(month = max(df$month), category = "Vehicle crime") %>% 
   select(month, category, area_code, area_name, n, population, rate, lq) %>% 
   write_csv("output/data/fig4.csv")

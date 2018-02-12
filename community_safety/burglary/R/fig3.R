@@ -20,7 +20,7 @@ households <- read_csv("http://www.nomisweb.co.uk/api/v01/dataset/NM_619_1.data.
 
 # manipulate data ---------------------------
 results <- df %>% 
-  filter(month == "2017-11-01") %>% 
+  filter(month == max(df$month)) %>% 
   group_by(area_name) %>% 
   count() %>% 
   ungroup() %>% 
@@ -49,6 +49,6 @@ ggsave(file = "output/figures/fig3.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
 
 results %>% 
-  mutate(month = "2017-11-01", category = "Burglary") %>% 
-  select(month, category, area_code, area_name, n, households, rate) %>% View()
+  mutate(month = max(df$month), category = "Burglary") %>% 
+  select(month, category, area_code, area_name, n, households, rate) %>%
   write_csv("output/data/fig3.csv")
