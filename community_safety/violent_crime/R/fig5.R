@@ -52,7 +52,7 @@ ggplot(results, aes(percent, area_name)) +
   geom_segment(aes(x = 0, y = area_name, xend = percent, yend = area_name), color = "#f0f0f0") +
   geom_point(colour = "#fc6721", size = 4) +
   geom_text(aes(label = paste0(percent, "%"), fontface = "bold"), color = "white", size = 2) + 
-  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 50), expand = c(0,0)) + # adjust limits
+  scale_x_continuous(labels = function(x){ paste0(x, "%") }, limits=c(0, 60), expand = c(0,0)) + # adjust limits
   labs(x = "percentage of all crime", y = NULL,
        title = NULL,
        caption = "Source: data.police.uk  |  @traffordDataLab") +
@@ -66,5 +66,5 @@ ggsave(file = "output/figures/fig5.png", width = 6, height = 6)
 
 results %>% 
   mutate(month = max(df$month)) %>% 
-  select(month, category, area_code, area_name, n, percent) %>% View()
+  select(month, category, area_code, area_name, n, percent) %>%
   write_csv("output/data/fig5.csv")
