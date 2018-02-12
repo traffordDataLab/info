@@ -1,6 +1,6 @@
 ## Ethnicity: multivariate density dot map of broad ethnic groups in Trafford
 
-# Credits: 
+# credits: 
 # - http://www.radicalcartography.net/index.html?chicagodots
 # - https://www.blog.cultureofinsight.com/2017/06/building-dot-density-maps-with-uk-census-data-in-r/
 
@@ -46,15 +46,15 @@ coords <- map(random_dots, ~as.data.frame(do.call(rbind, st_geometry(.))) %>%
              select(x = lon, y = lat))
 
 # add an ethnicity variable, bind dataframes and set factor levels
-ethnicities <- c("White", "Asian", "Black", "Mixed", "Other")
+ethnicities <- c("White", "Asian", "Black", "Mixed", "Other") # ensures White ethnicity doesn't mask others
 plot_dots <- map2_df(coords, ethnicities, ~ mutate(.x, ethnic_group = .y)) %>% 
   mutate(ethnic_group = factor(ethnic_group, levels = ethnicities))
 
 # plot data ---------------------------
 # create a palette
-pal <- c("#ffffb3","#8dd3c7","#bebada","#fb8072","#80b1d3")
+pal <- c("Asian" = "#8dd3c7", "Black" = "#bebada", "Mixed" = "#fb8072", "Other" = "#80b1d3", "White" = "#ffffb3")
 
-p <- ggplot() +
+ggplot() +
   geom_sf(data = sf_la, colour = "#d3d3d3", fill = NA, size = 0.3) +
   geom_point(data = plot_dots, aes(x, y, colour = ethnic_group), size = 0.1, alpha = 0.5) +
   geom_label(data = sf_tc, aes(x = lon, y = lat, label = as.character(name)),
@@ -62,8 +62,6 @@ p <- ggplot() +
              size = 2.5, color = "#212121") +
   scale_colour_manual(values = pal) +
   labs(x = NULL, y = NULL, 
-       title = "Ethnic diversity in Trafford", 
-       subtitle = "1 dot = 20 residents",
        caption = "Source: Census 2011  |  @traffordDataLab",
        colour = NULL) +
   guides(colour = guide_legend(override.aes = list(size = 2))) +
@@ -73,13 +71,6 @@ p <- ggplot() +
         legend.text = element_text(size = 10, colour = "#757575"),
         legend.position = "bottom",
         plot.title = element_text(face = "bold"))
-p
-
-# zoom in on particular ward
-bbox <- filter(sf_wards, area_name == "Clifford") %>% 
-  st_bbox()
-p + coord_sf(xlim = c(bbox[1], bbox[3]),ylim = c(bbox[2], bbox[4])) +
-  labs(title = "Ethnic diversity in Clifford") 
 
 # save plot / data  ---------------------------
 ggsave(file = "output/figures/fig1.svg", width = 10, height = 8)
