@@ -1,24 +1,24 @@
 month,category,area_code,area_name,n,households,rate
-2017-11-01,Burglary,E05000823,Brooklands,16,4269,3.7
-2017-11-01,Burglary,E05000830,Hale Barns,11,3809,2.9
-2017-11-01,Burglary,E05000819,Altrincham,12,5105,2.4
-2017-11-01,Burglary,E05000836,Stretford,11,4718,2.3
-2017-11-01,Burglary,E05000825,Clifford,10,4688,2.1
-2017-11-01,Burglary,E05000820,Ashton upon Mersey,8,4147,1.9
-2017-11-01,Burglary,E05000832,Longford,9,4686,1.9
-2017-11-01,Burglary,E05000839,Village,8,4523,1.8
-2017-11-01,Burglary,E05000831,Hale Central,7,4181,1.7
-2017-11-01,Burglary,E05000829,Gorse Hill,8,5107,1.6
-2017-11-01,Burglary,E05000833,Priory,8,4894,1.6
-2017-11-01,Burglary,E05000822,Broadheath,6,5150,1.2
-2017-11-01,Burglary,E05000837,Timperley,5,4275,1.2
-2017-11-01,Burglary,E05000821,Bowdon,4,3725,1.1
-2017-11-01,Burglary,E05000824,Bucklow-St Martins,4,4423,0.9
-2017-11-01,Burglary,E05000826,Davyhulme East,3,3953,0.8
-2017-11-01,Burglary,E05000828,Flixton,3,4586,0.7
-2017-11-01,Burglary,E05000835,Sale Moor,3,4418,0.7
-2017-11-01,Burglary,E05000834,St Mary's,2,5024,0.4
-2017-11-01,Burglary,E05000827,Davyhulme West,1,4000,0.2
-2017-11-01,Burglary,E05000838,Urmston,1,4803,0.2
-2017-11-01,Burglary,E08000009,Trafford,140,94484,1.5
-2017-11-01,Burglary,E47000001,Greater Manchester,2772,1128066,2.5
+2017-12-01,Burglary,E05000830,Hale Barns,15,3809,3.9
+2017-12-01,Burglary,E05000839,Village,12,4523,2.7
+2017-12-01,Burglary,E05000819,Altrincham,10,5105,2
+2017-12-01,Burglary,E05000822,Broadheath,10,5150,1.9
+2017-12-01,Burglary,E05000823,Brooklands,8,4269,1.9
+2017-12-01,Burglary,E05000826,Davyhulme East,7,3953,1.8
+2017-12-01,Burglary,E05000834,St Mary's,9,5024,1.8
+2017-12-01,Burglary,E05000820,Ashton upon Mersey,7,4147,1.7
+2017-12-01,Burglary,E05000831,Hale Central,7,4181,1.7
+2017-12-01,Burglary,E05000821,Bowdon,6,3725,1.6
+2017-12-01,Burglary,E05000829,Gorse Hill,8,5107,1.6
+2017-12-01,Burglary,E05000833,Priory,8,4894,1.6
+2017-12-01,Burglary,E05000832,Longford,7,4686,1.5
+2017-12-01,Burglary,E05000824,Bucklow-St Martins,6,4423,1.4
+2017-12-01,Burglary,E05000837,Timperley,5,4275,1.2
+2017-12-01,Burglary,E05000836,Stretford,5,4718,1.1
+2017-12-01,Burglary,E05000825,Clifford,4,4688,0.9
+2017-12-01,Burglary,E05000838,Urmston,4,4803,0.8
+2017-12-01,Burglary,E05000835,Sale Moor,3,4418,0.7
+2017-12-01,Burglary,E05000827,Davyhulme West,2,4000,0.5
+2017-12-01,Burglary,E05000828,Flixton,2,4586,0.4
+2017-12-01,Burglary,E08000009,Trafford,145,94484,1.5
+2017-12-01,Burglary,E47000001,Greater Manchester,5223,1128066,4.6

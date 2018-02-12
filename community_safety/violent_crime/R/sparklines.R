@@ -55,7 +55,7 @@ ggplot(results, aes(x = month, y = rate)) +
         axis.ticks = element_blank(),
         panel.grid.major = element_blank(),
         plot.title = element_text(hjust = 0.02),
-        plot.subtitle = element_text(size = 10, hjust = 0.02, vjust = 4),
+        plot.subtitle = element_text(size = 10, hjust = 0.018),
         strip.text = element_text(size = 8, face = "bold", angle = 0, hjust = 0.05, vjust = 1))
 
 ggsave(file = "output/figures/sparkline_plot.svg", dpi = 300, scale = 1)

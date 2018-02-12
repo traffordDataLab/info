@@ -11,7 +11,7 @@ df <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
 
 # manipulate data ---------------------------
 gm <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_recorded_crime/data/gm.csv.gz") %>% 
-  filter(month >= "2017-11-01" & category != "Anti-social behaviour") %>% 
+  filter(month >= max(df$month) & category != "Anti-social behaviour") %>% 
   group_by(category) %>%
   summarise(n = n()) %>% 
   arrange(desc(n)) %>%
@@ -22,7 +22,7 @@ gm <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
   select(area_name, category, n, percent)
 
 trafford <- df %>% 
-  filter(month == "2017-11-01" & category != "Anti-social behaviour") %>% 
+  filter(month == max(df$month) & category != "Anti-social behaviour") %>% 
   group_by(category) %>%
   summarise(n = n()) %>% 
   arrange(desc(n)) %>%
@@ -33,7 +33,7 @@ trafford <- df %>%
   select(area_name, category, n, percent)
 
 results <- df %>% 
-  filter(month == "2017-11-01" & category != "Anti-social behaviour") %>% 
+  filter(month == max(df$month) & category != "Anti-social behaviour") %>% 
   group_by(area_code, area_name, category) %>%
   summarise(n = n()) %>%
   ungroup() %>%
@@ -65,6 +65,6 @@ ggsave(file = "output/figures/fig5.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig5.png", width = 6, height = 6)
 
 results %>% 
-  mutate(month = "2017-11-01") %>% 
+  mutate(month = max(df$month)) %>% 
   select(month, category, area_code, area_name, n, percent) %>% 
   write_csv("output/data/fig5.csv")

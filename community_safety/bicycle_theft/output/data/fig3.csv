@@ -1,19 +1,14 @@
 month,category,area_code,area_name,n,population,rate
-2017-11-01,Bicycle theft,E05000819,Altrincham,10,12521,0.8
-2017-11-01,Bicycle theft,E05000833,Priory,3,11426,0.3
-2017-11-01,Bicycle theft,E05000820,Ashton upon Mersey,2,10066,0.2
-2017-11-01,Bicycle theft,E05000824,Bucklow-St Martins,2,10482,0.2
-2017-11-01,Bicycle theft,E05000826,Davyhulme East,2,9739,0.2
-2017-11-01,Bicycle theft,E05000827,Davyhulme West,2,10042,0.2
-2017-11-01,Bicycle theft,E05000832,Longford,2,12304,0.2
-2017-11-01,Bicycle theft,E05000836,Stretford,2,11451,0.2
-2017-11-01,Bicycle theft,E05000821,Bowdon,1,9536,0.1
-2017-11-01,Bicycle theft,E05000822,Broadheath,1,13894,0.1
-2017-11-01,Bicycle theft,E05000825,Clifford,1,12199,0.1
-2017-11-01,Bicycle theft,E05000828,Flixton,1,10804,0.1
-2017-11-01,Bicycle theft,E05000829,Gorse Hill,1,12422,0.1
-2017-11-01,Bicycle theft,E05000834,St Mary's,1,11895,0.1
-2017-11-01,Bicycle theft,E05000837,Timperley,1,11242,0.1
-2017-11-01,Bicycle theft,E05000838,Urmston,1,11447,0.1
-2017-11-01,Bicycle theft,E08000009,Trafford,33,234673,0.1
-2017-11-01,Bicycle theft,E47000001,Greater Manchester,356,2782141,0.1
+2017-12-01,Bicycle theft,E05000819,Altrincham,4,12521,0.3
+2017-12-01,Bicycle theft,E05000820,Ashton upon Mersey,3,10066,0.3
+2017-12-01,Bicycle theft,E05000826,Davyhulme East,3,9739,0.3
+2017-12-01,Bicycle theft,E05000822,Broadheath,3,13894,0.2
+2017-12-01,Bicycle theft,E05000832,Longford,2,12304,0.2
+2017-12-01,Bicycle theft,E05000833,Priory,2,11426,0.2
+2017-12-01,Bicycle theft,E05000821,Bowdon,1,9536,0.1
+2017-12-01,Bicycle theft,E05000825,Clifford,1,12199,0.1
+2017-12-01,Bicycle theft,E05000835,Sale Moor,1,10723,0.1
+2017-12-01,Bicycle theft,E05000834,St Mary's,1,11895,0.1
+2017-12-01,Bicycle theft,E05000839,Village,1,10912,0.1
+2017-12-01,Bicycle theft,E08000009,Trafford,22,234673,0.1
+2017-12-01,Bicycle theft,E47000001,Greater Manchester,211,2782141,0.1

@@ -1,7 +1,7 @@
 ## Robbery: count in Trafford by month ##
 
 # load R packages  ---------------------------
-library(tidyverse); library(ggplot2); library(svglite)
+library(tidyverse); library(lubridate); library(ggplot2); library(svglite)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
@@ -12,7 +12,7 @@ df <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_r
 
 # manipulate data ---------------------------
 results <- df %>% 
-  filter(month >= "2016-11-01") %>% 
+  filter(month >= max(df$month) - months(12)) %>% 
   group_by(month) %>% 
   count()
 

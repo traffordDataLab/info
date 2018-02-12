@@ -1,5 +1,4 @@
 month,category,area_code,area_name,n
-2016-11-01,Burglary,E08000009,Trafford,160
 2016-12-01,Burglary,E08000009,Trafford,198
 2017-01-01,Burglary,E08000009,Trafford,176
 2017-02-01,Burglary,E08000009,Trafford,170
@@ -12,3 +11,4 @@ month,category,area_code,area_name,n
 2017-09-01,Burglary,E08000009,Trafford,130
 2017-10-01,Burglary,E08000009,Trafford,144
 2017-11-01,Burglary,E08000009,Trafford,140
+2017-12-01,Burglary,E08000009,Trafford,145

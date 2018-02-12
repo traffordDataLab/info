@@ -20,13 +20,13 @@ population <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/
   select(area_code, area_name, population = all_ages)
 
 gm <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/police_recorded_crime/data/gm.csv.gz") %>% 
-  filter(category == "Robbery" & month >= "2017-11-01") %>% 
+  filter(category == "Robbery" & month == max(df$month)) %>% 
   count() %>% 
   pull()
 
 # manipulate data ---------------------------
 results <- df %>% 
-  filter(month == "2017-11-01") %>% 
+  filter(month == max(df$month)) %>% 
   group_by(area_name) %>% 
   count() %>% 
   ungroup() %>% 
@@ -55,6 +55,6 @@ ggsave(file = "output/figures/fig3.svg", width = 6, height = 6)
 ggsave(file = "output/figures/fig3.png", width = 6, height = 6)
 
 results %>% 
-  mutate(month = "2017-11-01", category = "Robbery") %>% 
+  mutate(month = max(df$month), category = "Robbery") %>% 
   select(month, category, area_code, area_name, n, population, rate) %>% 
   write_csv("output/data/fig3.csv")
