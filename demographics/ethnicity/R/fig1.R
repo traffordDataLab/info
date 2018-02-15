@@ -1,4 +1,4 @@
-## Ethnicity: frequency of residents by ethnic group and ward
+## Ethnicity: proportion of usual residents by ethnic group and ward
 
 # load R packages  ---------------------------
 library(tidyverse) ; library(sf) ; library(svglite)

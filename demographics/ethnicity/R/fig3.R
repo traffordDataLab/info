@@ -1,4 +1,4 @@
-## Ethnicity: multivariate density dot map of broad ethnic groups in Trafford
+## Ethnicity: multivariate dot density map of self-reported ethnic groups in Trafford by ethnic group
 
 # load R packages  ---------------------------
 library(tidyverse) ; library(sf) ; library(svglite)
