@@ -10,10 +10,10 @@ source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme
 # source: https://www.nomisweb.co.uk/census/2011/ks201ew
 df <- read_csv("http://www.nomisweb.co.uk/api/v01/dataset/NM_608_1.data.csv?date=latest&geography=1254126722...1254127431,1254260803...1254260823&rural_urban=0&cell=100,200,300,400,500&measures=20100&select=date_name,geography_name,geography_code,rural_urban_name,cell_name,measures_name,obs_value,obs_status_name")
 
+# load geospatial data ---------------------------
 sf_oa <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/oa/2011/trafford_oa_generalised.geojson") # output areas
 sf_la <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/local_authority/2016/trafford_local_authority_generalised.geojson") # wards
 sf_tc <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/town_centres/trafford_town_centres.geojson") # town centres
-sf_wards <- st_read("https://github.com/traffordDataLab/spatial_data/raw/master/ward/2017/trafford_ward_generalised.geojson")
 
 # manipulate data ---------------------------
 df_tidy <- df %>%
