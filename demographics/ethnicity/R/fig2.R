@@ -1,10 +1,5 @@
 ## Ethnicity: multivariate density dot map of broad ethnic groups in Trafford
 
-# credits: 
-# - http://www.radicalcartography.net/index.html?chicagodots
-# - https://www.blog.cultureofinsight.com/2017/06/building-dot-density-maps-with-uk-census-data-in-r/
-
-
 # load R packages  ---------------------------
 library(tidyverse) ; library(sf) ; library(svglite)
 
@@ -33,26 +28,27 @@ df_tidy <- df %>%
 sf_df <- merge(sf_oa, df_tidy, by = "area_code", sort = FALSE)
 
 # create a dataframe with dots for each output area 
-dots <- select(as.data.frame(sf_df), Asian:White) / 10 # each dot represents 10 residents
+dots <- select(as.data.frame(sf_df), White, Asian:Other) / 10 # each dot represents 10 residents
 
 # randomly scatter dots within each corresponding output area
 random_dots <- map(names(dots), 
-                   ~st_sample(sf_df, 
-                              size = as.integer(dots[,.]), 
-                              type = "random"))
+              ~st_sample(sf_df, 
+                         size = as.integer(dots[,.]), 
+                         type = "random"))
 
 # extract coordinates of each dot
 coords <- map(random_dots, ~as.data.frame(do.call(rbind, st_geometry(.))) %>% 
-                select(x = lon, y = lat))
+             select(x = lon, y = lat))
 
 # add an ethnicity variable, bind dataframes and set factor levels
-ethnicities <- c("Asian", "Black", "Mixed", "Other", "White")
+ethnicities <- c("White", "Asian", "Black", "Mixed", "Other") # ensures White ethnicity doesn't mask others
 plot_dots <- map2_df(coords, ethnicities, ~ mutate(.x, ethnic_group = .y)) %>% 
-  mutate(ethnic_group = factor(ethnic_group, levels = ethnicities)) 
+  mutate(ethnic_group = factor(ethnic_group, levels = ethnicities))
 
 # plot data ---------------------------
-# create a palette
-pal <- c("Asian" = "#8dd3c7", "Black" = "#bebada", "Mixed" = "#fb8072", "Other" = "#80b1d3", "White" = "#ffffb3")
+# create a palette (source: Cable 2013)
+pal <- c("Asian" = "#FF0000", "Black" = "#55FF00", "Mixed" = "#FFAA01", "Other" = "#8A5B47", "White" = "#82B3FF")
+plot_dots$ethnic_group <- factor(plot_dots$ethnic_group, levels=c("Asian", "Black", "Mixed", "Other", "White"))
 
 ggplot() +
   geom_sf(data = sf_la, colour = "#d3d3d3", fill = NA, size = 0.3) +
@@ -65,7 +61,6 @@ ggplot() +
        caption = "Source: Census 2011  |  @traffordDataLab",
        colour = NULL) +
   guides(colour = guide_legend(override.aes = list(size = 2))) +
-  facet_wrap(~ethnic_group, nrow = 2) +
   theme_lab() +
   theme(axis.line = element_blank(), 
         axis.text = element_blank(),

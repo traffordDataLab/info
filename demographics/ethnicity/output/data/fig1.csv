@@ -1,0 +1,106 @@
+area_code,area_name,ethnic_group,n,percent
+E05000819,Altrincham,Asian,610,5.3
+E05000820,Ashton upon Mersey,Asian,260,2.7
+E05000821,Bowdon,Asian,522,5.7
+E05000822,Broadheath,Asian,906,7.2
+E05000823,Brooklands,Asian,647,6.2
+E05000824,Bucklow-St Martins,Asian,163,1.6
+E05000825,Clifford,Asian,4275,35.9
+E05000826,Davyhulme East,Asian,256,2.6
+E05000827,Davyhulme West,Asian,181,1.8
+E05000828,Flixton,Asian,167,1.5
+E05000829,Gorse Hill,Asian,1146,9.6
+E05000830,Hale Barns,Asian,1165,12
+E05000831,Hale Central,Asian,361,3.5
+E05000832,Longford,Asian,3091,25.9
+E05000833,Priory,Asian,674,6.4
+E05000834,St Mary's,Asian,685,5.8
+E05000835,Sale Moor,Asian,430,4.2
+E05000836,Stretford,Asian,1189,10.6
+E05000837,Timperley,Asian,337,3
+E05000838,Urmston,Asian,355,3.2
+E05000839,Village,Asian,553,5.2
+E05000819,Altrincham,Black,95,0.8
+E05000820,Ashton upon Mersey,Black,90,0.9
+E05000821,Bowdon,Black,44,0.5
+E05000822,Broadheath,Black,148,1.2
+E05000823,Brooklands,Black,108,1
+E05000824,Bucklow-St Martins,Black,174,1.7
+E05000825,Clifford,Black,2261,19
+E05000826,Davyhulme East,Black,139,1.4
+E05000827,Davyhulme West,Black,96,1
+E05000828,Flixton,Black,73,0.7
+E05000829,Gorse Hill,Black,822,6.9
+E05000830,Hale Barns,Black,63,0.6
+E05000831,Hale Central,Black,49,0.5
+E05000832,Longford,Black,975,8.2
+E05000833,Priory,Black,91,0.9
+E05000834,St Mary's,Black,273,2.3
+E05000835,Sale Moor,Black,130,1.3
+E05000836,Stretford,Black,544,4.9
+E05000837,Timperley,Black,52,0.5
+E05000838,Urmston,Black,184,1.7
+E05000839,Village,Black,129,1.2
+E05000819,Altrincham,Mixed,270,2.4
+E05000820,Ashton upon Mersey,Mixed,170,1.8
+E05000821,Bowdon,Mixed,174,1.9
+E05000822,Broadheath,Mixed,302,2.4
+E05000823,Brooklands,Mixed,217,2.1
+E05000824,Bucklow-St Martins,Mixed,261,2.5
+E05000825,Clifford,Mixed,715,6
+E05000826,Davyhulme East,Mixed,174,1.8
+E05000827,Davyhulme West,Mixed,142,1.4
+E05000828,Flixton,Mixed,151,1.4
+E05000829,Gorse Hill,Mixed,645,5.4
+E05000830,Hale Barns,Mixed,221,2.3
+E05000831,Hale Central,Mixed,237,2.3
+E05000832,Longford,Mixed,529,4.4
+E05000833,Priory,Mixed,237,2.3
+E05000834,St Mary's,Mixed,326,2.8
+E05000835,Sale Moor,Mixed,199,1.9
+E05000836,Stretford,Mixed,420,3.8
+E05000837,Timperley,Mixed,128,1.2
+E05000838,Urmston,Mixed,283,2.5
+E05000839,Village,Mixed,230,2.1
+E05000819,Altrincham,Other,77,0.7
+E05000820,Ashton upon Mersey,Other,57,0.6
+E05000821,Bowdon,Other,85,0.9
+E05000822,Broadheath,Other,93,0.7
+E05000823,Brooklands,Other,113,1.1
+E05000824,Bucklow-St Martins,Other,40,0.4
+E05000825,Clifford,Other,433,3.6
+E05000826,Davyhulme East,Other,26,0.3
+E05000827,Davyhulme West,Other,25,0.3
+E05000828,Flixton,Other,22,0.2
+E05000829,Gorse Hill,Other,130,1.1
+E05000830,Hale Barns,Other,193,2
+E05000831,Hale Central,Other,34,0.3
+E05000832,Longford,Other,256,2.1
+E05000833,Priory,Other,48,0.5
+E05000834,St Mary's,Other,171,1.5
+E05000835,Sale Moor,Other,124,1.2
+E05000836,Stretford,Other,111,1
+E05000837,Timperley,Other,45,0.4
+E05000838,Urmston,Other,32,0.3
+E05000839,Village,Other,85,0.8
+E05000819,Altrincham,White,10425,90.8
+E05000820,Ashton upon Mersey,White,9116,94
+E05000821,Bowdon,White,8403,91.1
+E05000822,Broadheath,White,11089,88.4
+E05000823,Brooklands,White,9349,89.6
+E05000824,Bucklow-St Martins,White,9720,93.8
+E05000825,Clifford,White,4208,35.4
+E05000826,Davyhulme East,White,9127,93.9
+E05000827,Davyhulme West,White,9388,95.5
+E05000828,Flixton,White,10373,96.2
+E05000829,Gorse Hill,White,9151,76.9
+E05000830,Hale Barns,White,8094,83.1
+E05000831,Hale Central,White,9669,93.4
+E05000832,Longford,White,7101,59.4
+E05000833,Priory,White,9431,90
+E05000834,St Mary's,White,10320,87.6
+E05000835,Sale Moor,White,9440,91.4
+E05000836,Stretford,White,8908,79.7
+E05000837,Timperley,White,10499,94.9
+E05000838,Urmston,White,10287,92.3
+E05000839,Village,White,9736,90.7

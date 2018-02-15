@@ -29,22 +29,41 @@
             <div class="main">
                 <div class="main">
                     <h1>Ethnicity</h1>
-                    <p>Data on the ethnic group of the usual resident population of Trafford is visualised below.</p>
+                    <p>According to the 2011 Census, 85.5% of Trafford's residents self-report as White, 7.9% as Asian, 2.9% as Black, 2.7% as Mixed, and 1% as Other.
+                    This composition broadly reflects the ethnic diversity of England Wales in 2011.</p>
 
                     <!-- Double column layout - text | visualisation ### PREFERRED ### -->
+                    <h3>Ethnic groups by ward</h3>
+                    <div class="doubleColumnTxtImg">
+                        <div>
+                            <p>In Clifford ward, the majority of the usual resident population reported their ethnic group as Asian (35.9%) or White (35.4%).
+                                Longford ward is also relatively diverse with 40.6% of residents reporting as belonging to a Black, Asian, and minority ethnic (BAME) group.</p>
+
+                            <p>However, several wards are ethnically homogeneous with the majority of residents belonging to a single dominant ethnic group.
+                            For example, 96.2% of the residents of Flixton ward self-reported as White in 2011.</p>
+                        </div>
+                        <div>
+                            <h5>Figure 1: Self-reported ethnicity of residents by ward</h5>
+                            <object type="image/svg+xml" data="output/figures/fig1.svg"></object>
+                            <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig1.csv" target="_blank">Data</a> | <a href="/output/figures/fig1.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig1.R" target="_blank">R code</a></span>
+                        </div>
+                    </div>
+
+                    <br />
+
                     <h3>Spatial distribution and density</h3>
                     <div class="doubleColumnTxtImg">
                         <div>
-                            <p>Fig 1 is a multivariate dot density map which shows the spatial distribution and density of self-reported ethnic groups in Trafford according to the 2011 Census.
+                            <p>Fig 2 is a multivariate dot density map which shows the spatial distribution and density of self-reported ethnic groups in Trafford according to the 2011 Census.
                                 Each dot represents 10 residents and is colour coded by broad ethnic group. Individual dots are randomly scattered within a particular Census Output Area to match the total population for that area.
                                 Some points may therefore be located on areas of non-population like parks and industrial estates.</p>
 
                             <p>The map shows that wards like Clifford and Longford with lots of different coloured dots are more ethnically diverse than other parts of Trafford.</p>
                         </div>
                         <div>
-                            <h5>Figure 1: Ethnic diversity in Trafford, 1 dot = 10 residents</h5>
-                            <object type="image/svg+xml" data="output/figures/fig1.svg"></object>
-                            <span class="download">Download: <a href="/output/figures/fig1.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                            <h5>Figure 2: Ethnic diversity in Trafford, 1 dot = 10 residents</h5>
+                            <object type="image/svg+xml" data="output/figures/fig2.svg"></object>
+                            <span class="download">Download: <a href="/output/figures/fig2.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig2.R" target="_blank">R code</a></span>
                         </div>
                     </div>
 
@@ -52,12 +71,12 @@
 
                     <div class="doubleColumnTxtImg">
                         <div>
-                            <p>Figure 2 facets the dot density map to reveal the spatial distribution and density of residents by self-reported ethnic group.</p>
+                            <p>Figure 3 facets the dot density map to reveal the spatial distribution and density of residents by self-reported ethnic group.</p>
                         </div>
                         <div>
-                            <h5>Figure 2: Ethnic diversity in Trafford, 1 dot = 10 residents</h5>
-                            <object type="image/svg+xml" data="output/figures/fig2.svg"></object>
-                            <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/data/fig.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig.R" target="_blank">R code</a></span>
+                            <h5>Figure 3: Ethnic diversity in Trafford by ethnic group, 1 dot = 10 residents</h5>
+                            <object type="image/svg+xml" data="output/figures/fig3.svg"></object>
+                            <span class="download">Download: <a href="http://www.trafforddatalab.io/info/.../.../output/figures/fig3.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/.../.../R/fig3.R" target="_blank">R code</a></span>
                         </div>
                     </div>
 
@@ -65,7 +84,14 @@
 
                 <div class="endNotes">
                     <h3>Notes</h3>
-                    <p>Paragraphs containing notes about the page</p>
+                    <p>Paul Campbell's <a href="https://www.blog.cultureofinsight.com/2017/06/building-dot-density-maps-with-uk-census-data-in-r/" target="_blank">blog post</a> was a very helpful guide to the creation of dot density maps in R.</p>
+
+                    <div>
+                        <h3>References</h3>
+                        <p>Cable, D. (2013). The Racial Dot Map. Retrieved from <a href="https://demographics.coopercenter.org/racial-dot-map/" target="_blank">https://demographics.coopercenter.org/racial-dot-map/</a></p>
+                        <p>Cheshire, J. & Uberti. O. (2014). London: The Information Capital. London: Particular Books, p. 100-101</p>
+                        <p>Rankin, B. (2009). Chicago Boundaries. Retrieved from <a href="http://www.radicalcartography.net/index.html?chicagodots" target="_blank">http://www.radicalcartography.net/index.html?chicagodots</a></p>
+                    </div>
 
                     <h3>Data sources</h3>
                     <ul>
