@@ -25,15 +25,6 @@ results <- df %>%
 # plot data ---------------------------
 pal <- c("Asian" = "#FF0000", "Black" = "#55FF00", "Mixed" = "#FFAA01", "Other" = "#8A5B47", "White" = "#82B3FF")
 
-ggplot(data = results, mapping = aes(x = percent, fill = ethnic_group)) + 
-  geom_bar(position = "fill") +
-  scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
-  labs(title = "Better Cut Diamonds have Better Clarity",
-       subtitle = "Share of Diamonds with Different Qualities by Clarity of Cut",
-       caption = "The Source of Diamond Data",
-       x = "Clarity",
-       y = "Count")
-
 ggplot(results, aes(x = fct_rev(area_name), y = percent, fill = ethnic_group)) + 
   geom_col(position = "stack", width = 0.3, alpha = 0.8) +
   scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
