@@ -1,4 +1,4 @@
-## Languages: Main languages in Clifford ward ##
+## Languages: Main languages spoken in Clifford ward, 2011 ##
 
 # source: 2011 Census
 # publisher: nomis

@@ -1,4 +1,4 @@
-## Languages: Top ten main 'Other' languages in Trafford ##
+## Languages: Main language by ward, 2011 ##
 
 # source: 2011 Census
 # publisher: nomis
