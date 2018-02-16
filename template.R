@@ -1,5 +1,10 @@
 ## [theme name]: [figure title] ##
 
+# Source: 
+# Publisher: 
+# Publisher URL: 
+# Licence: Open Government Licence
+
 # load R packages  ---------------------------
 
 # load Lab's ggplot2 theme  ---------------------------
