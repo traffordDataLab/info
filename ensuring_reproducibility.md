@@ -18,7 +18,7 @@ Here are the steps:
 	
 	i. the name of the dataset (e.g. nm_616_1) and;
 	
-	ii. the type of geography (e.g. TYPE265). 
+	ii. the type of geography (e.g. TYPE295). 
 
 4. With this information we can concatenate an API call to use in R:
 
