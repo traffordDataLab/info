@@ -1,4 +1,4 @@
-## Religion: Proportion of residents reporting a religion by ward, 2011 ##
+## Religion: Proportion of ward residents reporting a religion, 2011 ##
 
 # Source: Table KS209EW, 2011 Census
 # Publisher: nomis
@@ -37,10 +37,10 @@ results <- df_tidy %>%
   gather(status, percent, -c(area_code, area_name)) %>% 
   mutate(status = factor(status, levels = c("religion", "no_religion", "not_stated")))
 
-ggplot(results, aes(x = fct_rev(area_name), y = percent, fill = status)) + 
+ggplot(results, aes(fct_reorder(area_name, percent), percent, fill = status)) + 
   geom_col(position = "stack",  alpha = 0.8) +
   scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
-  scale_fill_manual(values = c("religion" = "#a6cee3", "no_religion" = "#b2df8a", "not_stated" = "#fb9a99"),
+  scale_fill_manual(values = c("religion" = "#fee6ce", "no_religion" = "#fdae6b", "not_stated" = "#e6550d"),
                     labels = c("Religion", "No religion", "Not stated"), 
                     guide = guide_legend(keyheight = unit(2, units = "mm"), 
                                          keywidth = unit(20, units = "mm"), 
