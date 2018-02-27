@@ -1,0 +1,148 @@
+area_name,area_code,religion,n
+Altrincham,E05000819,Christian,7191
+Ashton upon Mersey,E05000820,Christian,6607
+Bowdon,E05000821,Christian,5806
+Broadheath,E05000822,Christian,8053
+Brooklands,E05000823,Christian,6910
+Bucklow-St Martins,E05000824,Christian,6857
+Clifford,E05000825,Christian,4040
+Davyhulme East,E05000826,Christian,7051
+Davyhulme West,E05000827,Christian,7350
+Flixton,E05000828,Christian,7916
+Gorse Hill,E05000829,Christian,7195
+Hale Barns,E05000830,Christian,5734
+Hale Central,E05000831,Christian,6573
+Longford,E05000832,Christian,5760
+Priory,E05000833,Christian,6364
+St Mary's,E05000834,Christian,7749
+Sale Moor,E05000835,Christian,6704
+Stretford,E05000836,Christian,6914
+Timperley,E05000837,Christian,7919
+Urmston,E05000838,Christian,7534
+Village,E05000839,Christian,7412
+Altrincham,E05000819,Buddhist,56
+Ashton upon Mersey,E05000820,Buddhist,35
+Bowdon,E05000821,Buddhist,27
+Broadheath,E05000822,Buddhist,31
+Brooklands,E05000823,Buddhist,43
+Bucklow-St Martins,E05000824,Buddhist,18
+Clifford,E05000825,Buddhist,46
+Davyhulme East,E05000826,Buddhist,32
+Davyhulme West,E05000827,Buddhist,11
+Flixton,E05000828,Buddhist,34
+Gorse Hill,E05000829,Buddhist,37
+Hale Barns,E05000830,Buddhist,33
+Hale Central,E05000831,Buddhist,32
+Longford,E05000832,Buddhist,41
+Priory,E05000833,Buddhist,63
+St Mary's,E05000834,Buddhist,36
+Sale Moor,E05000835,Buddhist,38
+Stretford,E05000836,Buddhist,38
+Timperley,E05000837,Buddhist,44
+Urmston,E05000838,Buddhist,39
+Village,E05000839,Buddhist,34
+Altrincham,E05000819,Hindu,140
+Ashton upon Mersey,E05000820,Hindu,50
+Bowdon,E05000821,Hindu,141
+Broadheath,E05000822,Hindu,285
+Brooklands,E05000823,Hindu,163
+Bucklow-St Martins,E05000824,Hindu,24
+Clifford,E05000825,Hindu,118
+Davyhulme East,E05000826,Hindu,27
+Davyhulme West,E05000827,Hindu,30
+Flixton,E05000828,Hindu,18
+Gorse Hill,E05000829,Hindu,95
+Hale Barns,E05000830,Hindu,229
+Hale Central,E05000831,Hindu,87
+Longford,E05000832,Hindu,117
+Priory,E05000833,Hindu,261
+St Mary's,E05000834,Hindu,124
+Sale Moor,E05000835,Hindu,78
+Stretford,E05000836,Hindu,50
+Timperley,E05000837,Hindu,86
+Urmston,E05000838,Hindu,39
+Village,E05000839,Hindu,109
+Altrincham,E05000819,Jewish,189
+Ashton upon Mersey,E05000820,Jewish,49
+Bowdon,E05000821,Jewish,548
+Broadheath,E05000822,Jewish,26
+Brooklands,E05000823,Jewish,18
+Bucklow-St Martins,E05000824,Jewish,14
+Clifford,E05000825,Jewish,19
+Davyhulme East,E05000826,Jewish,15
+Davyhulme West,E05000827,Jewish,19
+Flixton,E05000828,Jewish,9
+Gorse Hill,E05000829,Jewish,9
+Hale Barns,E05000830,Jewish,909
+Hale Central,E05000831,Jewish,350
+Longford,E05000832,Jewish,22
+Priory,E05000833,Jewish,29
+St Mary's,E05000834,Jewish,67
+Sale Moor,E05000835,Jewish,22
+Stretford,E05000836,Jewish,16
+Timperley,E05000837,Jewish,37
+Urmston,E05000838,Jewish,6
+Village,E05000839,Jewish,40
+Altrincham,E05000819,Muslim,223
+Ashton upon Mersey,E05000820,Muslim,159
+Bowdon,E05000821,Muslim,293
+Broadheath,E05000822,Muslim,396
+Brooklands,E05000823,Muslim,284
+Bucklow-St Martins,E05000824,Muslim,89
+Clifford,E05000825,Muslim,4340
+Davyhulme East,E05000826,Muslim,122
+Davyhulme West,E05000827,Muslim,118
+Flixton,E05000828,Muslim,64
+Gorse Hill,E05000829,Muslim,801
+Hale Barns,E05000830,Muslim,876
+Hale Central,E05000831,Muslim,210
+Longford,E05000832,Muslim,2734
+Priory,E05000833,Muslim,150
+St Mary's,E05000834,Muslim,426
+Sale Moor,E05000835,Muslim,298
+Stretford,E05000836,Muslim,830
+Timperley,E05000837,Muslim,143
+Urmston,E05000838,Muslim,136
+Village,E05000839,Muslim,302
+Altrincham,E05000819,Sikh,32
+Ashton upon Mersey,E05000820,Sikh,18
+Bowdon,E05000821,Sikh,23
+Broadheath,E05000822,Sikh,42
+Brooklands,E05000823,Sikh,17
+Bucklow-St Martins,E05000824,Sikh,11
+Clifford,E05000825,Sikh,437
+Davyhulme East,E05000826,Sikh,10
+Davyhulme West,E05000827,Sikh,8
+Flixton,E05000828,Sikh,2
+Gorse Hill,E05000829,Sikh,211
+Hale Barns,E05000830,Sikh,41
+Hale Central,E05000831,Sikh,6
+Longford,E05000832,Sikh,397
+Priory,E05000833,Sikh,10
+St Mary's,E05000834,Sikh,60
+Sale Moor,E05000835,Sikh,11
+Stretford,E05000836,Sikh,240
+Timperley,E05000837,Sikh,5
+Urmston,E05000838,Sikh,43
+Village,E05000839,Sikh,28
+Altrincham,E05000819,Other religion,18
+Ashton upon Mersey,E05000820,Other religion,32
+Bowdon,E05000821,Other religion,27
+Broadheath,E05000822,Other religion,36
+Brooklands,E05000823,Other religion,20
+Bucklow-St Martins,E05000824,Other religion,28
+Clifford,E05000825,Other religion,47
+Davyhulme East,E05000826,Other religion,26
+Davyhulme West,E05000827,Other religion,15
+Flixton,E05000828,Other religion,18
+Gorse Hill,E05000829,Other religion,35
+Hale Barns,E05000830,Other religion,11
+Hale Central,E05000831,Other religion,28
+Longford,E05000832,Other religion,37
+Priory,E05000833,Other religion,30
+St Mary's,E05000834,Other religion,21
+Sale Moor,E05000835,Other religion,55
+Stretford,E05000836,Other religion,35
+Timperley,E05000837,Other religion,5
+Urmston,E05000838,Other religion,22
+Village,E05000839,Other religion,20
