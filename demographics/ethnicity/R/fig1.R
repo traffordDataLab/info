@@ -1,7 +1,7 @@
 ## Ethnicity: proportion of usual residents by ethnic group and ward
 
 # load R packages  ---------------------------
-library(tidyverse) ; library(sf) ; library(svglite)
+library(tidyverse) ; library(svglite)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
