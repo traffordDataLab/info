@@ -1,0 +1,127 @@
+area_name,mode,n
+Altrincham,Car,15
+Ashton upon Mersey,Car,2
+Bowdon,Car,7
+Broadheath,Car,8
+Brooklands,Car,2
+Bucklow-St Martins,Car,17
+Clifford,Car,6
+Davyhulme East,Car,30
+Davyhulme West,Car,0
+Flixton,Car,2
+Gorse Hill,Car,20
+Hale Barns,Car,8
+Hale Central,Car,1
+Longford,Car,10
+Priory,Car,7
+Sale Moor,Car,1
+St Mary's,Car,1
+Stretford,Car,8
+Timperley,Car,1
+Urmston,Car,9
+Village,Car,7
+Altrincham,Other,1
+Ashton upon Mersey,Other,1
+Bowdon,Other,0
+Broadheath,Other,0
+Brooklands,Other,0
+Bucklow-St Martins,Other,1
+Clifford,Other,0
+Davyhulme East,Other,0
+Davyhulme West,Other,0
+Flixton,Other,2
+Gorse Hill,Other,1
+Hale Barns,Other,0
+Hale Central,Other,0
+Longford,Other,1
+Priory,Other,3
+Sale Moor,Other,0
+St Mary's,Other,0
+Stretford,Other,2
+Timperley,Other,0
+Urmston,Other,0
+Village,Other,0
+Altrincham,Pedal Cycle,1
+Ashton upon Mersey,Pedal Cycle,2
+Bowdon,Pedal Cycle,0
+Broadheath,Pedal Cycle,2
+Brooklands,Pedal Cycle,2
+Bucklow-St Martins,Pedal Cycle,4
+Clifford,Pedal Cycle,2
+Davyhulme East,Pedal Cycle,3
+Davyhulme West,Pedal Cycle,0
+Flixton,Pedal Cycle,1
+Gorse Hill,Pedal Cycle,4
+Hale Barns,Pedal Cycle,0
+Hale Central,Pedal Cycle,1
+Longford,Pedal Cycle,4
+Priory,Pedal Cycle,1
+Sale Moor,Pedal Cycle,1
+St Mary's,Pedal Cycle,2
+Stretford,Pedal Cycle,6
+Timperley,Pedal Cycle,1
+Urmston,Pedal Cycle,0
+Village,Pedal Cycle,1
+Altrincham,Pedestrian,2
+Ashton upon Mersey,Pedestrian,1
+Bowdon,Pedestrian,1
+Broadheath,Pedestrian,2
+Brooklands,Pedestrian,3
+Bucklow-St Martins,Pedestrian,0
+Clifford,Pedestrian,4
+Davyhulme East,Pedestrian,1
+Davyhulme West,Pedestrian,0
+Flixton,Pedestrian,3
+Gorse Hill,Pedestrian,7
+Hale Barns,Pedestrian,1
+Hale Central,Pedestrian,4
+Longford,Pedestrian,2
+Priory,Pedestrian,1
+Sale Moor,Pedestrian,1
+St Mary's,Pedestrian,1
+Stretford,Pedestrian,3
+Timperley,Pedestrian,3
+Urmston,Pedestrian,1
+Village,Pedestrian,1
+Altrincham,Powered 2 Wheeler,1
+Ashton upon Mersey,Powered 2 Wheeler,0
+Bowdon,Powered 2 Wheeler,0
+Broadheath,Powered 2 Wheeler,0
+Brooklands,Powered 2 Wheeler,1
+Bucklow-St Martins,Powered 2 Wheeler,0
+Clifford,Powered 2 Wheeler,3
+Davyhulme East,Powered 2 Wheeler,2
+Davyhulme West,Powered 2 Wheeler,0
+Flixton,Powered 2 Wheeler,0
+Gorse Hill,Powered 2 Wheeler,5
+Hale Barns,Powered 2 Wheeler,2
+Hale Central,Powered 2 Wheeler,1
+Longford,Powered 2 Wheeler,0
+Priory,Powered 2 Wheeler,1
+Sale Moor,Powered 2 Wheeler,2
+St Mary's,Powered 2 Wheeler,2
+Stretford,Powered 2 Wheeler,0
+Timperley,Powered 2 Wheeler,0
+Urmston,Powered 2 Wheeler,1
+Village,Powered 2 Wheeler,0
+Altrincham,Total,20
+Ashton upon Mersey,Total,6
+Bowdon,Total,8
+Broadheath,Total,12
+Brooklands,Total,8
+Bucklow-St Martins,Total,22
+Clifford,Total,15
+Davyhulme East,Total,36
+Davyhulme West,Total,0
+Flixton,Total,8
+Gorse Hill,Total,37
+Hale Barns,Total,11
+Hale Central,Total,7
+Longford,Total,17
+Priory,Total,13
+Sale Moor,Total,5
+St Mary's,Total,6
+Stretford,Total,19
+Timperley,Total,5
+Urmston,Total,11
+Village,Total,9
