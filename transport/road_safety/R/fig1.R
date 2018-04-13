@@ -41,8 +41,6 @@ results <- sf %>%
   mutate(mode = factor(mode, 
                       levels = c("Car","Pedal Cycle", "Pedestrian",
                                  "Powered 2 Wheeler", "Other", "Total")))
-  
-filter(results, mode == "Total") %>% summarise(sum(n))
 
 # plot data  ---------------------------
 ggplot(results, aes(x = n, y = area_name, colour = mode)) +
@@ -51,7 +49,7 @@ ggplot(results, aes(x = n, y = area_name, colour = mode)) +
   geom_point(size = 4) +
   geom_text(aes(label = n), size = 3, colour = "white") +
   scale_fill_brewer(palette = "Set2") +
-  scale_y_discrete(limits = rev(unique(sort(temp$area_name)))) +
+  scale_y_discrete(limits = rev(unique(sort(results$area_name)))) +
   labs(x = NULL, y = NULL, colour = NULL,
        caption = "Source: Greater Manchester Police  |  @traffordDataLab") +
   facet_grid(.~mode, scales = "free_x") +
