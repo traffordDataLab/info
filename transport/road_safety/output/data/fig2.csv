@@ -1,0 +1,17 @@
+sex,mode,n,percent
+Female,Car,95,0.5828220858895705
+Male,Car,68,0.4171779141104294
+Female,Goods Vehicle,0,0
+Male,Goods Vehicle,5,1
+Female,Other Vehicle,0,0
+Male,Other Vehicle,1,1
+Female,Pedal Cycle,6,0.15789473684210525
+Male,Pedal Cycle,32,0.8421052631578947
+Female,Pedestrian,17,0.40476190476190477
+Male,Pedestrian,25,0.5952380952380952
+Female,Powered 2 Wheeler,1,0.047619047619047616
+Male,Powered 2 Wheeler,20,0.9523809523809523
+Female,Taxi,3,0.5
+Male,Taxi,3,0.5
+Female,Total,122,0.4420289855072464
+Male,Total,154,0.5579710144927537

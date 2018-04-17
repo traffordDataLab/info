@@ -1,4 +1,4 @@
-## Road Safety: Casualties by ward and mode of travel, 2016 ##
+## Road Safety: Casualties in Trafford by ward and mode of travel, 2016 ##
 
 # Source: Greater Manchester Police
 # Publisher URL: https://data.gov.uk/dataset/road-accidents-safety-data
@@ -43,7 +43,7 @@ results <- sf %>%
                                  "Powered 2 Wheeler", "Other", "Total")))
 
 # plot data  ---------------------------
-ggplot(results, aes(x = n, y = area_name, colour = mode)) +
+p <- ggplot(results, aes(x = n, y = area_name, colour = mode)) +
   geom_segment(aes(x = 0, xend = n, 
                    y = area_name, yend = area_name), linetype = "dotted", colour = "#212121", size = 0.5) + 
   geom_point(size = 4) +
@@ -63,7 +63,12 @@ ggplot(results, aes(x = n, y = area_name, colour = mode)) +
         legend.position = "none")
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig1.svg", scale = 1.8, width = 10, height = 5)
+ggsave(file = "output/figures/fig1.svg", plot = p, scale = 1.8, width = 10, height = 5)
+
+p + labs(title = "Casualties in Trafford ward and mode of travel, 2016") +
+  theme(plot.margin = unit(c(2, 2, 2, 2), "cm"),
+        plot.title = element_text(face = "bold", vjust = 15, hjust = 0.5))
+
 ggsave(file = "output/figures/fig1.png", scale = 1.5, width = 10, height = 5)
 
 write_csv(results, "output/data/fig1.csv")

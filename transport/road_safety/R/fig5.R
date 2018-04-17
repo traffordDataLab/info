@@ -1,4 +1,4 @@
-## Road Safety: Collisions by mode, day and hour, 2016 ##
+## Road Safety: Collisions in Trafford by mode, day and hour, 2016 ##
 
 # Source: Greater Manchester Police
 # Publisher URL: https://data.gov.uk/dataset/road-accidents-safety-data
@@ -48,7 +48,7 @@ results <- left_join(periods, collisions, by = "day_hour") %>%
 
 # plot data  ---------------------------
 lapply(unique(results$mode), function(cc) {
-ggplot(filter(results, mode == cc), aes(x = hour, y = fct_rev(day), fill = as.factor(n), frame = mode)) +
+ggplot(filter(results, mode == cc), aes(x = factor(hour), y = fct_rev(day), fill = factor(n), frame = mode)) +
   geom_tile(colour = "white", size = 0.1) + 
   scale_fill_viridis(name = "", discrete = T, direction = -1, na.value = "grey93",
                      breaks = c("1", "2", "3", "4", "5"),
@@ -59,13 +59,13 @@ ggplot(filter(results, mode == cc), aes(x = hour, y = fct_rev(day), fill = as.fa
                                           title.hjust = 0.5,
                                           label.hjust = 0.5,
                                           nrow = 1)) +
-  scale_x_discrete(expand = c(0,0)) +
+  scale_x_discrete(breaks = c(0,6,12,18,24), expand = c(0,0)) +
   scale_y_discrete(expand = c(0,0)) +
   coord_equal() +
   labs(x = NULL, y = NULL, fill = NULL, title = sprintf("%s", cc), subtitle = NULL) +
   theme_lab() +
   theme(panel.border = element_blank(),
-        plot.title = element_text(hjust = 0, size = 8),
+        plot.title = element_text(hjust = 0, size = 10),
         axis.text.x = element_text(hjust = 0, size = 6),
         axis.text.y = element_text(hjust = 0, size = 6),
         legend.title = element_text(size = 6),
@@ -76,11 +76,11 @@ ggplot(filter(results, mode == cc), aes(x = hour, y = fct_rev(day), fill = as.fa
         legend.key.width = unit(1, "cm"))
 }) -> cclist
 
-cclist[["ncol"]] <- 1
+cclist[["ncol"]] <- 2
 plot <- do.call(grid.arrange, cclist)
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/collision_days.svg", plot = plot, scale = 1.5, width = 10, height = 8)
-ggsave(file = "output/figures/collision_days.png", plot = plot, scale = 1.5, width = 10, height = 8)
+ggsave(file = "output/figures/fig5.svg", plot = plot, scale = 1.5, width = 10, height = 8)
+ggsave(file = "output/figures/fig5.png", plot = plot, scale = 1.5, width = 10, height = 8)
 
-write_csv(results, "output/data/fig.csv")
+write_csv(results, "output/data/fig5.csv")

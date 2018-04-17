@@ -28,3 +28,4 @@ df %>%
 df %>% 
   filter(severity != "Slight") %>% 
   summarize(frequency = n())
+

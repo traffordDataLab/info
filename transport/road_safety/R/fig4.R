@@ -1,4 +1,4 @@
-## Road Safety: Collisions by mode and month, 2016 ##
+## Road Safety: Collisions in Trafford by mode and month, 2016 ##
 
 # Source: Greater Manchester Police
 # Publisher URL: https://data.gov.uk/dataset/road-accidents-safety-data
@@ -31,7 +31,7 @@ results <- left_join(dates, collisions, by = "month_year") %>%
   gather(mode, n, -month_year) 
 
 # plot data  ---------------------------
-ggplot(results, aes(x = month_year, y = mode, fill = n)) + 
+p <- ggplot(results, aes(x = month_year, y = mode, fill = n)) + 
   geom_tile(color = "white", size = 0.4) + 
   scale_fill_viridis_c(name = "Number of collisions", 
                        direction = -1, 
@@ -56,7 +56,11 @@ ggplot(results, aes(x = month_year, y = mode, fill = n)) +
         plot.margin = unit(c(1,1,3,1), "cm"))
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig.svg", scale = 1.8, width = 10, height = 5)
-ggsave(file = "output/figures/fig.png", scale = 1.5, width = 10, height = 5)
+ggsave(file = "output/figures/fig4.svg", scale = 1.8, width = 10, height = 5)
 
-write_csv(results, "output/data/fig.csv")
+p + labs(title = "Collisions in Trafford by mode and month, 2016") +
+  theme(plot.margin = unit(c(2, 2, 2, 2), "cm"),
+        plot.title = element_text(face = "bold", vjust = 10, hjust = 0.5))
+ggsave(file = "output/figures/fig4.png", scale = 1.5, width = 10, height = 5)
+
+write_csv(results, "output/data/fig4.csv")
