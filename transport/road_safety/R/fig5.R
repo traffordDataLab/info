@@ -7,7 +7,7 @@
 # Credits: https://rud.is/projects/facetedheatmaps.html
 
 # load R packages  ---------------------------
-library(tidyverse) ; library(ggplot2) ; library(viridis); library(gridExtra)
+library(tidyverse) ; library(ggplot2) ; library(viridis); library(cowplot)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
@@ -44,11 +44,12 @@ periods <- data_frame(day = c(rep("Mon", 25), rep("Tue", 25), rep("Wed", 25),
 results <- left_join(periods, collisions, by = "day_hour") %>% 
   complete(day, hour, mode, fill = list(n = NA)) %>% 
   mutate(day = factor(day, levels = c("Mon", "Tue", "Wed", "Thu", "Fri", "Sat", "Sun")),
-         n = replace(n, n == 0, NA))
+         n = replace(n, n == 0, NA)) %>% 
+  filter(!is.na(mode))
 
 # plot data  ---------------------------
-lapply(unique(results$mode), function(cc) {
-ggplot(filter(results, mode == cc), aes(x = factor(hour), y = fct_rev(day), fill = factor(n), frame = mode)) +
+lapply(unique(results$mode), function(mode_list) {
+ggplot(filter(results, mode == mode_list), aes(x = factor(hour), y = fct_rev(day), fill = factor(n), frame = mode)) +
   geom_tile(colour = "white", size = 0.1) + 
   scale_fill_viridis(name = "", discrete = T, direction = -1, na.value = "grey93",
                      breaks = c("1", "2", "3", "4", "5"),
@@ -62,7 +63,7 @@ ggplot(filter(results, mode == cc), aes(x = factor(hour), y = fct_rev(day), fill
   scale_x_discrete(breaks = c(0,6,12,18,24), expand = c(0,0)) +
   scale_y_discrete(expand = c(0,0)) +
   coord_equal() +
-  labs(x = NULL, y = NULL, fill = NULL, title = sprintf("%s", cc), subtitle = NULL) +
+  labs(x = NULL, y = NULL, fill = NULL, title = sprintf("%s", mode_list), subtitle = NULL) +
   theme_lab() +
   theme(panel.border = element_blank(),
         plot.title = element_text(hjust = 0, size = 10),
@@ -74,13 +75,12 @@ ggplot(filter(results, mode == cc), aes(x = factor(hour), y = fct_rev(day), fill
         legend.box.margin = margin(-15,-15,-15,-15),
         legend.key.size = unit(0.2, "cm"),
         legend.key.width = unit(1, "cm"))
-}) -> cclist
+}) -> mode_list
 
-cclist[["ncol"]] <- 2
-plot <- do.call(grid.arrange, cclist)
+plot <- plot_grid(plotlist = mode_list, ncol = 2)
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig5.svg", plot = plot, scale = 1.5, width = 10, height = 8)
-ggsave(file = "output/figures/fig5.png", plot = plot, scale = 1.5, width = 10, height = 8)
+ggsave(file = "output/figures/fig5.svg", plot = plot, scale = 0.6, width = 10, height = 8)
+ggsave(file = "output/figures/fig5.png", plot = plot, scale = 0.6, width = 10, height = 8)
 
 write_csv(results, "output/data/fig5.csv")

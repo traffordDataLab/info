@@ -56,11 +56,11 @@ p <- ggplot(results, aes(x = month_year, y = mode, fill = n)) +
         plot.margin = unit(c(1,1,3,1), "cm"))
 
 # save plot / data  ---------------------------
-ggsave(file = "output/figures/fig4.svg", scale = 1.8, width = 10, height = 5)
+ggsave(file = "output/figures/fig4.svg", scale = 1.8, width = 10, height = 4)
 
 p + labs(title = "Collisions in Trafford by mode and month, 2016") +
   theme(plot.margin = unit(c(2, 2, 2, 2), "cm"),
         plot.title = element_text(face = "bold", vjust = 10, hjust = 0.5))
-ggsave(file = "output/figures/fig4.png", scale = 1.5, width = 10, height = 5)
+ggsave(file = "output/figures/fig4.png", scale = 1.5, width = 10, height = 4)
 
 write_csv(results, "output/data/fig4.csv")
