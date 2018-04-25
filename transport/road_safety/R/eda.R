@@ -1,4 +1,4 @@
-## Summary statistics ##
+## Exploratory Data Analysis ##
 
 # Source: Department for Transport
 # Publisher URL: https://data.gov.uk/dataset/road-accidents-safety-data
@@ -10,8 +10,6 @@ library(tidyverse) ; library(ggplot2)
 # load data ---------------------------
 df <- read_csv("https://www.trafforddatalab.io/open_data/road_casualties/2016/STATS19_casualty_data_2016.csv") %>% 
   filter(area_name == "Trafford") 
-
-# summary stats ---------------------------
 
 # Total collisions
 n_distinct(df$AREFNO)

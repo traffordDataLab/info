@@ -11,30 +11,30 @@ month_year,mode,n
 2016-10-01,Car,4
 2016-11-01,Car,10
 2016-12-01,Car,5
-2016-01-01,Goods Vehicle,NA
-2016-02-01,Goods Vehicle,NA
+2016-01-01,Goods Vehicle,0
+2016-02-01,Goods Vehicle,0
 2016-03-01,Goods Vehicle,1
 2016-04-01,Goods Vehicle,1
-2016-05-01,Goods Vehicle,NA
-2016-06-01,Goods Vehicle,NA
-2016-07-01,Goods Vehicle,NA
+2016-05-01,Goods Vehicle,0
+2016-06-01,Goods Vehicle,0
+2016-07-01,Goods Vehicle,0
 2016-08-01,Goods Vehicle,2
-2016-09-01,Goods Vehicle,NA
-2016-10-01,Goods Vehicle,NA
-2016-11-01,Goods Vehicle,NA
-2016-12-01,Goods Vehicle,NA
-2016-01-01,Other Vehicle,NA
-2016-02-01,Other Vehicle,NA
-2016-03-01,Other Vehicle,NA
-2016-04-01,Other Vehicle,NA
-2016-05-01,Other Vehicle,NA
-2016-06-01,Other Vehicle,NA
+2016-09-01,Goods Vehicle,0
+2016-10-01,Goods Vehicle,0
+2016-11-01,Goods Vehicle,0
+2016-12-01,Goods Vehicle,0
+2016-01-01,Other Vehicle,0
+2016-02-01,Other Vehicle,0
+2016-03-01,Other Vehicle,0
+2016-04-01,Other Vehicle,0
+2016-05-01,Other Vehicle,0
+2016-06-01,Other Vehicle,0
 2016-07-01,Other Vehicle,1
-2016-08-01,Other Vehicle,NA
-2016-09-01,Other Vehicle,NA
-2016-10-01,Other Vehicle,NA
-2016-11-01,Other Vehicle,NA
-2016-12-01,Other Vehicle,NA
+2016-08-01,Other Vehicle,0
+2016-09-01,Other Vehicle,0
+2016-10-01,Other Vehicle,0
+2016-11-01,Other Vehicle,0
+2016-12-01,Other Vehicle,0
 2016-01-01,Pedal Cycle,2
 2016-02-01,Pedal Cycle,1
 2016-03-01,Pedal Cycle,3
@@ -54,32 +54,32 @@ month_year,mode,n
 2016-05-01,Pedestrian,3
 2016-06-01,Pedestrian,5
 2016-07-01,Pedestrian,2
-2016-08-01,Pedestrian,NA
+2016-08-01,Pedestrian,0
 2016-09-01,Pedestrian,5
 2016-10-01,Pedestrian,2
 2016-11-01,Pedestrian,10
 2016-12-01,Pedestrian,1
 2016-01-01,Powered 2 Wheeler,1
-2016-02-01,Powered 2 Wheeler,NA
+2016-02-01,Powered 2 Wheeler,0
 2016-03-01,Powered 2 Wheeler,3
 2016-04-01,Powered 2 Wheeler,3
 2016-05-01,Powered 2 Wheeler,4
 2016-06-01,Powered 2 Wheeler,3
-2016-07-01,Powered 2 Wheeler,NA
+2016-07-01,Powered 2 Wheeler,0
 2016-08-01,Powered 2 Wheeler,1
 2016-09-01,Powered 2 Wheeler,1
 2016-10-01,Powered 2 Wheeler,1
 2016-11-01,Powered 2 Wheeler,3
 2016-12-01,Powered 2 Wheeler,1
-2016-01-01,Taxi,NA
-2016-02-01,Taxi,NA
+2016-01-01,Taxi,0
+2016-02-01,Taxi,0
 2016-03-01,Taxi,1
-2016-04-01,Taxi,NA
-2016-05-01,Taxi,NA
-2016-06-01,Taxi,NA
+2016-04-01,Taxi,0
+2016-05-01,Taxi,0
+2016-06-01,Taxi,0
 2016-07-01,Taxi,1
-2016-08-01,Taxi,NA
+2016-08-01,Taxi,0
 2016-09-01,Taxi,1
-2016-10-01,Taxi,NA
-2016-11-01,Taxi,NA
+2016-10-01,Taxi,0
+2016-11-01,Taxi,0
 2016-12-01,Taxi,2

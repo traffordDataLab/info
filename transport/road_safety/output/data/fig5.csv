@@ -1,1226 +1,1051 @@
-day,hour,mode,day_hour,n
-Fri,0,Car,Fri_0,NA
-Fri,0,Pedal Cycle,Fri_0,NA
-Fri,0,Pedestrian,Fri_0,NA
-Fri,0,Powered 2 Wheeler,Fri_0,1
-Fri,0,Other,Fri_0,NA
-Fri,0,Total,Fri_0,1
-Fri,0,NA,NA,NA
-Fri,1,Car,Fri_1,NA
-Fri,1,Pedal Cycle,Fri_1,NA
-Fri,1,Pedestrian,Fri_1,NA
-Fri,1,Powered 2 Wheeler,Fri_1,NA
-Fri,1,Other,Fri_1,NA
-Fri,1,Total,Fri_1,NA
-Fri,1,NA,NA,NA
-Fri,2,Car,NA,NA
-Fri,2,Pedal Cycle,NA,NA
-Fri,2,Pedestrian,NA,NA
-Fri,2,Powered 2 Wheeler,NA,NA
-Fri,2,Other,NA,NA
-Fri,2,Total,NA,NA
-Fri,2,NA,Fri_2,NA
-Fri,3,Car,Fri_3,NA
-Fri,3,Pedal Cycle,Fri_3,NA
-Fri,3,Pedestrian,Fri_3,NA
-Fri,3,Powered 2 Wheeler,Fri_3,NA
-Fri,3,Other,Fri_3,NA
-Fri,3,Total,Fri_3,NA
-Fri,3,NA,NA,NA
-Fri,4,Car,NA,NA
-Fri,4,Pedal Cycle,NA,NA
-Fri,4,Pedestrian,NA,NA
-Fri,4,Powered 2 Wheeler,NA,NA
-Fri,4,Other,NA,NA
-Fri,4,Total,NA,NA
-Fri,4,NA,Fri_4,NA
-Fri,5,Car,Fri_5,NA
-Fri,5,Pedal Cycle,Fri_5,NA
-Fri,5,Pedestrian,Fri_5,NA
-Fri,5,Powered 2 Wheeler,Fri_5,NA
-Fri,5,Other,Fri_5,NA
-Fri,5,Total,Fri_5,NA
-Fri,5,NA,NA,NA
-Fri,6,Car,Fri_6,NA
-Fri,6,Pedal Cycle,Fri_6,NA
-Fri,6,Pedestrian,Fri_6,NA
-Fri,6,Powered 2 Wheeler,Fri_6,NA
-Fri,6,Other,Fri_6,NA
-Fri,6,Total,Fri_6,NA
-Fri,6,NA,NA,NA
-Fri,7,Car,Fri_7,2
-Fri,7,Pedal Cycle,Fri_7,NA
-Fri,7,Pedestrian,Fri_7,NA
-Fri,7,Powered 2 Wheeler,Fri_7,1
-Fri,7,Other,Fri_7,NA
-Fri,7,Total,Fri_7,3
-Fri,7,NA,NA,NA
-Fri,8,Car,Fri_8,NA
-Fri,8,Pedal Cycle,Fri_8,3
-Fri,8,Pedestrian,Fri_8,2
-Fri,8,Powered 2 Wheeler,Fri_8,NA
-Fri,8,Other,Fri_8,NA
-Fri,8,Total,Fri_8,5
-Fri,8,NA,NA,NA
-Fri,9,Car,Fri_9,1
-Fri,9,Pedal Cycle,Fri_9,1
-Fri,9,Pedestrian,Fri_9,NA
-Fri,9,Powered 2 Wheeler,Fri_9,1
-Fri,9,Other,Fri_9,NA
-Fri,9,Total,Fri_9,3
-Fri,9,NA,NA,NA
-Fri,10,Car,Fri_10,1
-Fri,10,Pedal Cycle,Fri_10,1
-Fri,10,Pedestrian,Fri_10,NA
-Fri,10,Powered 2 Wheeler,Fri_10,NA
-Fri,10,Other,Fri_10,NA
-Fri,10,Total,Fri_10,2
-Fri,10,NA,NA,NA
-Fri,11,Car,Fri_11,NA
-Fri,11,Pedal Cycle,Fri_11,NA
-Fri,11,Pedestrian,Fri_11,NA
-Fri,11,Powered 2 Wheeler,Fri_11,NA
-Fri,11,Other,Fri_11,NA
-Fri,11,Total,Fri_11,NA
-Fri,11,NA,NA,NA
-Fri,12,Car,Fri_12,NA
-Fri,12,Pedal Cycle,Fri_12,NA
-Fri,12,Pedestrian,Fri_12,NA
-Fri,12,Powered 2 Wheeler,Fri_12,1
-Fri,12,Other,Fri_12,NA
-Fri,12,Total,Fri_12,1
-Fri,12,NA,NA,NA
-Fri,13,Car,Fri_13,1
-Fri,13,Pedal Cycle,Fri_13,1
-Fri,13,Pedestrian,Fri_13,NA
-Fri,13,Powered 2 Wheeler,Fri_13,NA
-Fri,13,Other,Fri_13,NA
-Fri,13,Total,Fri_13,2
-Fri,13,NA,NA,NA
-Fri,14,Car,Fri_14,NA
-Fri,14,Pedal Cycle,Fri_14,NA
-Fri,14,Pedestrian,Fri_14,1
-Fri,14,Powered 2 Wheeler,Fri_14,NA
-Fri,14,Other,Fri_14,1
-Fri,14,Total,Fri_14,2
-Fri,14,NA,NA,NA
-Fri,15,Car,Fri_15,NA
-Fri,15,Pedal Cycle,Fri_15,NA
-Fri,15,Pedestrian,Fri_15,1
-Fri,15,Powered 2 Wheeler,Fri_15,NA
-Fri,15,Other,Fri_15,NA
-Fri,15,Total,Fri_15,1
-Fri,15,NA,NA,NA
-Fri,16,Car,Fri_16,3
-Fri,16,Pedal Cycle,Fri_16,NA
-Fri,16,Pedestrian,Fri_16,1
-Fri,16,Powered 2 Wheeler,Fri_16,1
-Fri,16,Other,Fri_16,NA
-Fri,16,Total,Fri_16,5
-Fri,16,NA,NA,NA
-Fri,17,Car,Fri_17,NA
-Fri,17,Pedal Cycle,Fri_17,NA
-Fri,17,Pedestrian,Fri_17,1
-Fri,17,Powered 2 Wheeler,Fri_17,NA
-Fri,17,Other,Fri_17,NA
-Fri,17,Total,Fri_17,1
-Fri,17,NA,NA,NA
-Fri,18,Car,Fri_18,1
-Fri,18,Pedal Cycle,Fri_18,1
-Fri,18,Pedestrian,Fri_18,3
-Fri,18,Powered 2 Wheeler,Fri_18,NA
-Fri,18,Other,Fri_18,NA
-Fri,18,Total,Fri_18,5
-Fri,18,NA,NA,NA
-Fri,19,Car,Fri_19,1
-Fri,19,Pedal Cycle,Fri_19,NA
-Fri,19,Pedestrian,Fri_19,1
-Fri,19,Powered 2 Wheeler,Fri_19,NA
-Fri,19,Other,Fri_19,NA
-Fri,19,Total,Fri_19,2
-Fri,19,NA,NA,NA
-Fri,20,Car,Fri_20,NA
-Fri,20,Pedal Cycle,Fri_20,NA
-Fri,20,Pedestrian,Fri_20,NA
-Fri,20,Powered 2 Wheeler,Fri_20,NA
-Fri,20,Other,Fri_20,NA
-Fri,20,Total,Fri_20,NA
-Fri,20,NA,NA,NA
-Fri,21,Car,Fri_21,1
-Fri,21,Pedal Cycle,Fri_21,NA
-Fri,21,Pedestrian,Fri_21,1
-Fri,21,Powered 2 Wheeler,Fri_21,NA
-Fri,21,Other,Fri_21,NA
-Fri,21,Total,Fri_21,2
-Fri,21,NA,NA,NA
-Fri,22,Car,Fri_22,1
-Fri,22,Pedal Cycle,Fri_22,NA
-Fri,22,Pedestrian,Fri_22,NA
-Fri,22,Powered 2 Wheeler,Fri_22,NA
-Fri,22,Other,Fri_22,NA
-Fri,22,Total,Fri_22,1
-Fri,22,NA,NA,NA
-Fri,23,Car,Fri_23,2
-Fri,23,Pedal Cycle,Fri_23,NA
-Fri,23,Pedestrian,Fri_23,NA
-Fri,23,Powered 2 Wheeler,Fri_23,NA
-Fri,23,Other,Fri_23,1
-Fri,23,Total,Fri_23,3
-Fri,23,NA,NA,NA
-Fri,24,Car,NA,NA
-Fri,24,Pedal Cycle,NA,NA
-Fri,24,Pedestrian,NA,NA
-Fri,24,Powered 2 Wheeler,NA,NA
-Fri,24,Other,NA,NA
-Fri,24,Total,NA,NA
-Fri,24,NA,Fri_24,NA
-Mon,0,Car,Mon_0,NA
-Mon,0,Pedal Cycle,Mon_0,NA
-Mon,0,Pedestrian,Mon_0,NA
-Mon,0,Powered 2 Wheeler,Mon_0,NA
-Mon,0,Other,Mon_0,NA
-Mon,0,Total,Mon_0,NA
-Mon,0,NA,NA,NA
-Mon,1,Car,Mon_1,NA
-Mon,1,Pedal Cycle,Mon_1,NA
-Mon,1,Pedestrian,Mon_1,NA
-Mon,1,Powered 2 Wheeler,Mon_1,NA
-Mon,1,Other,Mon_1,NA
-Mon,1,Total,Mon_1,NA
-Mon,1,NA,NA,NA
-Mon,2,Car,NA,NA
-Mon,2,Pedal Cycle,NA,NA
-Mon,2,Pedestrian,NA,NA
-Mon,2,Powered 2 Wheeler,NA,NA
-Mon,2,Other,NA,NA
-Mon,2,Total,NA,NA
-Mon,2,NA,Mon_2,NA
-Mon,3,Car,Mon_3,NA
-Mon,3,Pedal Cycle,Mon_3,NA
-Mon,3,Pedestrian,Mon_3,NA
-Mon,3,Powered 2 Wheeler,Mon_3,NA
-Mon,3,Other,Mon_3,NA
-Mon,3,Total,Mon_3,NA
-Mon,3,NA,NA,NA
-Mon,4,Car,NA,NA
-Mon,4,Pedal Cycle,NA,NA
-Mon,4,Pedestrian,NA,NA
-Mon,4,Powered 2 Wheeler,NA,NA
-Mon,4,Other,NA,NA
-Mon,4,Total,NA,NA
-Mon,4,NA,Mon_4,NA
-Mon,5,Car,Mon_5,NA
-Mon,5,Pedal Cycle,Mon_5,NA
-Mon,5,Pedestrian,Mon_5,NA
-Mon,5,Powered 2 Wheeler,Mon_5,NA
-Mon,5,Other,Mon_5,NA
-Mon,5,Total,Mon_5,NA
-Mon,5,NA,NA,NA
-Mon,6,Car,Mon_6,NA
-Mon,6,Pedal Cycle,Mon_6,1
-Mon,6,Pedestrian,Mon_6,NA
-Mon,6,Powered 2 Wheeler,Mon_6,NA
-Mon,6,Other,Mon_6,NA
-Mon,6,Total,Mon_6,1
-Mon,6,NA,NA,NA
-Mon,7,Car,Mon_7,NA
-Mon,7,Pedal Cycle,Mon_7,2
-Mon,7,Pedestrian,Mon_7,NA
-Mon,7,Powered 2 Wheeler,Mon_7,NA
-Mon,7,Other,Mon_7,NA
-Mon,7,Total,Mon_7,2
-Mon,7,NA,NA,NA
-Mon,8,Car,Mon_8,1
-Mon,8,Pedal Cycle,Mon_8,NA
-Mon,8,Pedestrian,Mon_8,2
-Mon,8,Powered 2 Wheeler,Mon_8,NA
-Mon,8,Other,Mon_8,NA
-Mon,8,Total,Mon_8,3
-Mon,8,NA,NA,NA
-Mon,9,Car,Mon_9,1
-Mon,9,Pedal Cycle,Mon_9,NA
-Mon,9,Pedestrian,Mon_9,NA
-Mon,9,Powered 2 Wheeler,Mon_9,NA
-Mon,9,Other,Mon_9,NA
-Mon,9,Total,Mon_9,1
-Mon,9,NA,NA,NA
-Mon,10,Car,Mon_10,1
-Mon,10,Pedal Cycle,Mon_10,NA
-Mon,10,Pedestrian,Mon_10,NA
-Mon,10,Powered 2 Wheeler,Mon_10,NA
-Mon,10,Other,Mon_10,NA
-Mon,10,Total,Mon_10,1
-Mon,10,NA,NA,NA
-Mon,11,Car,Mon_11,NA
-Mon,11,Pedal Cycle,Mon_11,NA
-Mon,11,Pedestrian,Mon_11,1
-Mon,11,Powered 2 Wheeler,Mon_11,NA
-Mon,11,Other,Mon_11,NA
-Mon,11,Total,Mon_11,1
-Mon,11,NA,NA,NA
-Mon,12,Car,Mon_12,NA
-Mon,12,Pedal Cycle,Mon_12,NA
-Mon,12,Pedestrian,Mon_12,NA
-Mon,12,Powered 2 Wheeler,Mon_12,NA
-Mon,12,Other,Mon_12,NA
-Mon,12,Total,Mon_12,NA
-Mon,12,NA,NA,NA
-Mon,13,Car,Mon_13,NA
-Mon,13,Pedal Cycle,Mon_13,NA
-Mon,13,Pedestrian,Mon_13,1
-Mon,13,Powered 2 Wheeler,Mon_13,NA
-Mon,13,Other,Mon_13,NA
-Mon,13,Total,Mon_13,1
-Mon,13,NA,NA,NA
-Mon,14,Car,Mon_14,1
-Mon,14,Pedal Cycle,Mon_14,2
-Mon,14,Pedestrian,Mon_14,NA
-Mon,14,Powered 2 Wheeler,Mon_14,NA
-Mon,14,Other,Mon_14,NA
-Mon,14,Total,Mon_14,3
-Mon,14,NA,NA,NA
-Mon,15,Car,Mon_15,1
-Mon,15,Pedal Cycle,Mon_15,NA
-Mon,15,Pedestrian,Mon_15,1
-Mon,15,Powered 2 Wheeler,Mon_15,NA
-Mon,15,Other,Mon_15,1
-Mon,15,Total,Mon_15,3
-Mon,15,NA,NA,NA
-Mon,16,Car,Mon_16,NA
-Mon,16,Pedal Cycle,Mon_16,NA
-Mon,16,Pedestrian,Mon_16,NA
-Mon,16,Powered 2 Wheeler,Mon_16,1
-Mon,16,Other,Mon_16,NA
-Mon,16,Total,Mon_16,1
-Mon,16,NA,NA,NA
-Mon,17,Car,Mon_17,NA
-Mon,17,Pedal Cycle,Mon_17,1
-Mon,17,Pedestrian,Mon_17,NA
-Mon,17,Powered 2 Wheeler,Mon_17,NA
-Mon,17,Other,Mon_17,NA
-Mon,17,Total,Mon_17,1
-Mon,17,NA,NA,NA
-Mon,18,Car,Mon_18,1
-Mon,18,Pedal Cycle,Mon_18,2
-Mon,18,Pedestrian,Mon_18,1
-Mon,18,Powered 2 Wheeler,Mon_18,1
-Mon,18,Other,Mon_18,NA
-Mon,18,Total,Mon_18,5
-Mon,18,NA,NA,NA
-Mon,19,Car,Mon_19,NA
-Mon,19,Pedal Cycle,Mon_19,NA
-Mon,19,Pedestrian,Mon_19,NA
-Mon,19,Powered 2 Wheeler,Mon_19,NA
-Mon,19,Other,Mon_19,NA
-Mon,19,Total,Mon_19,NA
-Mon,19,NA,NA,NA
-Mon,20,Car,Mon_20,NA
-Mon,20,Pedal Cycle,Mon_20,NA
-Mon,20,Pedestrian,Mon_20,NA
-Mon,20,Powered 2 Wheeler,Mon_20,NA
-Mon,20,Other,Mon_20,NA
-Mon,20,Total,Mon_20,NA
-Mon,20,NA,NA,NA
-Mon,21,Car,Mon_21,NA
-Mon,21,Pedal Cycle,Mon_21,NA
-Mon,21,Pedestrian,Mon_21,NA
-Mon,21,Powered 2 Wheeler,Mon_21,NA
-Mon,21,Other,Mon_21,NA
-Mon,21,Total,Mon_21,NA
-Mon,21,NA,NA,NA
-Mon,22,Car,Mon_22,NA
-Mon,22,Pedal Cycle,Mon_22,NA
-Mon,22,Pedestrian,Mon_22,1
-Mon,22,Powered 2 Wheeler,Mon_22,NA
-Mon,22,Other,Mon_22,NA
-Mon,22,Total,Mon_22,1
-Mon,22,NA,NA,NA
-Mon,23,Car,Mon_23,NA
-Mon,23,Pedal Cycle,Mon_23,NA
-Mon,23,Pedestrian,Mon_23,NA
-Mon,23,Powered 2 Wheeler,Mon_23,NA
-Mon,23,Other,Mon_23,NA
-Mon,23,Total,Mon_23,NA
-Mon,23,NA,NA,NA
-Mon,24,Car,NA,NA
-Mon,24,Pedal Cycle,NA,NA
-Mon,24,Pedestrian,NA,NA
-Mon,24,Powered 2 Wheeler,NA,NA
-Mon,24,Other,NA,NA
-Mon,24,Total,NA,NA
-Mon,24,NA,Mon_24,NA
-Sat,0,Car,Sat_0,NA
-Sat,0,Pedal Cycle,Sat_0,NA
-Sat,0,Pedestrian,Sat_0,NA
-Sat,0,Powered 2 Wheeler,Sat_0,NA
-Sat,0,Other,Sat_0,1
-Sat,0,Total,Sat_0,1
-Sat,0,NA,NA,NA
-Sat,1,Car,Sat_1,1
-Sat,1,Pedal Cycle,Sat_1,1
-Sat,1,Pedestrian,Sat_1,NA
-Sat,1,Powered 2 Wheeler,Sat_1,NA
-Sat,1,Other,Sat_1,NA
-Sat,1,Total,Sat_1,2
-Sat,1,NA,NA,NA
-Sat,2,Car,NA,NA
-Sat,2,Pedal Cycle,NA,NA
-Sat,2,Pedestrian,NA,NA
-Sat,2,Powered 2 Wheeler,NA,NA
-Sat,2,Other,NA,NA
-Sat,2,Total,NA,NA
-Sat,2,NA,Sat_2,NA
-Sat,3,Car,Sat_3,1
-Sat,3,Pedal Cycle,Sat_3,NA
-Sat,3,Pedestrian,Sat_3,NA
-Sat,3,Powered 2 Wheeler,Sat_3,NA
-Sat,3,Other,Sat_3,NA
-Sat,3,Total,Sat_3,1
-Sat,3,NA,NA,NA
-Sat,4,Car,NA,NA
-Sat,4,Pedal Cycle,NA,NA
-Sat,4,Pedestrian,NA,NA
-Sat,4,Powered 2 Wheeler,NA,NA
-Sat,4,Other,NA,NA
-Sat,4,Total,NA,NA
-Sat,4,NA,Sat_4,NA
-Sat,5,Car,Sat_5,NA
-Sat,5,Pedal Cycle,Sat_5,NA
-Sat,5,Pedestrian,Sat_5,NA
-Sat,5,Powered 2 Wheeler,Sat_5,NA
-Sat,5,Other,Sat_5,NA
-Sat,5,Total,Sat_5,NA
-Sat,5,NA,NA,NA
-Sat,6,Car,Sat_6,NA
-Sat,6,Pedal Cycle,Sat_6,NA
-Sat,6,Pedestrian,Sat_6,NA
-Sat,6,Powered 2 Wheeler,Sat_6,NA
-Sat,6,Other,Sat_6,NA
-Sat,6,Total,Sat_6,NA
-Sat,6,NA,NA,NA
-Sat,7,Car,Sat_7,NA
-Sat,7,Pedal Cycle,Sat_7,NA
-Sat,7,Pedestrian,Sat_7,NA
-Sat,7,Powered 2 Wheeler,Sat_7,NA
-Sat,7,Other,Sat_7,1
-Sat,7,Total,Sat_7,1
-Sat,7,NA,NA,NA
-Sat,8,Car,Sat_8,2
-Sat,8,Pedal Cycle,Sat_8,NA
-Sat,8,Pedestrian,Sat_8,NA
-Sat,8,Powered 2 Wheeler,Sat_8,NA
-Sat,8,Other,Sat_8,NA
-Sat,8,Total,Sat_8,2
-Sat,8,NA,NA,NA
-Sat,9,Car,Sat_9,NA
-Sat,9,Pedal Cycle,Sat_9,NA
-Sat,9,Pedestrian,Sat_9,NA
-Sat,9,Powered 2 Wheeler,Sat_9,1
-Sat,9,Other,Sat_9,NA
-Sat,9,Total,Sat_9,1
-Sat,9,NA,NA,NA
-Sat,10,Car,Sat_10,2
-Sat,10,Pedal Cycle,Sat_10,NA
-Sat,10,Pedestrian,Sat_10,NA
-Sat,10,Powered 2 Wheeler,Sat_10,NA
-Sat,10,Other,Sat_10,NA
-Sat,10,Total,Sat_10,2
-Sat,10,NA,NA,NA
-Sat,11,Car,Sat_11,2
-Sat,11,Pedal Cycle,Sat_11,NA
-Sat,11,Pedestrian,Sat_11,1
-Sat,11,Powered 2 Wheeler,Sat_11,NA
-Sat,11,Other,Sat_11,NA
-Sat,11,Total,Sat_11,3
-Sat,11,NA,NA,NA
-Sat,12,Car,Sat_12,NA
-Sat,12,Pedal Cycle,Sat_12,NA
-Sat,12,Pedestrian,Sat_12,NA
-Sat,12,Powered 2 Wheeler,Sat_12,1
-Sat,12,Other,Sat_12,NA
-Sat,12,Total,Sat_12,1
-Sat,12,NA,NA,NA
-Sat,13,Car,Sat_13,3
-Sat,13,Pedal Cycle,Sat_13,2
-Sat,13,Pedestrian,Sat_13,NA
-Sat,13,Powered 2 Wheeler,Sat_13,NA
-Sat,13,Other,Sat_13,NA
-Sat,13,Total,Sat_13,5
-Sat,13,NA,NA,NA
-Sat,14,Car,Sat_14,1
-Sat,14,Pedal Cycle,Sat_14,NA
-Sat,14,Pedestrian,Sat_14,1
-Sat,14,Powered 2 Wheeler,Sat_14,NA
-Sat,14,Other,Sat_14,NA
-Sat,14,Total,Sat_14,2
-Sat,14,NA,NA,NA
-Sat,15,Car,Sat_15,1
-Sat,15,Pedal Cycle,Sat_15,NA
-Sat,15,Pedestrian,Sat_15,NA
-Sat,15,Powered 2 Wheeler,Sat_15,NA
-Sat,15,Other,Sat_15,NA
-Sat,15,Total,Sat_15,1
-Sat,15,NA,NA,NA
-Sat,16,Car,Sat_16,1
-Sat,16,Pedal Cycle,Sat_16,NA
-Sat,16,Pedestrian,Sat_16,NA
-Sat,16,Powered 2 Wheeler,Sat_16,NA
-Sat,16,Other,Sat_16,NA
-Sat,16,Total,Sat_16,1
-Sat,16,NA,NA,NA
-Sat,17,Car,Sat_17,1
-Sat,17,Pedal Cycle,Sat_17,1
-Sat,17,Pedestrian,Sat_17,NA
-Sat,17,Powered 2 Wheeler,Sat_17,NA
-Sat,17,Other,Sat_17,NA
-Sat,17,Total,Sat_17,2
-Sat,17,NA,NA,NA
-Sat,18,Car,Sat_18,1
-Sat,18,Pedal Cycle,Sat_18,NA
-Sat,18,Pedestrian,Sat_18,1
-Sat,18,Powered 2 Wheeler,Sat_18,NA
-Sat,18,Other,Sat_18,NA
-Sat,18,Total,Sat_18,2
-Sat,18,NA,NA,NA
-Sat,19,Car,Sat_19,1
-Sat,19,Pedal Cycle,Sat_19,NA
-Sat,19,Pedestrian,Sat_19,NA
-Sat,19,Powered 2 Wheeler,Sat_19,1
-Sat,19,Other,Sat_19,NA
-Sat,19,Total,Sat_19,2
-Sat,19,NA,NA,NA
-Sat,20,Car,Sat_20,NA
-Sat,20,Pedal Cycle,Sat_20,NA
-Sat,20,Pedestrian,Sat_20,NA
-Sat,20,Powered 2 Wheeler,Sat_20,NA
-Sat,20,Other,Sat_20,NA
-Sat,20,Total,Sat_20,NA
-Sat,20,NA,NA,NA
-Sat,21,Car,Sat_21,NA
-Sat,21,Pedal Cycle,Sat_21,NA
-Sat,21,Pedestrian,Sat_21,NA
-Sat,21,Powered 2 Wheeler,Sat_21,1
-Sat,21,Other,Sat_21,NA
-Sat,21,Total,Sat_21,1
-Sat,21,NA,NA,NA
-Sat,22,Car,Sat_22,1
-Sat,22,Pedal Cycle,Sat_22,NA
-Sat,22,Pedestrian,Sat_22,NA
-Sat,22,Powered 2 Wheeler,Sat_22,NA
-Sat,22,Other,Sat_22,NA
-Sat,22,Total,Sat_22,1
-Sat,22,NA,NA,NA
-Sat,23,Car,Sat_23,NA
-Sat,23,Pedal Cycle,Sat_23,NA
-Sat,23,Pedestrian,Sat_23,NA
-Sat,23,Powered 2 Wheeler,Sat_23,NA
-Sat,23,Other,Sat_23,NA
-Sat,23,Total,Sat_23,NA
-Sat,23,NA,NA,NA
-Sat,24,Car,NA,NA
-Sat,24,Pedal Cycle,NA,NA
-Sat,24,Pedestrian,NA,NA
-Sat,24,Powered 2 Wheeler,NA,NA
-Sat,24,Other,NA,NA
-Sat,24,Total,NA,NA
-Sat,24,NA,Sat_24,NA
-Sun,0,Car,Sun_0,NA
-Sun,0,Pedal Cycle,Sun_0,NA
-Sun,0,Pedestrian,Sun_0,1
-Sun,0,Powered 2 Wheeler,Sun_0,NA
-Sun,0,Other,Sun_0,NA
-Sun,0,Total,Sun_0,1
-Sun,0,NA,NA,NA
-Sun,1,Car,Sun_1,NA
-Sun,1,Pedal Cycle,Sun_1,NA
-Sun,1,Pedestrian,Sun_1,NA
-Sun,1,Powered 2 Wheeler,Sun_1,NA
-Sun,1,Other,Sun_1,NA
-Sun,1,Total,Sun_1,NA
-Sun,1,NA,NA,NA
-Sun,2,Car,NA,NA
-Sun,2,Pedal Cycle,NA,NA
-Sun,2,Pedestrian,NA,NA
-Sun,2,Powered 2 Wheeler,NA,NA
-Sun,2,Other,NA,NA
-Sun,2,Total,NA,NA
-Sun,2,NA,Sun_2,NA
-Sun,3,Car,Sun_3,1
-Sun,3,Pedal Cycle,Sun_3,NA
-Sun,3,Pedestrian,Sun_3,NA
-Sun,3,Powered 2 Wheeler,Sun_3,NA
-Sun,3,Other,Sun_3,NA
-Sun,3,Total,Sun_3,1
-Sun,3,NA,NA,NA
-Sun,4,Car,NA,NA
-Sun,4,Pedal Cycle,NA,NA
-Sun,4,Pedestrian,NA,NA
-Sun,4,Powered 2 Wheeler,NA,NA
-Sun,4,Other,NA,NA
-Sun,4,Total,NA,NA
-Sun,4,NA,Sun_4,NA
-Sun,5,Car,Sun_5,NA
-Sun,5,Pedal Cycle,Sun_5,NA
-Sun,5,Pedestrian,Sun_5,NA
-Sun,5,Powered 2 Wheeler,Sun_5,NA
-Sun,5,Other,Sun_5,NA
-Sun,5,Total,Sun_5,NA
-Sun,5,NA,NA,NA
-Sun,6,Car,Sun_6,NA
-Sun,6,Pedal Cycle,Sun_6,NA
-Sun,6,Pedestrian,Sun_6,NA
-Sun,6,Powered 2 Wheeler,Sun_6,NA
-Sun,6,Other,Sun_6,1
-Sun,6,Total,Sun_6,1
-Sun,6,NA,NA,NA
-Sun,7,Car,Sun_7,NA
-Sun,7,Pedal Cycle,Sun_7,1
-Sun,7,Pedestrian,Sun_7,NA
-Sun,7,Powered 2 Wheeler,Sun_7,NA
-Sun,7,Other,Sun_7,NA
-Sun,7,Total,Sun_7,1
-Sun,7,NA,NA,NA
-Sun,8,Car,Sun_8,NA
-Sun,8,Pedal Cycle,Sun_8,NA
-Sun,8,Pedestrian,Sun_8,NA
-Sun,8,Powered 2 Wheeler,Sun_8,NA
-Sun,8,Other,Sun_8,NA
-Sun,8,Total,Sun_8,NA
-Sun,8,NA,NA,NA
-Sun,9,Car,Sun_9,1
-Sun,9,Pedal Cycle,Sun_9,1
-Sun,9,Pedestrian,Sun_9,NA
-Sun,9,Powered 2 Wheeler,Sun_9,NA
-Sun,9,Other,Sun_9,NA
-Sun,9,Total,Sun_9,2
-Sun,9,NA,NA,NA
-Sun,10,Car,Sun_10,NA
-Sun,10,Pedal Cycle,Sun_10,NA
-Sun,10,Pedestrian,Sun_10,1
-Sun,10,Powered 2 Wheeler,Sun_10,NA
-Sun,10,Other,Sun_10,NA
-Sun,10,Total,Sun_10,1
-Sun,10,NA,NA,NA
-Sun,11,Car,Sun_11,1
-Sun,11,Pedal Cycle,Sun_11,1
-Sun,11,Pedestrian,Sun_11,2
-Sun,11,Powered 2 Wheeler,Sun_11,NA
-Sun,11,Other,Sun_11,NA
-Sun,11,Total,Sun_11,4
-Sun,11,NA,NA,NA
-Sun,12,Car,Sun_12,1
-Sun,12,Pedal Cycle,Sun_12,NA
-Sun,12,Pedestrian,Sun_12,NA
-Sun,12,Powered 2 Wheeler,Sun_12,NA
-Sun,12,Other,Sun_12,NA
-Sun,12,Total,Sun_12,1
-Sun,12,NA,NA,NA
-Sun,13,Car,Sun_13,3
-Sun,13,Pedal Cycle,Sun_13,NA
-Sun,13,Pedestrian,Sun_13,NA
-Sun,13,Powered 2 Wheeler,Sun_13,NA
-Sun,13,Other,Sun_13,NA
-Sun,13,Total,Sun_13,3
-Sun,13,NA,NA,NA
-Sun,14,Car,Sun_14,1
-Sun,14,Pedal Cycle,Sun_14,NA
-Sun,14,Pedestrian,Sun_14,2
-Sun,14,Powered 2 Wheeler,Sun_14,NA
-Sun,14,Other,Sun_14,NA
-Sun,14,Total,Sun_14,3
-Sun,14,NA,NA,NA
-Sun,15,Car,Sun_15,NA
-Sun,15,Pedal Cycle,Sun_15,NA
-Sun,15,Pedestrian,Sun_15,NA
-Sun,15,Powered 2 Wheeler,Sun_15,NA
-Sun,15,Other,Sun_15,NA
-Sun,15,Total,Sun_15,NA
-Sun,15,NA,NA,NA
-Sun,16,Car,Sun_16,1
-Sun,16,Pedal Cycle,Sun_16,NA
-Sun,16,Pedestrian,Sun_16,NA
-Sun,16,Powered 2 Wheeler,Sun_16,1
-Sun,16,Other,Sun_16,NA
-Sun,16,Total,Sun_16,2
-Sun,16,NA,NA,NA
-Sun,17,Car,Sun_17,3
-Sun,17,Pedal Cycle,Sun_17,NA
-Sun,17,Pedestrian,Sun_17,NA
-Sun,17,Powered 2 Wheeler,Sun_17,NA
-Sun,17,Other,Sun_17,NA
-Sun,17,Total,Sun_17,3
-Sun,17,NA,NA,NA
-Sun,18,Car,Sun_18,2
-Sun,18,Pedal Cycle,Sun_18,1
-Sun,18,Pedestrian,Sun_18,NA
-Sun,18,Powered 2 Wheeler,Sun_18,NA
-Sun,18,Other,Sun_18,NA
-Sun,18,Total,Sun_18,3
-Sun,18,NA,NA,NA
-Sun,19,Car,Sun_19,NA
-Sun,19,Pedal Cycle,Sun_19,NA
-Sun,19,Pedestrian,Sun_19,NA
-Sun,19,Powered 2 Wheeler,Sun_19,NA
-Sun,19,Other,Sun_19,NA
-Sun,19,Total,Sun_19,NA
-Sun,19,NA,NA,NA
-Sun,20,Car,Sun_20,NA
-Sun,20,Pedal Cycle,Sun_20,NA
-Sun,20,Pedestrian,Sun_20,NA
-Sun,20,Powered 2 Wheeler,Sun_20,NA
-Sun,20,Other,Sun_20,NA
-Sun,20,Total,Sun_20,NA
-Sun,20,NA,NA,NA
-Sun,21,Car,Sun_21,NA
-Sun,21,Pedal Cycle,Sun_21,NA
-Sun,21,Pedestrian,Sun_21,NA
-Sun,21,Powered 2 Wheeler,Sun_21,NA
-Sun,21,Other,Sun_21,NA
-Sun,21,Total,Sun_21,NA
-Sun,21,NA,NA,NA
-Sun,22,Car,Sun_22,1
-Sun,22,Pedal Cycle,Sun_22,NA
-Sun,22,Pedestrian,Sun_22,NA
-Sun,22,Powered 2 Wheeler,Sun_22,NA
-Sun,22,Other,Sun_22,NA
-Sun,22,Total,Sun_22,1
-Sun,22,NA,NA,NA
-Sun,23,Car,Sun_23,NA
-Sun,23,Pedal Cycle,Sun_23,NA
-Sun,23,Pedestrian,Sun_23,NA
-Sun,23,Powered 2 Wheeler,Sun_23,NA
-Sun,23,Other,Sun_23,NA
-Sun,23,Total,Sun_23,NA
-Sun,23,NA,NA,NA
-Sun,24,Car,NA,NA
-Sun,24,Pedal Cycle,NA,NA
-Sun,24,Pedestrian,NA,NA
-Sun,24,Powered 2 Wheeler,NA,NA
-Sun,24,Other,NA,NA
-Sun,24,Total,NA,NA
-Sun,24,NA,Sun_24,NA
-Thu,0,Car,Thu_0,NA
-Thu,0,Pedal Cycle,Thu_0,NA
-Thu,0,Pedestrian,Thu_0,NA
-Thu,0,Powered 2 Wheeler,Thu_0,NA
-Thu,0,Other,Thu_0,NA
-Thu,0,Total,Thu_0,NA
-Thu,0,NA,NA,NA
-Thu,1,Car,Thu_1,NA
-Thu,1,Pedal Cycle,Thu_1,NA
-Thu,1,Pedestrian,Thu_1,NA
-Thu,1,Powered 2 Wheeler,Thu_1,NA
-Thu,1,Other,Thu_1,NA
-Thu,1,Total,Thu_1,NA
-Thu,1,NA,NA,NA
-Thu,2,Car,NA,NA
-Thu,2,Pedal Cycle,NA,NA
-Thu,2,Pedestrian,NA,NA
-Thu,2,Powered 2 Wheeler,NA,NA
-Thu,2,Other,NA,NA
-Thu,2,Total,NA,NA
-Thu,2,NA,Thu_2,NA
-Thu,3,Car,Thu_3,1
-Thu,3,Pedal Cycle,Thu_3,NA
-Thu,3,Pedestrian,Thu_3,NA
-Thu,3,Powered 2 Wheeler,Thu_3,NA
-Thu,3,Other,Thu_3,NA
-Thu,3,Total,Thu_3,1
-Thu,3,NA,NA,NA
-Thu,4,Car,NA,NA
-Thu,4,Pedal Cycle,NA,NA
-Thu,4,Pedestrian,NA,NA
-Thu,4,Powered 2 Wheeler,NA,NA
-Thu,4,Other,NA,NA
-Thu,4,Total,NA,NA
-Thu,4,NA,Thu_4,NA
-Thu,5,Car,Thu_5,NA
-Thu,5,Pedal Cycle,Thu_5,NA
-Thu,5,Pedestrian,Thu_5,NA
-Thu,5,Powered 2 Wheeler,Thu_5,1
-Thu,5,Other,Thu_5,NA
-Thu,5,Total,Thu_5,1
-Thu,5,NA,NA,NA
-Thu,6,Car,Thu_6,NA
-Thu,6,Pedal Cycle,Thu_6,NA
-Thu,6,Pedestrian,Thu_6,NA
-Thu,6,Powered 2 Wheeler,Thu_6,1
-Thu,6,Other,Thu_6,NA
-Thu,6,Total,Thu_6,1
-Thu,6,NA,NA,NA
-Thu,7,Car,Thu_7,1
-Thu,7,Pedal Cycle,Thu_7,NA
-Thu,7,Pedestrian,Thu_7,1
-Thu,7,Powered 2 Wheeler,Thu_7,NA
-Thu,7,Other,Thu_7,NA
-Thu,7,Total,Thu_7,2
-Thu,7,NA,NA,NA
-Thu,8,Car,Thu_8,2
-Thu,8,Pedal Cycle,Thu_8,NA
-Thu,8,Pedestrian,Thu_8,NA
-Thu,8,Powered 2 Wheeler,Thu_8,1
-Thu,8,Other,Thu_8,NA
-Thu,8,Total,Thu_8,3
-Thu,8,NA,NA,NA
-Thu,9,Car,Thu_9,NA
-Thu,9,Pedal Cycle,Thu_9,1
-Thu,9,Pedestrian,Thu_9,NA
-Thu,9,Powered 2 Wheeler,Thu_9,NA
-Thu,9,Other,Thu_9,NA
-Thu,9,Total,Thu_9,1
-Thu,9,NA,NA,NA
-Thu,10,Car,Thu_10,NA
-Thu,10,Pedal Cycle,Thu_10,1
-Thu,10,Pedestrian,Thu_10,1
-Thu,10,Powered 2 Wheeler,Thu_10,NA
-Thu,10,Other,Thu_10,NA
-Thu,10,Total,Thu_10,2
-Thu,10,NA,NA,NA
-Thu,11,Car,Thu_11,1
-Thu,11,Pedal Cycle,Thu_11,NA
-Thu,11,Pedestrian,Thu_11,1
-Thu,11,Powered 2 Wheeler,Thu_11,NA
-Thu,11,Other,Thu_11,NA
-Thu,11,Total,Thu_11,2
-Thu,11,NA,NA,NA
-Thu,12,Car,Thu_12,1
-Thu,12,Pedal Cycle,Thu_12,NA
-Thu,12,Pedestrian,Thu_12,NA
-Thu,12,Powered 2 Wheeler,Thu_12,NA
-Thu,12,Other,Thu_12,NA
-Thu,12,Total,Thu_12,1
-Thu,12,NA,NA,NA
-Thu,13,Car,Thu_13,NA
-Thu,13,Pedal Cycle,Thu_13,NA
-Thu,13,Pedestrian,Thu_13,NA
-Thu,13,Powered 2 Wheeler,Thu_13,NA
-Thu,13,Other,Thu_13,NA
-Thu,13,Total,Thu_13,NA
-Thu,13,NA,NA,NA
-Thu,14,Car,Thu_14,1
-Thu,14,Pedal Cycle,Thu_14,NA
-Thu,14,Pedestrian,Thu_14,NA
-Thu,14,Powered 2 Wheeler,Thu_14,NA
-Thu,14,Other,Thu_14,NA
-Thu,14,Total,Thu_14,1
-Thu,14,NA,NA,NA
-Thu,15,Car,Thu_15,NA
-Thu,15,Pedal Cycle,Thu_15,NA
-Thu,15,Pedestrian,Thu_15,1
-Thu,15,Powered 2 Wheeler,Thu_15,NA
-Thu,15,Other,Thu_15,NA
-Thu,15,Total,Thu_15,1
-Thu,15,NA,NA,NA
-Thu,16,Car,Thu_16,1
-Thu,16,Pedal Cycle,Thu_16,1
-Thu,16,Pedestrian,Thu_16,NA
-Thu,16,Powered 2 Wheeler,Thu_16,NA
-Thu,16,Other,Thu_16,NA
-Thu,16,Total,Thu_16,2
-Thu,16,NA,NA,NA
-Thu,17,Car,Thu_17,NA
-Thu,17,Pedal Cycle,Thu_17,NA
-Thu,17,Pedestrian,Thu_17,NA
-Thu,17,Powered 2 Wheeler,Thu_17,1
-Thu,17,Other,Thu_17,NA
-Thu,17,Total,Thu_17,1
-Thu,17,NA,NA,NA
-Thu,18,Car,Thu_18,NA
-Thu,18,Pedal Cycle,Thu_18,1
-Thu,18,Pedestrian,Thu_18,1
-Thu,18,Powered 2 Wheeler,Thu_18,NA
-Thu,18,Other,Thu_18,NA
-Thu,18,Total,Thu_18,2
-Thu,18,NA,NA,NA
-Thu,19,Car,Thu_19,NA
-Thu,19,Pedal Cycle,Thu_19,1
-Thu,19,Pedestrian,Thu_19,NA
-Thu,19,Powered 2 Wheeler,Thu_19,NA
-Thu,19,Other,Thu_19,NA
-Thu,19,Total,Thu_19,1
-Thu,19,NA,NA,NA
-Thu,20,Car,Thu_20,NA
-Thu,20,Pedal Cycle,Thu_20,NA
-Thu,20,Pedestrian,Thu_20,NA
-Thu,20,Powered 2 Wheeler,Thu_20,NA
-Thu,20,Other,Thu_20,NA
-Thu,20,Total,Thu_20,NA
-Thu,20,NA,NA,NA
-Thu,21,Car,Thu_21,NA
-Thu,21,Pedal Cycle,Thu_21,NA
-Thu,21,Pedestrian,Thu_21,NA
-Thu,21,Powered 2 Wheeler,Thu_21,NA
-Thu,21,Other,Thu_21,NA
-Thu,21,Total,Thu_21,NA
-Thu,21,NA,NA,NA
-Thu,22,Car,Thu_22,NA
-Thu,22,Pedal Cycle,Thu_22,NA
-Thu,22,Pedestrian,Thu_22,NA
-Thu,22,Powered 2 Wheeler,Thu_22,NA
-Thu,22,Other,Thu_22,NA
-Thu,22,Total,Thu_22,NA
-Thu,22,NA,NA,NA
-Thu,23,Car,Thu_23,1
-Thu,23,Pedal Cycle,Thu_23,NA
-Thu,23,Pedestrian,Thu_23,NA
-Thu,23,Powered 2 Wheeler,Thu_23,NA
-Thu,23,Other,Thu_23,NA
-Thu,23,Total,Thu_23,1
-Thu,23,NA,NA,NA
-Thu,24,Car,NA,NA
-Thu,24,Pedal Cycle,NA,NA
-Thu,24,Pedestrian,NA,NA
-Thu,24,Powered 2 Wheeler,NA,NA
-Thu,24,Other,NA,NA
-Thu,24,Total,NA,NA
-Thu,24,NA,Thu_24,NA
-Tue,0,Car,Tue_0,NA
-Tue,0,Pedal Cycle,Tue_0,NA
-Tue,0,Pedestrian,Tue_0,NA
-Tue,0,Powered 2 Wheeler,Tue_0,NA
-Tue,0,Other,Tue_0,NA
-Tue,0,Total,Tue_0,NA
-Tue,0,NA,NA,NA
-Tue,1,Car,Tue_1,NA
-Tue,1,Pedal Cycle,Tue_1,NA
-Tue,1,Pedestrian,Tue_1,NA
-Tue,1,Powered 2 Wheeler,Tue_1,NA
-Tue,1,Other,Tue_1,NA
-Tue,1,Total,Tue_1,NA
-Tue,1,NA,NA,NA
-Tue,2,Car,NA,NA
-Tue,2,Pedal Cycle,NA,NA
-Tue,2,Pedestrian,NA,NA
-Tue,2,Powered 2 Wheeler,NA,NA
-Tue,2,Other,NA,NA
-Tue,2,Total,NA,NA
-Tue,2,NA,Tue_2,NA
-Tue,3,Car,Tue_3,NA
-Tue,3,Pedal Cycle,Tue_3,NA
-Tue,3,Pedestrian,Tue_3,NA
-Tue,3,Powered 2 Wheeler,Tue_3,NA
-Tue,3,Other,Tue_3,NA
-Tue,3,Total,Tue_3,NA
-Tue,3,NA,NA,NA
-Tue,4,Car,NA,NA
-Tue,4,Pedal Cycle,NA,NA
-Tue,4,Pedestrian,NA,NA
-Tue,4,Powered 2 Wheeler,NA,NA
-Tue,4,Other,NA,NA
-Tue,4,Total,NA,NA
-Tue,4,NA,Tue_4,NA
-Tue,5,Car,Tue_5,1
-Tue,5,Pedal Cycle,Tue_5,NA
-Tue,5,Pedestrian,Tue_5,NA
-Tue,5,Powered 2 Wheeler,Tue_5,NA
-Tue,5,Other,Tue_5,NA
-Tue,5,Total,Tue_5,1
-Tue,5,NA,NA,NA
-Tue,6,Car,Tue_6,NA
-Tue,6,Pedal Cycle,Tue_6,NA
-Tue,6,Pedestrian,Tue_6,NA
-Tue,6,Powered 2 Wheeler,Tue_6,NA
-Tue,6,Other,Tue_6,NA
-Tue,6,Total,Tue_6,NA
-Tue,6,NA,NA,NA
-Tue,7,Car,Tue_7,NA
-Tue,7,Pedal Cycle,Tue_7,NA
-Tue,7,Pedestrian,Tue_7,NA
-Tue,7,Powered 2 Wheeler,Tue_7,1
-Tue,7,Other,Tue_7,1
-Tue,7,Total,Tue_7,2
-Tue,7,NA,NA,NA
-Tue,8,Car,Tue_8,2
-Tue,8,Pedal Cycle,Tue_8,1
-Tue,8,Pedestrian,Tue_8,1
-Tue,8,Powered 2 Wheeler,Tue_8,NA
-Tue,8,Other,Tue_8,NA
-Tue,8,Total,Tue_8,4
-Tue,8,NA,NA,NA
-Tue,9,Car,Tue_9,NA
-Tue,9,Pedal Cycle,Tue_9,NA
-Tue,9,Pedestrian,Tue_9,NA
-Tue,9,Powered 2 Wheeler,Tue_9,NA
-Tue,9,Other,Tue_9,NA
-Tue,9,Total,Tue_9,NA
-Tue,9,NA,NA,NA
-Tue,10,Car,Tue_10,1
-Tue,10,Pedal Cycle,Tue_10,NA
-Tue,10,Pedestrian,Tue_10,NA
-Tue,10,Powered 2 Wheeler,Tue_10,NA
-Tue,10,Other,Tue_10,NA
-Tue,10,Total,Tue_10,1
-Tue,10,NA,NA,NA
-Tue,11,Car,Tue_11,2
-Tue,11,Pedal Cycle,Tue_11,NA
-Tue,11,Pedestrian,Tue_11,NA
-Tue,11,Powered 2 Wheeler,Tue_11,1
-Tue,11,Other,Tue_11,NA
-Tue,11,Total,Tue_11,3
-Tue,11,NA,NA,NA
-Tue,12,Car,Tue_12,NA
-Tue,12,Pedal Cycle,Tue_12,NA
-Tue,12,Pedestrian,Tue_12,NA
-Tue,12,Powered 2 Wheeler,Tue_12,NA
-Tue,12,Other,Tue_12,NA
-Tue,12,Total,Tue_12,NA
-Tue,12,NA,NA,NA
-Tue,13,Car,Tue_13,3
-Tue,13,Pedal Cycle,Tue_13,NA
-Tue,13,Pedestrian,Tue_13,NA
-Tue,13,Powered 2 Wheeler,Tue_13,NA
-Tue,13,Other,Tue_13,NA
-Tue,13,Total,Tue_13,3
-Tue,13,NA,NA,NA
-Tue,14,Car,Tue_14,NA
-Tue,14,Pedal Cycle,Tue_14,1
-Tue,14,Pedestrian,Tue_14,NA
-Tue,14,Powered 2 Wheeler,Tue_14,NA
-Tue,14,Other,Tue_14,NA
-Tue,14,Total,Tue_14,1
-Tue,14,NA,NA,NA
-Tue,15,Car,Tue_15,1
-Tue,15,Pedal Cycle,Tue_15,NA
-Tue,15,Pedestrian,Tue_15,NA
-Tue,15,Powered 2 Wheeler,Tue_15,NA
-Tue,15,Other,Tue_15,NA
-Tue,15,Total,Tue_15,1
-Tue,15,NA,NA,NA
-Tue,16,Car,Tue_16,NA
-Tue,16,Pedal Cycle,Tue_16,NA
-Tue,16,Pedestrian,Tue_16,NA
-Tue,16,Powered 2 Wheeler,Tue_16,NA
-Tue,16,Other,Tue_16,NA
-Tue,16,Total,Tue_16,NA
-Tue,16,NA,NA,NA
-Tue,17,Car,Tue_17,1
-Tue,17,Pedal Cycle,Tue_17,NA
-Tue,17,Pedestrian,Tue_17,NA
-Tue,17,Powered 2 Wheeler,Tue_17,NA
-Tue,17,Other,Tue_17,NA
-Tue,17,Total,Tue_17,1
-Tue,17,NA,NA,NA
-Tue,18,Car,Tue_18,NA
-Tue,18,Pedal Cycle,Tue_18,NA
-Tue,18,Pedestrian,Tue_18,2
-Tue,18,Powered 2 Wheeler,Tue_18,NA
-Tue,18,Other,Tue_18,NA
-Tue,18,Total,Tue_18,2
-Tue,18,NA,NA,NA
-Tue,19,Car,Tue_19,2
-Tue,19,Pedal Cycle,Tue_19,NA
-Tue,19,Pedestrian,Tue_19,1
-Tue,19,Powered 2 Wheeler,Tue_19,1
-Tue,19,Other,Tue_19,NA
-Tue,19,Total,Tue_19,4
-Tue,19,NA,NA,NA
-Tue,20,Car,Tue_20,NA
-Tue,20,Pedal Cycle,Tue_20,1
-Tue,20,Pedestrian,Tue_20,NA
-Tue,20,Powered 2 Wheeler,Tue_20,NA
-Tue,20,Other,Tue_20,NA
-Tue,20,Total,Tue_20,1
-Tue,20,NA,NA,NA
-Tue,21,Car,Tue_21,NA
-Tue,21,Pedal Cycle,Tue_21,NA
-Tue,21,Pedestrian,Tue_21,NA
-Tue,21,Powered 2 Wheeler,Tue_21,NA
-Tue,21,Other,Tue_21,NA
-Tue,21,Total,Tue_21,NA
-Tue,21,NA,NA,NA
-Tue,22,Car,Tue_22,1
-Tue,22,Pedal Cycle,Tue_22,NA
-Tue,22,Pedestrian,Tue_22,NA
-Tue,22,Powered 2 Wheeler,Tue_22,NA
-Tue,22,Other,Tue_22,NA
-Tue,22,Total,Tue_22,1
-Tue,22,NA,NA,NA
-Tue,23,Car,Tue_23,NA
-Tue,23,Pedal Cycle,Tue_23,NA
-Tue,23,Pedestrian,Tue_23,NA
-Tue,23,Powered 2 Wheeler,Tue_23,NA
-Tue,23,Other,Tue_23,NA
-Tue,23,Total,Tue_23,NA
-Tue,23,NA,NA,NA
-Tue,24,Car,NA,NA
-Tue,24,Pedal Cycle,NA,NA
-Tue,24,Pedestrian,NA,NA
-Tue,24,Powered 2 Wheeler,NA,NA
-Tue,24,Other,NA,NA
-Tue,24,Total,NA,NA
-Tue,24,NA,Tue_24,NA
-Wed,0,Car,Wed_0,NA
-Wed,0,Pedal Cycle,Wed_0,NA
-Wed,0,Pedestrian,Wed_0,NA
-Wed,0,Powered 2 Wheeler,Wed_0,NA
-Wed,0,Other,Wed_0,NA
-Wed,0,Total,Wed_0,NA
-Wed,0,NA,NA,NA
-Wed,1,Car,Wed_1,NA
-Wed,1,Pedal Cycle,Wed_1,NA
-Wed,1,Pedestrian,Wed_1,NA
-Wed,1,Powered 2 Wheeler,Wed_1,NA
-Wed,1,Other,Wed_1,NA
-Wed,1,Total,Wed_1,NA
-Wed,1,NA,NA,NA
-Wed,2,Car,NA,NA
-Wed,2,Pedal Cycle,NA,NA
-Wed,2,Pedestrian,NA,NA
-Wed,2,Powered 2 Wheeler,NA,NA
-Wed,2,Other,NA,NA
-Wed,2,Total,NA,NA
-Wed,2,NA,Wed_2,NA
-Wed,3,Car,Wed_3,NA
-Wed,3,Pedal Cycle,Wed_3,NA
-Wed,3,Pedestrian,Wed_3,NA
-Wed,3,Powered 2 Wheeler,Wed_3,NA
-Wed,3,Other,Wed_3,NA
-Wed,3,Total,Wed_3,NA
-Wed,3,NA,NA,NA
-Wed,4,Car,NA,NA
-Wed,4,Pedal Cycle,NA,NA
-Wed,4,Pedestrian,NA,NA
-Wed,4,Powered 2 Wheeler,NA,NA
-Wed,4,Other,NA,NA
-Wed,4,Total,NA,NA
-Wed,4,NA,Wed_4,NA
-Wed,5,Car,Wed_5,NA
-Wed,5,Pedal Cycle,Wed_5,NA
-Wed,5,Pedestrian,Wed_5,NA
-Wed,5,Powered 2 Wheeler,Wed_5,NA
-Wed,5,Other,Wed_5,NA
-Wed,5,Total,Wed_5,NA
-Wed,5,NA,NA,NA
-Wed,6,Car,Wed_6,NA
-Wed,6,Pedal Cycle,Wed_6,1
-Wed,6,Pedestrian,Wed_6,NA
-Wed,6,Powered 2 Wheeler,Wed_6,NA
-Wed,6,Other,Wed_6,NA
-Wed,6,Total,Wed_6,1
-Wed,6,NA,NA,NA
-Wed,7,Car,Wed_7,1
-Wed,7,Pedal Cycle,Wed_7,1
-Wed,7,Pedestrian,Wed_7,NA
-Wed,7,Powered 2 Wheeler,Wed_7,NA
-Wed,7,Other,Wed_7,NA
-Wed,7,Total,Wed_7,2
-Wed,7,NA,NA,NA
-Wed,8,Car,Wed_8,NA
-Wed,8,Pedal Cycle,Wed_8,NA
-Wed,8,Pedestrian,Wed_8,NA
-Wed,8,Powered 2 Wheeler,Wed_8,NA
-Wed,8,Other,Wed_8,NA
-Wed,8,Total,Wed_8,NA
-Wed,8,NA,NA,NA
-Wed,9,Car,Wed_9,1
-Wed,9,Pedal Cycle,Wed_9,NA
-Wed,9,Pedestrian,Wed_9,NA
-Wed,9,Powered 2 Wheeler,Wed_9,NA
-Wed,9,Other,Wed_9,NA
-Wed,9,Total,Wed_9,1
-Wed,9,NA,NA,NA
-Wed,10,Car,Wed_10,1
-Wed,10,Pedal Cycle,Wed_10,NA
-Wed,10,Pedestrian,Wed_10,NA
-Wed,10,Powered 2 Wheeler,Wed_10,NA
-Wed,10,Other,Wed_10,NA
-Wed,10,Total,Wed_10,1
-Wed,10,NA,NA,NA
-Wed,11,Car,Wed_11,NA
-Wed,11,Pedal Cycle,Wed_11,NA
-Wed,11,Pedestrian,Wed_11,1
-Wed,11,Powered 2 Wheeler,Wed_11,NA
-Wed,11,Other,Wed_11,1
-Wed,11,Total,Wed_11,2
-Wed,11,NA,NA,NA
-Wed,12,Car,Wed_12,NA
-Wed,12,Pedal Cycle,Wed_12,1
-Wed,12,Pedestrian,Wed_12,NA
-Wed,12,Powered 2 Wheeler,Wed_12,NA
-Wed,12,Other,Wed_12,NA
-Wed,12,Total,Wed_12,1
-Wed,12,NA,NA,NA
-Wed,13,Car,Wed_13,NA
-Wed,13,Pedal Cycle,Wed_13,1
-Wed,13,Pedestrian,Wed_13,NA
-Wed,13,Powered 2 Wheeler,Wed_13,NA
-Wed,13,Other,Wed_13,NA
-Wed,13,Total,Wed_13,1
-Wed,13,NA,NA,NA
-Wed,14,Car,Wed_14,1
-Wed,14,Pedal Cycle,Wed_14,NA
-Wed,14,Pedestrian,Wed_14,1
-Wed,14,Powered 2 Wheeler,Wed_14,NA
-Wed,14,Other,Wed_14,1
-Wed,14,Total,Wed_14,3
-Wed,14,NA,NA,NA
-Wed,15,Car,Wed_15,2
-Wed,15,Pedal Cycle,Wed_15,NA
-Wed,15,Pedestrian,Wed_15,1
-Wed,15,Powered 2 Wheeler,Wed_15,1
-Wed,15,Other,Wed_15,NA
-Wed,15,Total,Wed_15,4
-Wed,15,NA,NA,NA
-Wed,16,Car,Wed_16,1
-Wed,16,Pedal Cycle,Wed_16,NA
-Wed,16,Pedestrian,Wed_16,NA
-Wed,16,Powered 2 Wheeler,Wed_16,1
-Wed,16,Other,Wed_16,NA
-Wed,16,Total,Wed_16,2
-Wed,16,NA,NA,NA
-Wed,17,Car,Wed_17,3
-Wed,17,Pedal Cycle,Wed_17,1
-Wed,17,Pedestrian,Wed_17,NA
-Wed,17,Powered 2 Wheeler,Wed_17,NA
-Wed,17,Other,Wed_17,NA
-Wed,17,Total,Wed_17,4
-Wed,17,NA,NA,NA
-Wed,18,Car,Wed_18,NA
-Wed,18,Pedal Cycle,Wed_18,NA
-Wed,18,Pedestrian,Wed_18,NA
-Wed,18,Powered 2 Wheeler,Wed_18,NA
-Wed,18,Other,Wed_18,NA
-Wed,18,Total,Wed_18,NA
-Wed,18,NA,NA,NA
-Wed,19,Car,Wed_19,NA
-Wed,19,Pedal Cycle,Wed_19,NA
-Wed,19,Pedestrian,Wed_19,1
-Wed,19,Powered 2 Wheeler,Wed_19,NA
-Wed,19,Other,Wed_19,NA
-Wed,19,Total,Wed_19,1
-Wed,19,NA,NA,NA
-Wed,20,Car,Wed_20,NA
-Wed,20,Pedal Cycle,Wed_20,1
-Wed,20,Pedestrian,Wed_20,1
-Wed,20,Powered 2 Wheeler,Wed_20,NA
-Wed,20,Other,Wed_20,1
-Wed,20,Total,Wed_20,3
-Wed,20,NA,NA,NA
-Wed,21,Car,Wed_21,NA
-Wed,21,Pedal Cycle,Wed_21,NA
-Wed,21,Pedestrian,Wed_21,NA
-Wed,21,Powered 2 Wheeler,Wed_21,NA
-Wed,21,Other,Wed_21,NA
-Wed,21,Total,Wed_21,NA
-Wed,21,NA,NA,NA
-Wed,22,Car,Wed_22,NA
-Wed,22,Pedal Cycle,Wed_22,NA
-Wed,22,Pedestrian,Wed_22,NA
-Wed,22,Powered 2 Wheeler,Wed_22,NA
-Wed,22,Other,Wed_22,NA
-Wed,22,Total,Wed_22,NA
-Wed,22,NA,NA,NA
-Wed,23,Car,Wed_23,NA
-Wed,23,Pedal Cycle,Wed_23,NA
-Wed,23,Pedestrian,Wed_23,NA
-Wed,23,Powered 2 Wheeler,Wed_23,NA
-Wed,23,Other,Wed_23,NA
-Wed,23,Total,Wed_23,NA
-Wed,23,NA,NA,NA
-Wed,24,Car,NA,NA
-Wed,24,Pedal Cycle,NA,NA
-Wed,24,Pedestrian,NA,NA
-Wed,24,Powered 2 Wheeler,NA,NA
-Wed,24,Other,NA,NA
-Wed,24,Total,NA,NA
-Wed,24,NA,Wed_24,NA
+day,hour,mode,n
+Fri,0,Car,0
+Fri,0,Pedal Cycle,0
+Fri,0,Pedestrian,0
+Fri,0,Powered 2 Wheeler,1
+Fri,0,Other,0
+Fri,0,Total,1
+Fri,1,Car,0
+Fri,1,Pedal Cycle,0
+Fri,1,Pedestrian,0
+Fri,1,Powered 2 Wheeler,0
+Fri,1,Other,0
+Fri,1,Total,0
+Fri,2,Car,0
+Fri,2,Pedal Cycle,0
+Fri,2,Pedestrian,0
+Fri,2,Powered 2 Wheeler,0
+Fri,2,Other,0
+Fri,2,Total,0
+Fri,3,Car,0
+Fri,3,Pedal Cycle,0
+Fri,3,Pedestrian,0
+Fri,3,Powered 2 Wheeler,0
+Fri,3,Other,0
+Fri,3,Total,0
+Fri,4,Car,0
+Fri,4,Pedal Cycle,0
+Fri,4,Pedestrian,0
+Fri,4,Powered 2 Wheeler,0
+Fri,4,Other,0
+Fri,4,Total,0
+Fri,5,Car,0
+Fri,5,Pedal Cycle,0
+Fri,5,Pedestrian,0
+Fri,5,Powered 2 Wheeler,0
+Fri,5,Other,0
+Fri,5,Total,0
+Fri,6,Car,0
+Fri,6,Pedal Cycle,0
+Fri,6,Pedestrian,0
+Fri,6,Powered 2 Wheeler,0
+Fri,6,Other,0
+Fri,6,Total,0
+Fri,7,Car,2
+Fri,7,Pedal Cycle,0
+Fri,7,Pedestrian,0
+Fri,7,Powered 2 Wheeler,1
+Fri,7,Other,0
+Fri,7,Total,3
+Fri,8,Car,0
+Fri,8,Pedal Cycle,3
+Fri,8,Pedestrian,2
+Fri,8,Powered 2 Wheeler,0
+Fri,8,Other,0
+Fri,8,Total,5
+Fri,9,Car,1
+Fri,9,Pedal Cycle,1
+Fri,9,Pedestrian,0
+Fri,9,Powered 2 Wheeler,1
+Fri,9,Other,0
+Fri,9,Total,3
+Fri,10,Car,1
+Fri,10,Pedal Cycle,1
+Fri,10,Pedestrian,0
+Fri,10,Powered 2 Wheeler,0
+Fri,10,Other,0
+Fri,10,Total,2
+Fri,11,Car,0
+Fri,11,Pedal Cycle,0
+Fri,11,Pedestrian,0
+Fri,11,Powered 2 Wheeler,0
+Fri,11,Other,0
+Fri,11,Total,0
+Fri,12,Car,0
+Fri,12,Pedal Cycle,0
+Fri,12,Pedestrian,0
+Fri,12,Powered 2 Wheeler,1
+Fri,12,Other,0
+Fri,12,Total,1
+Fri,13,Car,1
+Fri,13,Pedal Cycle,1
+Fri,13,Pedestrian,0
+Fri,13,Powered 2 Wheeler,0
+Fri,13,Other,0
+Fri,13,Total,2
+Fri,14,Car,0
+Fri,14,Pedal Cycle,0
+Fri,14,Pedestrian,1
+Fri,14,Powered 2 Wheeler,0
+Fri,14,Other,1
+Fri,14,Total,2
+Fri,15,Car,0
+Fri,15,Pedal Cycle,0
+Fri,15,Pedestrian,1
+Fri,15,Powered 2 Wheeler,0
+Fri,15,Other,0
+Fri,15,Total,1
+Fri,16,Car,3
+Fri,16,Pedal Cycle,0
+Fri,16,Pedestrian,1
+Fri,16,Powered 2 Wheeler,1
+Fri,16,Other,0
+Fri,16,Total,5
+Fri,17,Car,0
+Fri,17,Pedal Cycle,0
+Fri,17,Pedestrian,1
+Fri,17,Powered 2 Wheeler,0
+Fri,17,Other,0
+Fri,17,Total,1
+Fri,18,Car,1
+Fri,18,Pedal Cycle,1
+Fri,18,Pedestrian,3
+Fri,18,Powered 2 Wheeler,0
+Fri,18,Other,0
+Fri,18,Total,5
+Fri,19,Car,1
+Fri,19,Pedal Cycle,0
+Fri,19,Pedestrian,1
+Fri,19,Powered 2 Wheeler,0
+Fri,19,Other,0
+Fri,19,Total,2
+Fri,20,Car,0
+Fri,20,Pedal Cycle,0
+Fri,20,Pedestrian,0
+Fri,20,Powered 2 Wheeler,0
+Fri,20,Other,0
+Fri,20,Total,0
+Fri,21,Car,1
+Fri,21,Pedal Cycle,0
+Fri,21,Pedestrian,1
+Fri,21,Powered 2 Wheeler,0
+Fri,21,Other,0
+Fri,21,Total,2
+Fri,22,Car,1
+Fri,22,Pedal Cycle,0
+Fri,22,Pedestrian,0
+Fri,22,Powered 2 Wheeler,0
+Fri,22,Other,0
+Fri,22,Total,1
+Fri,23,Car,2
+Fri,23,Pedal Cycle,0
+Fri,23,Pedestrian,0
+Fri,23,Powered 2 Wheeler,0
+Fri,23,Other,1
+Fri,23,Total,3
+Fri,24,Car,0
+Fri,24,Pedal Cycle,0
+Fri,24,Pedestrian,0
+Fri,24,Powered 2 Wheeler,0
+Fri,24,Other,0
+Fri,24,Total,0
+Mon,0,Car,0
+Mon,0,Pedal Cycle,0
+Mon,0,Pedestrian,0
+Mon,0,Powered 2 Wheeler,0
+Mon,0,Other,0
+Mon,0,Total,0
+Mon,1,Car,0
+Mon,1,Pedal Cycle,0
+Mon,1,Pedestrian,0
+Mon,1,Powered 2 Wheeler,0
+Mon,1,Other,0
+Mon,1,Total,0
+Mon,2,Car,0
+Mon,2,Pedal Cycle,0
+Mon,2,Pedestrian,0
+Mon,2,Powered 2 Wheeler,0
+Mon,2,Other,0
+Mon,2,Total,0
+Mon,3,Car,0
+Mon,3,Pedal Cycle,0
+Mon,3,Pedestrian,0
+Mon,3,Powered 2 Wheeler,0
+Mon,3,Other,0
+Mon,3,Total,0
+Mon,4,Car,0
+Mon,4,Pedal Cycle,0
+Mon,4,Pedestrian,0
+Mon,4,Powered 2 Wheeler,0
+Mon,4,Other,0
+Mon,4,Total,0
+Mon,5,Car,0
+Mon,5,Pedal Cycle,0
+Mon,5,Pedestrian,0
+Mon,5,Powered 2 Wheeler,0
+Mon,5,Other,0
+Mon,5,Total,0
+Mon,6,Car,0
+Mon,6,Pedal Cycle,1
+Mon,6,Pedestrian,0
+Mon,6,Powered 2 Wheeler,0
+Mon,6,Other,0
+Mon,6,Total,1
+Mon,7,Car,0
+Mon,7,Pedal Cycle,2
+Mon,7,Pedestrian,0
+Mon,7,Powered 2 Wheeler,0
+Mon,7,Other,0
+Mon,7,Total,2
+Mon,8,Car,1
+Mon,8,Pedal Cycle,0
+Mon,8,Pedestrian,2
+Mon,8,Powered 2 Wheeler,0
+Mon,8,Other,0
+Mon,8,Total,3
+Mon,9,Car,1
+Mon,9,Pedal Cycle,0
+Mon,9,Pedestrian,0
+Mon,9,Powered 2 Wheeler,0
+Mon,9,Other,0
+Mon,9,Total,1
+Mon,10,Car,1
+Mon,10,Pedal Cycle,0
+Mon,10,Pedestrian,0
+Mon,10,Powered 2 Wheeler,0
+Mon,10,Other,0
+Mon,10,Total,1
+Mon,11,Car,0
+Mon,11,Pedal Cycle,0
+Mon,11,Pedestrian,1
+Mon,11,Powered 2 Wheeler,0
+Mon,11,Other,0
+Mon,11,Total,1
+Mon,12,Car,0
+Mon,12,Pedal Cycle,0
+Mon,12,Pedestrian,0
+Mon,12,Powered 2 Wheeler,0
+Mon,12,Other,0
+Mon,12,Total,0
+Mon,13,Car,0
+Mon,13,Pedal Cycle,0
+Mon,13,Pedestrian,1
+Mon,13,Powered 2 Wheeler,0
+Mon,13,Other,0
+Mon,13,Total,1
+Mon,14,Car,1
+Mon,14,Pedal Cycle,2
+Mon,14,Pedestrian,0
+Mon,14,Powered 2 Wheeler,0
+Mon,14,Other,0
+Mon,14,Total,3
+Mon,15,Car,1
+Mon,15,Pedal Cycle,0
+Mon,15,Pedestrian,1
+Mon,15,Powered 2 Wheeler,0
+Mon,15,Other,1
+Mon,15,Total,3
+Mon,16,Car,0
+Mon,16,Pedal Cycle,0
+Mon,16,Pedestrian,0
+Mon,16,Powered 2 Wheeler,1
+Mon,16,Other,0
+Mon,16,Total,1
+Mon,17,Car,0
+Mon,17,Pedal Cycle,1
+Mon,17,Pedestrian,0
+Mon,17,Powered 2 Wheeler,0
+Mon,17,Other,0
+Mon,17,Total,1
+Mon,18,Car,1
+Mon,18,Pedal Cycle,2
+Mon,18,Pedestrian,1
+Mon,18,Powered 2 Wheeler,1
+Mon,18,Other,0
+Mon,18,Total,5
+Mon,19,Car,0
+Mon,19,Pedal Cycle,0
+Mon,19,Pedestrian,0
+Mon,19,Powered 2 Wheeler,0
+Mon,19,Other,0
+Mon,19,Total,0
+Mon,20,Car,0
+Mon,20,Pedal Cycle,0
+Mon,20,Pedestrian,0
+Mon,20,Powered 2 Wheeler,0
+Mon,20,Other,0
+Mon,20,Total,0
+Mon,21,Car,0
+Mon,21,Pedal Cycle,0
+Mon,21,Pedestrian,0
+Mon,21,Powered 2 Wheeler,0
+Mon,21,Other,0
+Mon,21,Total,0
+Mon,22,Car,0
+Mon,22,Pedal Cycle,0
+Mon,22,Pedestrian,1
+Mon,22,Powered 2 Wheeler,0
+Mon,22,Other,0
+Mon,22,Total,1
+Mon,23,Car,0
+Mon,23,Pedal Cycle,0
+Mon,23,Pedestrian,0
+Mon,23,Powered 2 Wheeler,0
+Mon,23,Other,0
+Mon,23,Total,0
+Mon,24,Car,0
+Mon,24,Pedal Cycle,0
+Mon,24,Pedestrian,0
+Mon,24,Powered 2 Wheeler,0
+Mon,24,Other,0
+Mon,24,Total,0
+Sat,0,Car,0
+Sat,0,Pedal Cycle,0
+Sat,0,Pedestrian,0
+Sat,0,Powered 2 Wheeler,0
+Sat,0,Other,1
+Sat,0,Total,1
+Sat,1,Car,1
+Sat,1,Pedal Cycle,1
+Sat,1,Pedestrian,0
+Sat,1,Powered 2 Wheeler,0
+Sat,1,Other,0
+Sat,1,Total,2
+Sat,2,Car,0
+Sat,2,Pedal Cycle,0
+Sat,2,Pedestrian,0
+Sat,2,Powered 2 Wheeler,0
+Sat,2,Other,0
+Sat,2,Total,0
+Sat,3,Car,1
+Sat,3,Pedal Cycle,0
+Sat,3,Pedestrian,0
+Sat,3,Powered 2 Wheeler,0
+Sat,3,Other,0
+Sat,3,Total,1
+Sat,4,Car,0
+Sat,4,Pedal Cycle,0
+Sat,4,Pedestrian,0
+Sat,4,Powered 2 Wheeler,0
+Sat,4,Other,0
+Sat,4,Total,0
+Sat,5,Car,0
+Sat,5,Pedal Cycle,0
+Sat,5,Pedestrian,0
+Sat,5,Powered 2 Wheeler,0
+Sat,5,Other,0
+Sat,5,Total,0
+Sat,6,Car,0
+Sat,6,Pedal Cycle,0
+Sat,6,Pedestrian,0
+Sat,6,Powered 2 Wheeler,0
+Sat,6,Other,0
+Sat,6,Total,0
+Sat,7,Car,0
+Sat,7,Pedal Cycle,0
+Sat,7,Pedestrian,0
+Sat,7,Powered 2 Wheeler,0
+Sat,7,Other,1
+Sat,7,Total,1
+Sat,8,Car,2
+Sat,8,Pedal Cycle,0
+Sat,8,Pedestrian,0
+Sat,8,Powered 2 Wheeler,0
+Sat,8,Other,0
+Sat,8,Total,2
+Sat,9,Car,0
+Sat,9,Pedal Cycle,0
+Sat,9,Pedestrian,0
+Sat,9,Powered 2 Wheeler,1
+Sat,9,Other,0
+Sat,9,Total,1
+Sat,10,Car,2
+Sat,10,Pedal Cycle,0
+Sat,10,Pedestrian,0
+Sat,10,Powered 2 Wheeler,0
+Sat,10,Other,0
+Sat,10,Total,2
+Sat,11,Car,2
+Sat,11,Pedal Cycle,0
+Sat,11,Pedestrian,1
+Sat,11,Powered 2 Wheeler,0
+Sat,11,Other,0
+Sat,11,Total,3
+Sat,12,Car,0
+Sat,12,Pedal Cycle,0
+Sat,12,Pedestrian,0
+Sat,12,Powered 2 Wheeler,1
+Sat,12,Other,0
+Sat,12,Total,1
+Sat,13,Car,3
+Sat,13,Pedal Cycle,2
+Sat,13,Pedestrian,0
+Sat,13,Powered 2 Wheeler,0
+Sat,13,Other,0
+Sat,13,Total,5
+Sat,14,Car,1
+Sat,14,Pedal Cycle,0
+Sat,14,Pedestrian,1
+Sat,14,Powered 2 Wheeler,0
+Sat,14,Other,0
+Sat,14,Total,2
+Sat,15,Car,1
+Sat,15,Pedal Cycle,0
+Sat,15,Pedestrian,0
+Sat,15,Powered 2 Wheeler,0
+Sat,15,Other,0
+Sat,15,Total,1
+Sat,16,Car,1
+Sat,16,Pedal Cycle,0
+Sat,16,Pedestrian,0
+Sat,16,Powered 2 Wheeler,0
+Sat,16,Other,0
+Sat,16,Total,1
+Sat,17,Car,1
+Sat,17,Pedal Cycle,1
+Sat,17,Pedestrian,0
+Sat,17,Powered 2 Wheeler,0
+Sat,17,Other,0
+Sat,17,Total,2
+Sat,18,Car,1
+Sat,18,Pedal Cycle,0
+Sat,18,Pedestrian,1
+Sat,18,Powered 2 Wheeler,0
+Sat,18,Other,0
+Sat,18,Total,2
+Sat,19,Car,1
+Sat,19,Pedal Cycle,0
+Sat,19,Pedestrian,0
+Sat,19,Powered 2 Wheeler,1
+Sat,19,Other,0
+Sat,19,Total,2
+Sat,20,Car,0
+Sat,20,Pedal Cycle,0
+Sat,20,Pedestrian,0
+Sat,20,Powered 2 Wheeler,0
+Sat,20,Other,0
+Sat,20,Total,0
+Sat,21,Car,0
+Sat,21,Pedal Cycle,0
+Sat,21,Pedestrian,0
+Sat,21,Powered 2 Wheeler,1
+Sat,21,Other,0
+Sat,21,Total,1
+Sat,22,Car,1
+Sat,22,Pedal Cycle,0
+Sat,22,Pedestrian,0
+Sat,22,Powered 2 Wheeler,0
+Sat,22,Other,0
+Sat,22,Total,1
+Sat,23,Car,0
+Sat,23,Pedal Cycle,0
+Sat,23,Pedestrian,0
+Sat,23,Powered 2 Wheeler,0
+Sat,23,Other,0
+Sat,23,Total,0
+Sat,24,Car,0
+Sat,24,Pedal Cycle,0
+Sat,24,Pedestrian,0
+Sat,24,Powered 2 Wheeler,0
+Sat,24,Other,0
+Sat,24,Total,0
+Sun,0,Car,0
+Sun,0,Pedal Cycle,0
+Sun,0,Pedestrian,1
+Sun,0,Powered 2 Wheeler,0
+Sun,0,Other,0
+Sun,0,Total,1
+Sun,1,Car,0
+Sun,1,Pedal Cycle,0
+Sun,1,Pedestrian,0
+Sun,1,Powered 2 Wheeler,0
+Sun,1,Other,0
+Sun,1,Total,0
+Sun,2,Car,0
+Sun,2,Pedal Cycle,0
+Sun,2,Pedestrian,0
+Sun,2,Powered 2 Wheeler,0
+Sun,2,Other,0
+Sun,2,Total,0
+Sun,3,Car,1
+Sun,3,Pedal Cycle,0
+Sun,3,Pedestrian,0
+Sun,3,Powered 2 Wheeler,0
+Sun,3,Other,0
+Sun,3,Total,1
+Sun,4,Car,0
+Sun,4,Pedal Cycle,0
+Sun,4,Pedestrian,0
+Sun,4,Powered 2 Wheeler,0
+Sun,4,Other,0
+Sun,4,Total,0
+Sun,5,Car,0
+Sun,5,Pedal Cycle,0
+Sun,5,Pedestrian,0
+Sun,5,Powered 2 Wheeler,0
+Sun,5,Other,0
+Sun,5,Total,0
+Sun,6,Car,0
+Sun,6,Pedal Cycle,0
+Sun,6,Pedestrian,0
+Sun,6,Powered 2 Wheeler,0
+Sun,6,Other,1
+Sun,6,Total,1
+Sun,7,Car,0
+Sun,7,Pedal Cycle,1
+Sun,7,Pedestrian,0
+Sun,7,Powered 2 Wheeler,0
+Sun,7,Other,0
+Sun,7,Total,1
+Sun,8,Car,0
+Sun,8,Pedal Cycle,0
+Sun,8,Pedestrian,0
+Sun,8,Powered 2 Wheeler,0
+Sun,8,Other,0
+Sun,8,Total,0
+Sun,9,Car,1
+Sun,9,Pedal Cycle,1
+Sun,9,Pedestrian,0
+Sun,9,Powered 2 Wheeler,0
+Sun,9,Other,0
+Sun,9,Total,2
+Sun,10,Car,0
+Sun,10,Pedal Cycle,0
+Sun,10,Pedestrian,1
+Sun,10,Powered 2 Wheeler,0
+Sun,10,Other,0
+Sun,10,Total,1
+Sun,11,Car,1
+Sun,11,Pedal Cycle,1
+Sun,11,Pedestrian,2
+Sun,11,Powered 2 Wheeler,0
+Sun,11,Other,0
+Sun,11,Total,4
+Sun,12,Car,1
+Sun,12,Pedal Cycle,0
+Sun,12,Pedestrian,0
+Sun,12,Powered 2 Wheeler,0
+Sun,12,Other,0
+Sun,12,Total,1
+Sun,13,Car,3
+Sun,13,Pedal Cycle,0
+Sun,13,Pedestrian,0
+Sun,13,Powered 2 Wheeler,0
+Sun,13,Other,0
+Sun,13,Total,3
+Sun,14,Car,1
+Sun,14,Pedal Cycle,0
+Sun,14,Pedestrian,2
+Sun,14,Powered 2 Wheeler,0
+Sun,14,Other,0
+Sun,14,Total,3
+Sun,15,Car,0
+Sun,15,Pedal Cycle,0
+Sun,15,Pedestrian,0
+Sun,15,Powered 2 Wheeler,0
+Sun,15,Other,0
+Sun,15,Total,0
+Sun,16,Car,1
+Sun,16,Pedal Cycle,0
+Sun,16,Pedestrian,0
+Sun,16,Powered 2 Wheeler,1
+Sun,16,Other,0
+Sun,16,Total,2
+Sun,17,Car,3
+Sun,17,Pedal Cycle,0
+Sun,17,Pedestrian,0
+Sun,17,Powered 2 Wheeler,0
+Sun,17,Other,0
+Sun,17,Total,3
+Sun,18,Car,2
+Sun,18,Pedal Cycle,1
+Sun,18,Pedestrian,0
+Sun,18,Powered 2 Wheeler,0
+Sun,18,Other,0
+Sun,18,Total,3
+Sun,19,Car,0
+Sun,19,Pedal Cycle,0
+Sun,19,Pedestrian,0
+Sun,19,Powered 2 Wheeler,0
+Sun,19,Other,0
+Sun,19,Total,0
+Sun,20,Car,0
+Sun,20,Pedal Cycle,0
+Sun,20,Pedestrian,0
+Sun,20,Powered 2 Wheeler,0
+Sun,20,Other,0
+Sun,20,Total,0
+Sun,21,Car,0
+Sun,21,Pedal Cycle,0
+Sun,21,Pedestrian,0
+Sun,21,Powered 2 Wheeler,0
+Sun,21,Other,0
+Sun,21,Total,0
+Sun,22,Car,1
+Sun,22,Pedal Cycle,0
+Sun,22,Pedestrian,0
+Sun,22,Powered 2 Wheeler,0
+Sun,22,Other,0
+Sun,22,Total,1
+Sun,23,Car,0
+Sun,23,Pedal Cycle,0
+Sun,23,Pedestrian,0
+Sun,23,Powered 2 Wheeler,0
+Sun,23,Other,0
+Sun,23,Total,0
+Sun,24,Car,0
+Sun,24,Pedal Cycle,0
+Sun,24,Pedestrian,0
+Sun,24,Powered 2 Wheeler,0
+Sun,24,Other,0
+Sun,24,Total,0
+Thu,0,Car,0
+Thu,0,Pedal Cycle,0
+Thu,0,Pedestrian,0
+Thu,0,Powered 2 Wheeler,0
+Thu,0,Other,0
+Thu,0,Total,0
+Thu,1,Car,0
+Thu,1,Pedal Cycle,0
+Thu,1,Pedestrian,0
+Thu,1,Powered 2 Wheeler,0
+Thu,1,Other,0
+Thu,1,Total,0
+Thu,2,Car,0
+Thu,2,Pedal Cycle,0
+Thu,2,Pedestrian,0
+Thu,2,Powered 2 Wheeler,0
+Thu,2,Other,0
+Thu,2,Total,0
+Thu,3,Car,1
+Thu,3,Pedal Cycle,0
+Thu,3,Pedestrian,0
+Thu,3,Powered 2 Wheeler,0
+Thu,3,Other,0
+Thu,3,Total,1
+Thu,4,Car,0
+Thu,4,Pedal Cycle,0
+Thu,4,Pedestrian,0
+Thu,4,Powered 2 Wheeler,0
+Thu,4,Other,0
+Thu,4,Total,0
+Thu,5,Car,0
+Thu,5,Pedal Cycle,0
+Thu,5,Pedestrian,0
+Thu,5,Powered 2 Wheeler,1
+Thu,5,Other,0
+Thu,5,Total,1
+Thu,6,Car,0
+Thu,6,Pedal Cycle,0
+Thu,6,Pedestrian,0
+Thu,6,Powered 2 Wheeler,1
+Thu,6,Other,0
+Thu,6,Total,1
+Thu,7,Car,1
+Thu,7,Pedal Cycle,0
+Thu,7,Pedestrian,1
+Thu,7,Powered 2 Wheeler,0
+Thu,7,Other,0
+Thu,7,Total,2
+Thu,8,Car,2
+Thu,8,Pedal Cycle,0
+Thu,8,Pedestrian,0
+Thu,8,Powered 2 Wheeler,1
+Thu,8,Other,0
+Thu,8,Total,3
+Thu,9,Car,0
+Thu,9,Pedal Cycle,1
+Thu,9,Pedestrian,0
+Thu,9,Powered 2 Wheeler,0
+Thu,9,Other,0
+Thu,9,Total,1
+Thu,10,Car,0
+Thu,10,Pedal Cycle,1
+Thu,10,Pedestrian,1
+Thu,10,Powered 2 Wheeler,0
+Thu,10,Other,0
+Thu,10,Total,2
+Thu,11,Car,1
+Thu,11,Pedal Cycle,0
+Thu,11,Pedestrian,1
+Thu,11,Powered 2 Wheeler,0
+Thu,11,Other,0
+Thu,11,Total,2
+Thu,12,Car,1
+Thu,12,Pedal Cycle,0
+Thu,12,Pedestrian,0
+Thu,12,Powered 2 Wheeler,0
+Thu,12,Other,0
+Thu,12,Total,1
+Thu,13,Car,0
+Thu,13,Pedal Cycle,0
+Thu,13,Pedestrian,0
+Thu,13,Powered 2 Wheeler,0
+Thu,13,Other,0
+Thu,13,Total,0
+Thu,14,Car,1
+Thu,14,Pedal Cycle,0
+Thu,14,Pedestrian,0
+Thu,14,Powered 2 Wheeler,0
+Thu,14,Other,0
+Thu,14,Total,1
+Thu,15,Car,0
+Thu,15,Pedal Cycle,0
+Thu,15,Pedestrian,1
+Thu,15,Powered 2 Wheeler,0
+Thu,15,Other,0
+Thu,15,Total,1
+Thu,16,Car,1
+Thu,16,Pedal Cycle,1
+Thu,16,Pedestrian,0
+Thu,16,Powered 2 Wheeler,0
+Thu,16,Other,0
+Thu,16,Total,2
+Thu,17,Car,0
+Thu,17,Pedal Cycle,0
+Thu,17,Pedestrian,0
+Thu,17,Powered 2 Wheeler,1
+Thu,17,Other,0
+Thu,17,Total,1
+Thu,18,Car,0
+Thu,18,Pedal Cycle,1
+Thu,18,Pedestrian,1
+Thu,18,Powered 2 Wheeler,0
+Thu,18,Other,0
+Thu,18,Total,2
+Thu,19,Car,0
+Thu,19,Pedal Cycle,1
+Thu,19,Pedestrian,0
+Thu,19,Powered 2 Wheeler,0
+Thu,19,Other,0
+Thu,19,Total,1
+Thu,20,Car,0
+Thu,20,Pedal Cycle,0
+Thu,20,Pedestrian,0
+Thu,20,Powered 2 Wheeler,0
+Thu,20,Other,0
+Thu,20,Total,0
+Thu,21,Car,0
+Thu,21,Pedal Cycle,0
+Thu,21,Pedestrian,0
+Thu,21,Powered 2 Wheeler,0
+Thu,21,Other,0
+Thu,21,Total,0
+Thu,22,Car,0
+Thu,22,Pedal Cycle,0
+Thu,22,Pedestrian,0
+Thu,22,Powered 2 Wheeler,0
+Thu,22,Other,0
+Thu,22,Total,0
+Thu,23,Car,1
+Thu,23,Pedal Cycle,0
+Thu,23,Pedestrian,0
+Thu,23,Powered 2 Wheeler,0
+Thu,23,Other,0
+Thu,23,Total,1
+Thu,24,Car,0
+Thu,24,Pedal Cycle,0
+Thu,24,Pedestrian,0
+Thu,24,Powered 2 Wheeler,0
+Thu,24,Other,0
+Thu,24,Total,0
+Tue,0,Car,0
+Tue,0,Pedal Cycle,0
+Tue,0,Pedestrian,0
+Tue,0,Powered 2 Wheeler,0
+Tue,0,Other,0
+Tue,0,Total,0
+Tue,1,Car,0
+Tue,1,Pedal Cycle,0
+Tue,1,Pedestrian,0
+Tue,1,Powered 2 Wheeler,0
+Tue,1,Other,0
+Tue,1,Total,0
+Tue,2,Car,0
+Tue,2,Pedal Cycle,0
+Tue,2,Pedestrian,0
+Tue,2,Powered 2 Wheeler,0
+Tue,2,Other,0
+Tue,2,Total,0
+Tue,3,Car,0
+Tue,3,Pedal Cycle,0
+Tue,3,Pedestrian,0
+Tue,3,Powered 2 Wheeler,0
+Tue,3,Other,0
+Tue,3,Total,0
+Tue,4,Car,0
+Tue,4,Pedal Cycle,0
+Tue,4,Pedestrian,0
+Tue,4,Powered 2 Wheeler,0
+Tue,4,Other,0
+Tue,4,Total,0
+Tue,5,Car,1
+Tue,5,Pedal Cycle,0
+Tue,5,Pedestrian,0
+Tue,5,Powered 2 Wheeler,0
+Tue,5,Other,0
+Tue,5,Total,1
+Tue,6,Car,0
+Tue,6,Pedal Cycle,0
+Tue,6,Pedestrian,0
+Tue,6,Powered 2 Wheeler,0
+Tue,6,Other,0
+Tue,6,Total,0
+Tue,7,Car,0
+Tue,7,Pedal Cycle,0
+Tue,7,Pedestrian,0
+Tue,7,Powered 2 Wheeler,1
+Tue,7,Other,1
+Tue,7,Total,2
+Tue,8,Car,2
+Tue,8,Pedal Cycle,1
+Tue,8,Pedestrian,1
+Tue,8,Powered 2 Wheeler,0
+Tue,8,Other,0
+Tue,8,Total,4
+Tue,9,Car,0
+Tue,9,Pedal Cycle,0
+Tue,9,Pedestrian,0
+Tue,9,Powered 2 Wheeler,0
+Tue,9,Other,0
+Tue,9,Total,0
+Tue,10,Car,1
+Tue,10,Pedal Cycle,0
+Tue,10,Pedestrian,0
+Tue,10,Powered 2 Wheeler,0
+Tue,10,Other,0
+Tue,10,Total,1
+Tue,11,Car,2
+Tue,11,Pedal Cycle,0
+Tue,11,Pedestrian,0
+Tue,11,Powered 2 Wheeler,1
+Tue,11,Other,0
+Tue,11,Total,3
+Tue,12,Car,0
+Tue,12,Pedal Cycle,0
+Tue,12,Pedestrian,0
+Tue,12,Powered 2 Wheeler,0
+Tue,12,Other,0
+Tue,12,Total,0
+Tue,13,Car,3
+Tue,13,Pedal Cycle,0
+Tue,13,Pedestrian,0
+Tue,13,Powered 2 Wheeler,0
+Tue,13,Other,0
+Tue,13,Total,3
+Tue,14,Car,0
+Tue,14,Pedal Cycle,1
+Tue,14,Pedestrian,0
+Tue,14,Powered 2 Wheeler,0
+Tue,14,Other,0
+Tue,14,Total,1
+Tue,15,Car,1
+Tue,15,Pedal Cycle,0
+Tue,15,Pedestrian,0
+Tue,15,Powered 2 Wheeler,0
+Tue,15,Other,0
+Tue,15,Total,1
+Tue,16,Car,0
+Tue,16,Pedal Cycle,0
+Tue,16,Pedestrian,0
+Tue,16,Powered 2 Wheeler,0
+Tue,16,Other,0
+Tue,16,Total,0
+Tue,17,Car,1
+Tue,17,Pedal Cycle,0
+Tue,17,Pedestrian,0
+Tue,17,Powered 2 Wheeler,0
+Tue,17,Other,0
+Tue,17,Total,1
+Tue,18,Car,0
+Tue,18,Pedal Cycle,0
+Tue,18,Pedestrian,2
+Tue,18,Powered 2 Wheeler,0
+Tue,18,Other,0
+Tue,18,Total,2
+Tue,19,Car,2
+Tue,19,Pedal Cycle,0
+Tue,19,Pedestrian,1
+Tue,19,Powered 2 Wheeler,1
+Tue,19,Other,0
+Tue,19,Total,4
+Tue,20,Car,0
+Tue,20,Pedal Cycle,1
+Tue,20,Pedestrian,0
+Tue,20,Powered 2 Wheeler,0
+Tue,20,Other,0
+Tue,20,Total,1
+Tue,21,Car,0
+Tue,21,Pedal Cycle,0
+Tue,21,Pedestrian,0
+Tue,21,Powered 2 Wheeler,0
+Tue,21,Other,0
+Tue,21,Total,0
+Tue,22,Car,1
+Tue,22,Pedal Cycle,0
+Tue,22,Pedestrian,0
+Tue,22,Powered 2 Wheeler,0
+Tue,22,Other,0
+Tue,22,Total,1
+Tue,23,Car,0
+Tue,23,Pedal Cycle,0
+Tue,23,Pedestrian,0
+Tue,23,Powered 2 Wheeler,0
+Tue,23,Other,0
+Tue,23,Total,0
+Tue,24,Car,0
+Tue,24,Pedal Cycle,0
+Tue,24,Pedestrian,0
+Tue,24,Powered 2 Wheeler,0
+Tue,24,Other,0
+Tue,24,Total,0
+Wed,0,Car,0
+Wed,0,Pedal Cycle,0
+Wed,0,Pedestrian,0
+Wed,0,Powered 2 Wheeler,0
+Wed,0,Other,0
+Wed,0,Total,0
+Wed,1,Car,0
+Wed,1,Pedal Cycle,0
+Wed,1,Pedestrian,0
+Wed,1,Powered 2 Wheeler,0
+Wed,1,Other,0
+Wed,1,Total,0
+Wed,2,Car,0
+Wed,2,Pedal Cycle,0
+Wed,2,Pedestrian,0
+Wed,2,Powered 2 Wheeler,0
+Wed,2,Other,0
+Wed,2,Total,0
+Wed,3,Car,0
+Wed,3,Pedal Cycle,0
+Wed,3,Pedestrian,0
+Wed,3,Powered 2 Wheeler,0
+Wed,3,Other,0
+Wed,3,Total,0
+Wed,4,Car,0
+Wed,4,Pedal Cycle,0
+Wed,4,Pedestrian,0
+Wed,4,Powered 2 Wheeler,0
+Wed,4,Other,0
+Wed,4,Total,0
+Wed,5,Car,0
+Wed,5,Pedal Cycle,0
+Wed,5,Pedestrian,0
+Wed,5,Powered 2 Wheeler,0
+Wed,5,Other,0
+Wed,5,Total,0
+Wed,6,Car,0
+Wed,6,Pedal Cycle,1
+Wed,6,Pedestrian,0
+Wed,6,Powered 2 Wheeler,0
+Wed,6,Other,0
+Wed,6,Total,1
+Wed,7,Car,1
+Wed,7,Pedal Cycle,1
+Wed,7,Pedestrian,0
+Wed,7,Powered 2 Wheeler,0
+Wed,7,Other,0
+Wed,7,Total,2
+Wed,8,Car,0
+Wed,8,Pedal Cycle,0
+Wed,8,Pedestrian,0
+Wed,8,Powered 2 Wheeler,0
+Wed,8,Other,0
+Wed,8,Total,0
+Wed,9,Car,1
+Wed,9,Pedal Cycle,0
+Wed,9,Pedestrian,0
+Wed,9,Powered 2 Wheeler,0
+Wed,9,Other,0
+Wed,9,Total,1
+Wed,10,Car,1
+Wed,10,Pedal Cycle,0
+Wed,10,Pedestrian,0
+Wed,10,Powered 2 Wheeler,0
+Wed,10,Other,0
+Wed,10,Total,1
+Wed,11,Car,0
+Wed,11,Pedal Cycle,0
+Wed,11,Pedestrian,1
+Wed,11,Powered 2 Wheeler,0
+Wed,11,Other,1
+Wed,11,Total,2
+Wed,12,Car,0
+Wed,12,Pedal Cycle,1
+Wed,12,Pedestrian,0
+Wed,12,Powered 2 Wheeler,0
+Wed,12,Other,0
+Wed,12,Total,1
+Wed,13,Car,0
+Wed,13,Pedal Cycle,1
+Wed,13,Pedestrian,0
+Wed,13,Powered 2 Wheeler,0
+Wed,13,Other,0
+Wed,13,Total,1
+Wed,14,Car,1
+Wed,14,Pedal Cycle,0
+Wed,14,Pedestrian,1
+Wed,14,Powered 2 Wheeler,0
+Wed,14,Other,1
+Wed,14,Total,3
+Wed,15,Car,2
+Wed,15,Pedal Cycle,0
+Wed,15,Pedestrian,1
+Wed,15,Powered 2 Wheeler,1
+Wed,15,Other,0
+Wed,15,Total,4
+Wed,16,Car,1
+Wed,16,Pedal Cycle,0
+Wed,16,Pedestrian,0
+Wed,16,Powered 2 Wheeler,1
+Wed,16,Other,0
+Wed,16,Total,2
+Wed,17,Car,3
+Wed,17,Pedal Cycle,1
+Wed,17,Pedestrian,0
+Wed,17,Powered 2 Wheeler,0
+Wed,17,Other,0
+Wed,17,Total,4
+Wed,18,Car,0
+Wed,18,Pedal Cycle,0
+Wed,18,Pedestrian,0
+Wed,18,Powered 2 Wheeler,0
+Wed,18,Other,0
+Wed,18,Total,0
+Wed,19,Car,0
+Wed,19,Pedal Cycle,0
+Wed,19,Pedestrian,1
+Wed,19,Powered 2 Wheeler,0
+Wed,19,Other,0
+Wed,19,Total,1
+Wed,20,Car,0
+Wed,20,Pedal Cycle,1
+Wed,20,Pedestrian,1
+Wed,20,Powered 2 Wheeler,0
+Wed,20,Other,1
+Wed,20,Total,3
+Wed,21,Car,0
+Wed,21,Pedal Cycle,0
+Wed,21,Pedestrian,0
+Wed,21,Powered 2 Wheeler,0
+Wed,21,Other,0
+Wed,21,Total,0
+Wed,22,Car,0
+Wed,22,Pedal Cycle,0
+Wed,22,Pedestrian,0
+Wed,22,Powered 2 Wheeler,0
+Wed,22,Other,0
+Wed,22,Total,0
+Wed,23,Car,0
+Wed,23,Pedal Cycle,0
+Wed,23,Pedestrian,0
+Wed,23,Powered 2 Wheeler,0
+Wed,23,Other,0
+Wed,23,Total,0
+Wed,24,Car,0
+Wed,24,Pedal Cycle,0
+Wed,24,Pedestrian,0
+Wed,24,Powered 2 Wheeler,0
+Wed,24,Other,0
+Wed,24,Total,0

@@ -83,4 +83,7 @@ plot <- plot_grid(plotlist = mode_list, ncol = 2)
 ggsave(file = "output/figures/fig5.svg", plot = plot, scale = 0.6, width = 10, height = 8)
 ggsave(file = "output/figures/fig5.png", plot = plot, scale = 0.6, width = 10, height = 8)
 
-write_csv(results, "output/data/fig5.csv")
+results %>% 
+  select(-day_hour) %>% 
+  mutate(n = replace(n, is.na(n), 0)) %>% 
+  write_csv("output/data/fig5.csv")

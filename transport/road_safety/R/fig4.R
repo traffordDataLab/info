@@ -5,7 +5,7 @@
 # Licence: Open Government Licence
 
 # load R packages  ---------------------------
-library(tidyverse) ; library(zoo) ; library(ggplot2) ; library(viridis); library(gridExtra)
+library(tidyverse) ; library(zoo) ; library(ggplot2) ; library(viridis)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
