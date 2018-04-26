@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en-GB">
+<head>
+  <title>Trafford Data Lab: Unemployment</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover"/>
+  <meta charset="UTF-8"/>
+
+  <link rel="stylesheet" href="https://www.trafforddatalab.io/css/labBase.css"/>
+  <link rel="stylesheet" href="https://www.trafforddatalab.io/css/labWebsite.css"/>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto"/>
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.0.10/css/all.css" integrity="sha384-+d0P83n9kaQMCwj8F4RJB66tzIwOKmrdb46+porD/OvrJ+37WqIM7UoBtwHO6Nlg" crossorigin="anonymous">
+</head>
+<body>
+  <div class="container">
+    <div class="header">
+      <a href="https://www.trafforddatalab.io/index.html"><img src="https://www.trafforddatalab.io/assets/logo/trafforddatalab_logo.svg" alt="Trafford Data Lab" width="93" border="0" class="traffordDataLabLogo"/></a>
+
+      <h2 class="hideContent">Main Menu</h2>   <!-- Menu heading displayed only if we don't have CSS enabled -->
+      <ul class="navbar noBulletPoints">
+        <li class="hideContent"><a href="https://www.trafforddatalab.io/index.html">Home</a></li>   <!-- Home link displayed only if we don't have CSS enabled -->
+        <li class="menuItem"><a href="https://www.trafforddatalab.io/info.html">Info</a></li>
+        <li class="menuItem"><a href="https://www.trafforddatalab.io/maps.html">Maps</a></li>
+        <li class="menuItem"><a href="https://www.trafforddatalab.io/projects.html">Projects</a></li>
+        <li class="menuItem"><a href="https://www.trafforddatalab.io/data.html">Data</a></li>
+        <li class="menuItem"><a href="https://www.trafforddatalab.io/about.html">About</a></li>
+      </ul>
+    </div>
+    <div class="main">
+      <h1>Unemployment</h1>
+      <p>The <a href="https://www.ons.gov.uk" target="_blank">Office for National Statistics (ONS)</a> follows the international definition by the <a href="http://www.ilo.org/global/lang--en/index.htm" target="_blank">International Labour Organization (ILO)</a> to classify the <a href="http://www.ilo.org/global/statistics-and-databases/statistics-overview-and-topics/WCMS_470306/lang--en/index.htm" target="_blank">unemployed</a> as people without a job, who have been actively looking for a job in a recent period (one month), and are available to start working within two weeks.</p>
+
+      <h3>Unemployment rate during the last three years</h3>
+      <div class="doubleColumnTxtImg">
+        <div>
+          <p>The unemployment rate is the percentage of the economically active population (employed and unemployed) that are unemployed.</p>
+          <p>Figure 1 shows the unemployment rate reported by the Labour Force Survey. Each point represents the results from interviews conducted over a 12 month period.</p>
+          <p>When comparing similar periods among the three years, the unemployment rate has decreased from 2015 to 2016 and slightly increased from 2016 to 2017.</p>
+        </div>
+        <div>
+          <h5>Figure 1: Unemployment rate of population aged 16+ in Trafford</h5>
+          <object type="image/svg+xml" data="output/figures/fig1.svg"></object>
+          <span class="download">Download: <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/data/fig1.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/figures/fig1.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/R/fig1.R" target="_blank">R code</a></span>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Claimant count rates from 2015</h3>
+      <div class="doubleColumnTxtImg">
+        <div>
+          <p>The Claimant count includes individuals claiming Universal Credit or Jobseekers Allowance due to unemployment. Figure 2 shows the Claimant count rates of the economically active population. The unemployment rate differs from claimant count rates because it includes the unemployed people that do not claim benefits.</p>
+          <p>The rate has remained at or slightly below 2% during 2015 to 2017. The rate has slightly increased during 2018, reaching 2.3%. </p>
+        </div>
+        <div>
+          <h5>Figure 2: Claimant count rates of population aged 16+ in Trafford</h5>
+          <object type="image/svg+xml" data="output/figures/fig2.svg"></object>
+          <span class="download">Download: <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/data/fig2.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/figures/fig2.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/R/fig2.R" target="_blank">R code</a></span>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Age of claimants in Trafford wards</h3>
+      <div class="doubleColumnTxtImg">
+        <div>
+          <p>Figure 3 shows the composition of ages of claimants in Trafford wards in March 2018. The difference in column width reflects the difference of the number of claimants in each ward.</p>
+          <p>To better safeguard the confidentiality of information about individual claimants, the published data on the Claimant Count is rounded to the nearest 5.</p>
+          <p>In the 6 wards with the highest number of claimants (Clifford to St Mary's in Figure 3), the claimants under 34 account for 40% to 50% of the total number of claimants.</p>
+        </div>
+        <div>
+          <h5>Figure 3: Age group of claimants in Trafford by wards, March 2018* </h5>
+          <object type="image/svg+xml" data="output/figures/fig3.svg"></object>
+          <span class="download">*The width of the columns is proportional to the number of claimants</span>
+          <br />
+          <span class="download">Download: <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/data/fig3.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/figures/fig3.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/R/fig3.R" target="_blank">R code</a></span>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Economic Inactivity and Unemployment</h3>
+      <div class="doubleColumnTxtImg">
+        <div>
+          <p>People without a job who have not sought work in the last four weeks and/or are not available to start work in the next two weeks are classified as economically inactive.</p>
+          <p>According to the Census 2011 in Trafford wards, the percentage of the population aged 16 or over that are economically inactive varies from 27.3% in Broadheath to 42% in Hale Barns, as shown in Figure 4.</p>
+          <p>Hale Barns is also the ward with the lowest percentage of unemployment with 2.3% whilst Clifford had the highest with 8.3%</p>
+        </div>
+        <div>
+          <h5>Figure 4: Economic inactivity and unemployment in Trafford wards, 2011</h5>
+          <object type="image/svg+xml" data="output/figures/fig4.svg"></object>
+          <span class="download">Download: <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/data/fig4.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/figures/fig4.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/R/fig4.R" target="_blank">R code</a></span>
+        </div>
+      </div>
+
+      <br />
+
+      <h3>Reasons for economic inactivity</h3>
+      <div class="doubleColumnTxtImg">
+        <div>
+          <p>For 20 wards the most common reason for economic inactivity is retirement reaching 63.7% in Timperley. Clifford shows a different composition with the highest rate of 'student' (23.6%) and 'looking after home' (22.6%), and a high rate of 'long-term sick/disable' (21.8%).</p>
+          <p>In Hale Central, a high percentage of people (20.8%) report being 'student' as the reason for economic inactivity, contrasting with the 5.4% reporting being 'long-term sick/disable' as the reason, the lowest percentage among wards in that category.</p>
+        </div>
+        <div>
+          <h5>Figure 5: Reasons for economic inactivity in Trafford wards </h5>
+          <object type="image/svg+xml" data="output/figures/fig5.svg"></object>
+          <span class="download">Download: <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/data/fig5.csv" target="_blank">Data</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/output/figures/fig5.png" target="_blank">Image</a> | <a href="http://www.trafforddatalab.io/info/labour_market/unemployment/R/fig5.R" target="_blank">R code</a></span>
+        </div>
+      </div>
+
+      <br />
+
+      <div class="endNotes">
+
+        <h3>Data sources</h3>
+        <ul>
+          <li>ONS Labour Force Survey: <a href="https://www.nomisweb.co.uk/datasets/apsnew" target="_blank">Annual population survey</a></li>
+          <li>ONS Claimant count: <a href="https://www.nomisweb.co.uk/datasets/ucjsa" target="_blank">Claimant count by sex and age</a></li>
+          <li>ONS Census 2011: <a href="https://www.nomisweb.co.uk/census/2011/lc6107ew" target="_blank">Economic Activity by sex by age LC6107EW, </a><a href="https://www.nomisweb.co.uk/census/2011/qs601ew" target="_blank">Economic activity QS601EW</a></li>
+        </ul>
+
+        <span class="hideOnPDF">
+          <br />
+          <p><a href="http://www.trafforddatalab.io/info/labour_market/unemployment/unemployment.pdf" target="_blank"><span class="far fa-file-pdf fa-2x" aria-hidden="true"></span> view as PDF</a></p>
+        </span>
+      </div>
+
+    </div>
+
+    <div class="footer">
+        <div class="leftFooter">
+            <div class="logoMedia">
+                <span class="hideContent">Visit us on </span>
+                <a class="linkMedia" href="https://twitter.com/traffordDataLab" target="_blank"><span class="fab fa-twitter-square"></span><span class="hideContent">Twitter</span></a>
+                <span class="hideContent">, </span>
+                <a class="linkMedia" href="https://github.com/traffordDataLab" target="_blank"><span class="fab fa-github"></span><span class="hideContent">Github</span></a>
+                <span class="hideContent"> and </span>
+                <a class="linkMedia" href="https://medium.com/@traffordDataLab" target="_blank"><span class="fab fa-medium"></span><span class="hideContent">Medium<br /></span></a>
+            </div>
+            <div class="license">Code <a class="footerLink" href="LICENSE.txt" target="_blank">licensed</a> under MIT, data under OGL</div>
+        </div>
+        <div class="rightFooter">
+            <a href="https://www.trafford.gov.uk" target="_blank"><img class="logoTrafford" src="https://www.trafforddatalab.io/images/trafford_council_logo_black_on_white_100px.png" alt="Trafford Council" border="0"/></a>
+        </div>
+    </div>
+  </div>
+</body>
+</html>

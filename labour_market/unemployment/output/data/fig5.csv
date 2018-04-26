@@ -1,0 +1,106 @@
+date,area_code,area_name,measure,count,percent
+2011,E05000819,Altrincham,retired,944,50.6
+2011,E05000819,Altrincham,student,310,16.6
+2011,E05000819,Altrincham,looking after home,297,15.9
+2011,E05000819,Altrincham,long-term sick/disable,203,10.9
+2011,E05000819,Altrincham,other,111,6
+2011,E05000820,Ashton upon Mersey,retired,1058,58.4
+2011,E05000820,Ashton upon Mersey,student,265,14.6
+2011,E05000820,Ashton upon Mersey,looking after home,215,11.9
+2011,E05000820,Ashton upon Mersey,long-term sick/disable,189,10.4
+2011,E05000820,Ashton upon Mersey,other,84,4.6
+2011,E05000821,Bowdon,retired,1023,53.8
+2011,E05000821,Bowdon,student,318,16.7
+2011,E05000821,Bowdon,looking after home,294,15.5
+2011,E05000821,Bowdon,long-term sick/disable,132,6.9
+2011,E05000821,Bowdon,other,135,7.1
+2011,E05000822,Broadheath,retired,1085,52.2
+2011,E05000822,Broadheath,student,314,15.1
+2011,E05000822,Broadheath,looking after home,308,14.8
+2011,E05000822,Broadheath,long-term sick/disable,239,11.5
+2011,E05000822,Broadheath,other,131,6.3
+2011,E05000823,Brooklands,retired,1120,59.3
+2011,E05000823,Brooklands,student,298,15.8
+2011,E05000823,Brooklands,looking after home,232,12.3
+2011,E05000823,Brooklands,long-term sick/disable,165,8.7
+2011,E05000823,Brooklands,other,73,3.9
+2011,E05000824,Bucklow-St Martins,retired,918,37.4
+2011,E05000824,Bucklow-St Martins,student,271,11
+2011,E05000824,Bucklow-St Martins,looking after home,469,19.1
+2011,E05000824,Bucklow-St Martins,long-term sick/disable,603,24.6
+2011,E05000824,Bucklow-St Martins,other,195,7.9
+2011,E05000825,Clifford,retired,575,19.1
+2011,E05000825,Clifford,student,712,23.6
+2011,E05000825,Clifford,looking after home,679,22.6
+2011,E05000825,Clifford,long-term sick/disable,655,21.8
+2011,E05000825,Clifford,other,390,13
+2011,E05000826,Davyhulme East,retired,1157,58.9
+2011,E05000826,Davyhulme East,student,280,14.3
+2011,E05000826,Davyhulme East,looking after home,171,8.7
+2011,E05000826,Davyhulme East,long-term sick/disable,269,13.7
+2011,E05000826,Davyhulme East,other,87,4.4
+2011,E05000827,Davyhulme West,retired,1285,60.8
+2011,E05000827,Davyhulme West,student,278,13.1
+2011,E05000827,Davyhulme West,looking after home,184,8.7
+2011,E05000827,Davyhulme West,long-term sick/disable,285,13.5
+2011,E05000827,Davyhulme West,other,83,3.9
+2011,E05000828,Flixton,retired,1269,61.5
+2011,E05000828,Flixton,student,239,11.6
+2011,E05000828,Flixton,looking after home,164,8
+2011,E05000828,Flixton,long-term sick/disable,294,14.3
+2011,E05000828,Flixton,other,96,4.7
+2011,E05000829,Gorse Hill,retired,797,36.2
+2011,E05000829,Gorse Hill,student,370,16.8
+2011,E05000829,Gorse Hill,looking after home,359,16.3
+2011,E05000829,Gorse Hill,long-term sick/disable,484,22
+2011,E05000829,Gorse Hill,other,189,8.6
+2011,E05000830,Hale Barns,retired,1161,53.4
+2011,E05000830,Hale Barns,student,388,17.8
+2011,E05000830,Hale Barns,looking after home,357,16.4
+2011,E05000830,Hale Barns,long-term sick/disable,146,6.7
+2011,E05000830,Hale Barns,other,124,5.7
+2011,E05000831,Hale Central,retired,792,48.7
+2011,E05000831,Hale Central,student,338,20.8
+2011,E05000831,Hale Central,looking after home,313,19.2
+2011,E05000831,Hale Central,long-term sick/disable,88,5.4
+2011,E05000831,Hale Central,other,95,5.8
+2011,E05000832,Longford,retired,915,34.9
+2011,E05000832,Longford,student,522,19.9
+2011,E05000832,Longford,looking after home,498,19
+2011,E05000832,Longford,long-term sick/disable,443,16.9
+2011,E05000832,Longford,other,244,9.3
+2011,E05000833,Priory,retired,865,50.5
+2011,E05000833,Priory,student,271,15.8
+2011,E05000833,Priory,looking after home,252,14.7
+2011,E05000833,Priory,long-term sick/disable,228,13.3
+2011,E05000833,Priory,other,96,5.6
+2011,E05000835,Sale Moor,retired,1037,51.7
+2011,E05000835,Sale Moor,student,292,14.6
+2011,E05000835,Sale Moor,looking after home,262,13.1
+2011,E05000835,Sale Moor,long-term sick/disable,292,14.6
+2011,E05000835,Sale Moor,other,123,6.1
+2011,E05000834,St Mary's,retired,1248,47.5
+2011,E05000834,St Mary's,student,396,15.1
+2011,E05000834,St Mary's,looking after home,337,12.8
+2011,E05000834,St Mary's,long-term sick/disable,470,17.9
+2011,E05000834,St Mary's,other,176,6.7
+2011,E05000836,Stretford,retired,937,40.8
+2011,E05000836,Stretford,student,374,16.3
+2011,E05000836,Stretford,looking after home,342,14.9
+2011,E05000836,Stretford,long-term sick/disable,492,21.4
+2011,E05000836,Stretford,other,149,6.5
+2011,E05000837,Timperley,retired,1284,63.7
+2011,E05000837,Timperley,student,316,15.7
+2011,E05000837,Timperley,looking after home,199,9.9
+2011,E05000837,Timperley,long-term sick/disable,138,6.8
+2011,E05000837,Timperley,other,79,3.9
+2011,E05000838,Urmston,retired,1096,53.9
+2011,E05000838,Urmston,student,304,14.9
+2011,E05000838,Urmston,looking after home,200,9.8
+2011,E05000838,Urmston,long-term sick/disable,343,16.9
+2011,E05000838,Urmston,other,92,4.5
+2011,E05000839,Village,retired,1163,51.1
+2011,E05000839,Village,student,344,15.1
+2011,E05000839,Village,looking after home,294,12.9
+2011,E05000839,Village,long-term sick/disable,341,15
+2011,E05000839,Village,other,136,6
