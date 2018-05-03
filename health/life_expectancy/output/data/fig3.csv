@@ -1,0 +1,43 @@
+area_code,area_name,LE,HLE,sex
+E36006405,Altrincham,80.9,67.2,Male
+E36006405,Altrincham,84.7,69,Female
+E36006406,Ashton upon Mersey,81.1,67.2,Male
+E36006406,Ashton upon Mersey,85.7,69,Female
+E36006407,Bowdon,81,70.6,Male
+E36006407,Bowdon,84.4,71.6,Female
+E36006408,Broadheath,80.6,67.6,Male
+E36006408,Broadheath,85.2,68.3,Female
+E36006409,Brooklands,82.1,69.8,Male
+E36006409,Brooklands,83.8,69.6,Female
+E36006410,Bucklow-St Martins,75.9,57,Male
+E36006410,Bucklow-St Martins,80.1,57.2,Female
+E36006411,Clifford,78.3,56.1,Male
+E36006411,Clifford,84.6,55.7,Female
+E36006412,Davyhulme East,79,64,Male
+E36006412,Davyhulme East,83,66.1,Female
+E36006413,Davyhulme West,79.8,64,Male
+E36006413,Davyhulme West,83.9,65.7,Female
+E36006414,Flixton,79.7,65.4,Male
+E36006414,Flixton,82,65.1,Female
+E36006415,Gorse Hill,76.5,59,Male
+E36006415,Gorse Hill,83.4,61.3,Female
+E36006416,Hale Barns,82.3,70.6,Male
+E36006416,Hale Barns,87.6,73.1,Female
+E36006417,Hale Central,82.8,72,Male
+E36006417,Hale Central,87.7,73.9,Female
+E36006418,Longford,78.4,60,Male
+E36006418,Longford,83.1,61.7,Female
+E36006419,Priory,80.1,65.4,Male
+E36006419,Priory,84.8,67.3,Female
+E36006420,Sale Moor,79.2,63.5,Male
+E36006420,Sale Moor,85.2,65.5,Female
+E36006421,St Mary's,80,63.7,Male
+E36006421,St Mary's,84.1,64.2,Female
+E36006422,Stretford,77.7,60.6,Male
+E36006422,Stretford,82.3,62.5,Female
+E36006423,Timperley,80.9,68.5,Male
+E36006423,Timperley,83.7,70.1,Female
+E36006424,Urmston,78,63.2,Male
+E36006424,Urmston,80.8,64.2,Female
+E36006425,Village,78.8,63.5,Male
+E36006425,Village,82.4,65.5,Female
