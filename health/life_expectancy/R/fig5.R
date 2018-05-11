@@ -31,7 +31,7 @@ p <- ggplot(results, aes(x = period, y = value, group = sex, colour = sex)) +
   geom_errorbar(aes(ymax = UCL, ymin = LCL), width = 0.3) +
   scale_y_continuous(limits = c(0,12), breaks = scales::pretty_breaks()) +
   scale_colour_manual(values = c("Female" = "#d8b365", "Male" = "#5ab4ac")) +
-  labs(x = NULL, y = "Inequality in life expectancy at birth (years)",
+  labs(x = NULL, y = NULL,
        title = NULL,
        caption = "Source: Public Health Outcomes Framework |  @traffordDataLab") +
   facet_wrap(~sex) +
