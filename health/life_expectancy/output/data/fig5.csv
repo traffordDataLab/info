@@ -1,0 +1,11 @@
+area_code,area_name,period,sex,value,LCL,UCL
+E08000009,Trafford,2010 - 12,Male,9.9,8.3,11.6
+E08000009,Trafford,2010 - 12,Female,6.1,4.5,7.7
+E08000009,Trafford,2011 - 13,Male,8.7,7.1,10.4
+E08000009,Trafford,2011 - 13,Female,6.7,5.1,8.3
+E08000009,Trafford,2012 - 14,Male,9.7,8,11.3
+E08000009,Trafford,2012 - 14,Female,7,5.4,8.6
+E08000009,Trafford,2013 - 15,Male,9.1,7.5,10.8
+E08000009,Trafford,2013 - 15,Female,7.6,6,9.2
+E08000009,Trafford,2014 - 16,Male,10.4,8.8,12
+E08000009,Trafford,2014 - 16,Female,8.2,6.7,9.8

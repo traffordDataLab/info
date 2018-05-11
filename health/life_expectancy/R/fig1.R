@@ -1,6 +1,6 @@
-## Life expectancy: Life expectancy at birth by local authority ##
+## Life expectancy: Life expectancy at birth by local authority, 2014-2016 ##
 
-# Dataset: Life expectancy at birth 2014-2016
+# Dataset: Life expectancy at birth, 2014-2016
 # Source: ONS
 # Publisher: ONS
 # Publisher URL: https://www.ons.gov.uk/peoplepopulationandcommunity/healthandsocialcare/healthandlifeexpectancies/datasets/lifeexpectancyatbirthandatage65bylocalareasuk

@@ -1,6 +1,6 @@
-## Life expectancy: Life expectancy at birth in Trafford's wards ##
+## Life expectancy: Life expectancy at birth in Trafford's wards, 2011-2015 ##
 
-# Dataset: Life expectancy at birth 2011-2015
+# Dataset: Life expectancy at birth, 2011-2015
 # Source: ONS
 # Publisher: PHE Local Health
 # Publisher URL: http://www.localhealth.org.uk/
@@ -13,7 +13,7 @@ library(tidyverse) ; library(readxl) ; library(stringr) ; library(ggplot2)
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")
 
 # load and manipulate data  ---------------------------
-results <- read_excel("data/ward_life_expectancy_2011-2015.xls", skip = 1) %>% 
+results <- read_csv("data/ward_life_expectancy_2011-2015.csv") %>% 
   separate(`Ward 2016` , c('area_code', 'area_name'), sep=" - ") %>% 
   mutate(area_name = str_sub(area_name, 1, str_length(area_name)-10)) %>% 
   select(area_code, area_name,
