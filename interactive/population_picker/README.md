@@ -5,7 +5,7 @@ Population estimates derive from the [Office for National Statistics](https://ww
 
 <br>
 
-<img src="https://github.com/traffordDataLab/info/blob/master/interactive/population_picker/screenshot.png" width="800">
+<img src="https://github.com/traffordDataLab/info/blob/master/interactive/population_picker/screenshot.png" width="320">
 
 <br />
 
