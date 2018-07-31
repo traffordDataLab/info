@@ -167,25 +167,25 @@ oa_pop_total <- read_excel("data/SAPE19DT10b-mid-2016-coa-unformatted-syoa-estim
          All = `All Ages`,
          `90` = `90+`) %>% 
   select(-LSOA11CD) %>% 
-  mutate(year = "2016", area_name = area_code, gender = "Total") %>% 
+  mutate(year = "2016", area_name = paste0("Trafford - ", area_code), gender = "Total") %>% 
   select(year, area_code, area_name, gender, everything())
 
-oa_pop_male <- read_excel("data/SAPE19DT10b-mid-2016-coa-unformatted-syoa-estimates-north-west.xls", sheet = 4, skip = 3) %>% 
+oa_pop_male <- read_excel("data/SAPE19DT10b-mid-2016-coa-unformatted-syoa-estimates-north-west.xls", sheet = 5, skip = 3) %>% 
   filter(LSOA11CD %in% lsoas) %>% 
   rename(area_code = OA11CD, 
          All = `All Ages`,
          `90` = `90+`) %>% 
   select(-LSOA11CD) %>% 
-  mutate(year = "2016", area_name = area_code, gender = "Male") %>% 
+  mutate(year = "2016", area_name = paste0("Trafford - ", area_code), gender = "Male") %>% 
   select(year, area_code, area_name, gender, everything())
 
-oa_pop_female <- read_excel("data/SAPE19DT10b-mid-2016-coa-unformatted-syoa-estimates-north-west.xls", sheet = 4, skip = 3) %>% 
+oa_pop_female <- read_excel("data/SAPE19DT10b-mid-2016-coa-unformatted-syoa-estimates-north-west.xls", sheet = 6, skip = 3) %>% 
   filter(LSOA11CD %in% lsoas) %>% 
   rename(area_code = OA11CD, 
          All = `All Ages`,
          `90` = `90+`) %>% 
   select(-LSOA11CD) %>% 
-  mutate(year = "2016", area_name = area_code, gender = "Female") %>% 
+  mutate(year = "2016", area_name = paste0("Trafford - ", area_code), gender = "Female") %>% 
   select(year, area_code, area_name, gender, everything())
 
 oa_pop <- bind_rows(oa_pop_total, oa_pop_male, oa_pop_female) %>% 

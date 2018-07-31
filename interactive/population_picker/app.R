@@ -7,8 +7,8 @@ pop <- read_csv("data/population_estimates.csv") %>%
   gather(age, count, -year, -area_code, -area_name, -geography, -gender) %>% 
   mutate(age = as.integer(age))
 
-ui <- miniPage(
-  miniTitleBar(title = "Population picker"),
+ui <- miniPage(title = "Population Picker",
+  miniTitleBar(htmlOutput("title", inline = TRUE)),
   miniTabstripPanel(
     miniTabPanel("Parameters", icon = icon("sliders"),
                  miniContentPanel(fluidRow(
@@ -31,10 +31,8 @@ ui <- miniPage(
                                       ticks = TRUE,
                                       post = " years",
                                       width = '250px'),
-                          div(htmlOutput("summary", align = "center", style = "height: 50px;")),
-                          br(),
                           leafletOutput("map", width = "90%"),
-                          h6("Note that age 90 includes those aged 90 years and above."))))),
+                          h6("Note that 90 includes those aged 90 years and above."))))),
     miniTabPanel("Data", icon = icon("table"),
                  miniContentPanel(
                    dataTableOutput("table", height = "100%"))),
@@ -45,6 +43,18 @@ ui <- miniPage(
   )
 
 server <- function(input, output, session) {
+  
+  output$title <- renderUI({
+    
+    validate(need(clickedIds$ids, message = "Population picker"))
+  
+    HTML(paste0(prettyNum(sum(area_data()[area_data()$gender == "Total",]$count), big.mark = ",", scientific = FALSE),
+                " residents (",
+                round(sum(area_data()[area_data()$gender == "Female",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
+                "% Female | ",
+                round(sum(area_data()[area_data()$gender == "Male",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
+                "% Male)"))
+  })
   
   layer <- reactive({
     filename <- paste0("data/", input$geography, ".geojson")
@@ -117,9 +127,9 @@ server <- function(input, output, session) {
            age >= input$age[1], age <= input$age[2])
   })
 
-  output$table <- DT::renderDataTable({
+  output$table <- renderDataTable({
     
-    req(clickedIds$ids)
+    validate(need(clickedIds$ids, message = "Please click on one or more areas on the map"))
 
     area_data() %>% 
       select(Year = year,
@@ -142,24 +152,6 @@ server <- function(input, output, session) {
     columnDefs = list(list(className = 'dt-left', targets = 0:6)), 
     buttons = list('copy', 'csv', 'pdf')))
   
-
-  output$summary <- renderUI({
-    req(clickedIds$ids)
-    
-    HTML(paste0("<span>The resident population aged between <span style='text-decoration: underline;'>",
-                input$age[1], " and ", input$age[2], " years</span> is <strong>",
-                prettyNum(sum(area_data()[area_data()$gender == "Total",]$count), big.mark = ",", scientific = FALSE),
-                "</strong>.<br><small>Females: ",
-                prettyNum(sum(area_data()[area_data()$gender == "Female",]$count), big.mark = ",", scientific = FALSE),
-                " (", round(sum(area_data()[area_data()$gender == "Female",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
-                "%) | Males: ",
-                prettyNum(sum(area_data()[area_data()$gender == "Male",]$count), big.mark = ",", scientific = FALSE),
-                " (", round(sum(area_data()[area_data()$gender == "Male",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
-                "%)</small></br></span>"))
-  })
-  
 }
-
-  
 
 shinyApp(ui, server)
