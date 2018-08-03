@@ -1,54 +1,57 @@
 ## Population picker ##
 
-library(shiny) ; library(miniUI) ; library(tidyverse) ; library(sf) ; library(leaflet) ; library(htmlwidgets) ; library(DT)
+library(shiny) ; library(tidyverse) ; library(sf) ; library(leaflet) ; library(htmlwidgets) ; library(DT) ; library(plotly) ; library(janitor)
 
 pop <- read_csv("data/population_estimates.csv") %>% 
   select(-All) %>% 
   gather(age, count, -year, -area_code, -area_name, -geography, -gender) %>% 
   mutate(age = as.integer(age))
 
-ui <- miniPage(title = "Population Picker",
-  miniTitleBar(htmlOutput("title", inline = TRUE)),
-  miniTabstripPanel(
-    miniTabPanel("Parameters", icon = icon("sliders"),
-                 miniContentPanel(fluidRow(
-                   column(width = 12, align = "center",
-                          radioButtons("geography", 
-                                       label = NULL,
-                                       choices = list("District" = "la",
-                                                      "Ward" = "ward",
-                                                      "MSOA" = "msoa",
-                                                      "LSOA" = "lsoa",
-                                                      "OA" = "oa"), 
-                                       selected = "la",
-                                       inline = TRUE),
-                          sliderInput("age", 
-                                      label = div(style='width:300px;', 
-                                                  div(style='float:left;', ''), 
-                                                  div(style='float:right;font-weight: normal;font-style: italic;', 'Note that 90 = 90+')),
-                                      min = 0,
-                                      max = 90,
-                                      value = c(0, 90),
-                                      step = 1,
-                                      ticks = TRUE,
-                                      post = " years",
-                                      width = '300px'),
-                          leafletOutput("map", height = "300px", width = "90%"))))),
-    miniTabPanel("Data", icon = icon("table"),
-                 miniContentPanel(
-                   dataTableOutput("table", height = "100%"))),
-    miniTabPanel("Info", icon = icon("info"),
-                 miniContentPanel(
-                   includeMarkdown("info.md")))
-    )
-  )
+ui <- navbarPage(title = strong("Population Picker"), windowTitle = "Population Picker", fluid = TRUE, collapsible = TRUE,
+                 tabPanel("Parameters", "", icon = icon("cog", lib = "font-awesome"),
+                          fluidRow(column(8, offset = 2, align = "center", 
+                                          htmlOutput("title", inline = TRUE))),
+                          br(),
+                          fluidRow(column(10, offset = 1, align = "center", 
+                                          radioButtons("geography", 
+                                                      label = NULL,
+                                                      choices = list("District" = "la",
+                                                                     "Ward" = "ward",
+                                                                     "MSOA" = "msoa",
+                                                                     "LSOA" = "lsoa",
+                                                                     "OA" = "oa"),
+                                                      selected = "ward",
+                                                      inline = TRUE))),
+                          fluidRow(column(8, offset = 2, align = "center", 
+                                          leafletOutput("map", height = "320px"))),
+                          br(),
+                          fluidRow(column(10, offset = 1, align = "center", 
+                                          sliderInput("age",
+                                                      label = NULL,
+                                                      min = 0,
+                                                      max = 90,
+                                                      value = c(0, 90),
+                                                      step = 1,
+                                                      ticks = TRUE,
+                                                      post = " years")))),
+                 tabPanel("Chart", icon = icon("bar-chart-o", lib = "font-awesome"),
+                          fluidRow(column(8, offset = 2, align = "center",
+                                          plotlyOutput("plot"),
+                                          br(),
+                                          tableOutput('table')))),
+                 tabPanel("Data", icon = icon("table", lib = "font-awesome"),
+                          fluidRow(column(8, offset = 2, align = "center",
+                                          dataTableOutput("data", height = "100%")))),
+                 tabPanel("About", icon = icon("info", lib = "font-awesome"),
+                          fluidRow(column(8, offset = 2,
+                                          includeMarkdown("info.md")))))
 
 server <- function(input, output, session) {
   
   output$title <- renderUI({
     
-    validate(need(clickedIds$ids, message = "Population picker"))
-  
+    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    
     HTML(paste0("<span style = 'text-decoration: underline;'>", 
                 prettyNum(sum(area_data()[area_data()$gender == "Total",]$count), big.mark = ",", scientific = FALSE),
                 "</span> residents (",
@@ -70,7 +73,7 @@ server <- function(input, output, session) {
   })
   
   output$map <- renderLeaflet({
-      leaflet() %>% 
+    leaflet() %>% 
       setView(-2.35533522781156, 53.419025498197, zoom = 11) %>% 
       addTiles(urlTemplate = "https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png",
                attribution = '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>, <a href="http://cartodb.com/attributions">CartoDB</a> | <a href="https://www.ons.gov.uk/methodology/geography/licences">Contains OS data © Crown copyright and database right (2018)</a>',
@@ -97,8 +100,8 @@ server <- function(input, output, session) {
                                    $('head').append(","\'<meta name=\"viewport\" content=\"width=device-width, initial-scale=1.0\">\'",");
                                    }"))
 
-    })
-
+                                   })
+  
   observeEvent(input$map_shape_click, {
     
     click <- input$map_shape_click
@@ -128,12 +131,62 @@ server <- function(input, output, session) {
            area_code %in% clickedIds$ids,
            age >= input$age[1], age <= input$age[2])
   })
-
-  output$table <- renderDataTable({
+  
+  output$plot <- renderPlotly({
     
-    validate(need(clickedIds$ids, message = "Please click on one or more areas on the map"))
-
+    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    
+    temp <- area_data() %>% 
+      filter(area_code %in% clickedIds$ids, gender != "Total") %>% 
+      mutate(age = as.integer(age),
+             ageband = cut(age,
+                           breaks = c(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,120),
+                           labels = c("0-4","5-9","10-14","15-19","20-24","25-29","30-34","35-39",
+                                      "40-44","45-49","50-54","55-59","60-64","65-69","70-74",
+                                      "75-79","80-84","85-89","90+"),
+                           right = FALSE)) %>% 
+      group_by(gender, ageband) %>% 
+      summarise(n = sum(count)) %>%
+      mutate(percent = round(n/sum(n)*100, 1),
+             percent = 
+               case_when(
+                 gender == "Male" ~ percent*-1,
+                 TRUE ~ as.double(percent)))
+    
+    plot_ly(temp, x = ~percent, y = ~ageband, color = ~gender) %>% 
+      add_bars(orientation = 'h', hoverinfo = "none", colors = c('#d8b365', '#5ab4ac')) %>%
+      layout(bargap = 0.1, barmode = 'overlay',
+             xaxis = list(tickmode = 'array', tickvals = c(-5, -2.5, 0, 2.5, 5),
+                          ticktext = c('5%', '2.5%', '0', '2.5%', '5%'),
+                          title = ""),
+             yaxis = list(title = "")) %>% 
+      config(displayModeBar = F)
+    
+  })
+  
+  output$table <- renderTable({
+    
+    validate(need(clickedIds$ids, message = ""))
+    
     area_data() %>% 
+      select(area_name, gender, age, count) %>% 
+      group_by(area_name, gender) %>% 
+      summarise(n = sum(count)) %>% 
+      spread(gender, n) %>% 
+      rename(Area = area_name) %>% 
+      adorn_totals("row") %>% 
+      mutate(Female = prettyNum(Female, big.mark = ",", scientific = FALSE),
+             Male = prettyNum(Male, big.mark = ",", scientific = FALSE),
+             Total = prettyNum(Total, big.mark = ",", scientific = FALSE))
+    
+  })
+  
+  output$data <- renderDataTable({
+    
+    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    
+    area_data() %>% 
+      filter(gender != "Total") %>% 
       select(Year = year,
              `Area code` = area_code,
              `Area name` = area_name,
@@ -141,7 +194,7 @@ server <- function(input, output, session) {
              Gender = gender,
              Age = age,
              Count = count) %>% 
-      group_by(`Area code`, Gender) %>% 
+      group_by(`Area code`) %>% 
       arrange(Age)
   }, 
   extensions= c('Buttons', "Scroller"), 
@@ -155,6 +208,6 @@ server <- function(input, output, session) {
     columnDefs = list(list(className = 'dt-left', targets = 0:6)), 
     buttons = list('copy', 'csv', 'pdf')))
   
-}
+                                   }
 
 shinyApp(ui, server)
