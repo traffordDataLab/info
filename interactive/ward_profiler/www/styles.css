@@ -25,13 +25,13 @@ a:hover
     text-decoration: underline;
 }
 
-.navbar 
+.navbar
 {
   background-color: #fff;
   border-color: #212121;
 }
 
-.navbar-brand 
+.navbar-brand
 {
   color: #212121!important;
 }
@@ -44,15 +44,20 @@ a:hover
     color: #212121 !important;
 }
 
-.navbar-nav li a:hover, .navbar-nav > .active > a 
+.navbar-nav li a:hover, .navbar-nav > .active > a
 {
   color: #212121 !important;
   background-color: #fc6721 !important;
   background-image: none !important;
 }
 
-.section.sidebar 
+.section.sidebar
 {
   background-color: white;
 }
 
+.separator
+{
+    border-top: 1px solid #757575;
+    padding-top: 10px;
+}
