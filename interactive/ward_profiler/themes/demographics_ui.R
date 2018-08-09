@@ -5,10 +5,10 @@ tabPanel(title = "Demographics",
            fluidRow(
              br(),
              column(6,
-                    plotOutput("demographics_pyramid")
+                    uiOutput("demographics_text")
              ),
              column(6,
-                    "Box 2"
+                    plotOutput("demographics_pyramid")
              )
            ),
            br(),
