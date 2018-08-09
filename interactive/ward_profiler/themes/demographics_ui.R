@@ -1,9 +1,11 @@
+# Demographics #
+
 tabPanel(title = "Demographics",
          fluidPage(
            fluidRow(
              br(),
              column(6,
-                    plotlyOutput("demographics_pyramid")
+                    plotOutput("demographics_pyramid")
              ),
              column(6,
                     "Box 2"
