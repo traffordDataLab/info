@@ -14,10 +14,10 @@ tabPanel(title = "Demographics",
            br(),
            fluidRow(
              column(6,
-                    "Box 3"
+                    plotOutput("demographics_languages")
              ),
              column(6,
-                    dataTableOutput("demographics_data")
+                    "Box 4"
              )
            )
          ))

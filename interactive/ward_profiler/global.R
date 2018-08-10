@@ -1,6 +1,10 @@
 # load R packages  ---------------------------
-library(shiny) ; library(tidyverse) ; library(sf) ;
-library(DT)
+library(shiny) 
+library(tidyverse) 
+library(magrittr)
+library(sf)
+library(waffle) 
+library(RColorBrewer)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")

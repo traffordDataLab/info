@@ -1,19 +1,15 @@
 # Demographics #
 
 # load data ----------------------------------------
-# Mid-year population estimates (2016)
-pop <- read_csv("https://www.traffordDataLab.io/open_data/mid-year_pop_estimates_2016/mid-2016_population_estimates.csv") %>% 
-  filter(geography %in% c("Local Authority", "Ward")) %>% 
-  select(-All) %>% 
-  gather(age, count, -year, -area_code, -area_name, -geography, -gender) %>% 
-  mutate(age = as.integer(age))
+population <- read_csv("data/demographics/population.csv")
+languages <- read_csv("data/demographics/languages.csv")
 
 # text ----------------------------------------
 output$demographics_text <- renderText({ 
   
-  total_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Total"), count))
-  female_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Female"), count))
-  male_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Male"), count))
+  total_pop <- sum(select(filter(population, area_name == input$ward, gender == "Total"), n))
+  female_pop <- sum(select(filter(population, area_name == input$ward, gender == "Female"), n))
+  male_pop <- sum(select(filter(population, area_name == input$ward, gender == "Male"), n))
   
   text1 <- paste0("The resident population of ", input$ward, " in 2016 was ", 
          prettyNum(total_pop, big.mark = ",", scientific = FALSE), ". ", 
@@ -22,16 +18,16 @@ output$demographics_text <- renderText({
          round((male_pop/total_pop)*100,1), "% (", 
          prettyNum(male_pop, big.mark = ",", scientific = FALSE), ") male.")
   
-  child_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Total",
-                                 age %in% c(0:15)), count))
-  working_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Total",
-                                   age %in% c(16:64)), count))
-  older_pop <- sum(select(filter(pop, area_name == input$ward, gender == "Total",
-                                 age %in% c(65:90)), count))
+  child_pop <- sum(select(filter(population, area_name == input$ward, gender == "Total",
+                                 age %in% c(0:15)), n))
+  working_pop <- sum(select(filter(population, area_name == input$ward, gender == "Total",
+                                   age %in% c(16:64)), n))
+  older_pop <- sum(select(filter(population, area_name == input$ward, gender == "Total",
+                                 age %in% c(65:90)), n))
   
   text2 <- paste0("The proportion of residents aged between 0-15 years was ",
                   round((child_pop/total_pop)*100,1), "% (",
-                  prettyNum(child_pop, big.mark = ",", scientific = FALSE), "). ", 
+                  prettyNum(child_pop, big.mark = ",", scientific = FALSE), "), ", 
                   round((working_pop/total_pop)*100,1), "% (",
                   prettyNum(working_pop, big.mark = ",", scientific = FALSE),
                   ") were aged between 16-64 years and ",
@@ -39,13 +35,50 @@ output$demographics_text <- renderText({
                   prettyNum(older_pop, big.mark = ",", scientific = FALSE),
                   ") were aged 65 years or more.")
   
-  HTML(paste0("<p>", text1, "</p><p>", text2, "</p>"))
+  median_age <- filter(population, area_name == input$ward, gender == "Total") %>% 
+    arrange(age) %>% 
+    summarise(median_age = age[max(which(cumsum(n)/sum(n) <= 0.5))])
+  
+  text3 <- paste0("The median age in ", input$ward, " is ", median_age, ".")
+  
+  old_age_dependency <- filter(population, area_name == input$ward, gender == "Total") %>% 
+    arrange(age) %>% 
+    mutate(ageband = cut(age, breaks = c(15,65,91), labels = c("15-64","65+"), right = FALSE)) %>% 
+    filter(!is.na(ageband)) %>% 
+    group_by(ageband) %>% 
+    summarise(n = sum(n)) %>% 
+    spread(ageband, n) %>% 
+    mutate(ratio = round((`65+`/`15-64`)*100,0)) %>% 
+    select(ratio)
+    
+   text4 <- paste0("The number of older people (65+ years) in ",
+                   input$ward, " is equivalent to ", old_age_dependency,
+                   "% of the working age population (15-64 years).")
+   
+   non_english_spoken <- filter(languages, area_name == input$ward) %>% 
+     summarise(percent = round(sum((n[language != "English (English or Welsh if in Wales)"]))/sum(n)*100,1))
+   
+   text5 <- paste0(non_english_spoken, "% of ", input$ward, 
+                   "'s residents speak a language other than English as their main language. ")
+   
+  HTML(paste0("<h4>Summary statistics</h4><br/><ul><li>", text1, "</li><li>", text2, "</li><li>", text3, 
+              "</li><li>", text4, "</li><li>", text5, "</li></ul>"))
   
 })
 
 # population pyramid ----------------------------------------
 output$demographics_pyramid <- renderPlot({
-  temp <- filter(pop, area_name %in% c("Trafford", input$ward), gender != "Total") %>% 
+  
+  trafford <- population %>% group_by(gender, age) %>% 
+    summarise(n = sum(n)) %>% 
+    mutate(geography = "Local Authority",
+           period = 2016,
+           area_code = "E08000009",
+           area_name = "Trafford") %>% 
+    select(geography, period, area_code, area_name, gender, age, n)
+  
+  temp <- bind_rows(population, trafford) %>% 
+    filter(area_name %in% c("Trafford", input$ward), gender != "Total") %>% 
     mutate(age = as.integer(age),
            ageband = cut(age,
                          breaks = c(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,120),
@@ -54,7 +87,7 @@ output$demographics_pyramid <- renderPlot({
                                     "75-79","80-84","85-89","90+"),
                          right = FALSE)) %>% 
     group_by(geography, gender, ageband) %>% 
-    summarise(n = sum(count)) %>%
+    summarise(n = sum(n)) %>%
     mutate(percent = round(n/sum(n)*100, 1),
            percent = 
              case_when(
@@ -96,27 +129,45 @@ output$demographics_pyramid <- renderPlot({
           legend.position = "bottom") 
   })
 
-# raw data ----------------------------------------
-output$demographics_data <- renderDataTable({
+# languages spoken ----------------------------------------
+output$demographics_languages <- renderPlot({
+ 
+  temp <- languages %>% 
+    filter(area_name == input$ward, language != "English (English or Welsh if in Wales)", n != 0) %>%
+    arrange(desc(n)) %>% 
+    mutate(percent = n/sum(n)*100,
+           cum.percent = cumsum(percent),
+           dominant = case_when(cum.percent >= 50 ~ "Other", TRUE ~ language)) %>% 
+    select(n, percent, dominant) %>% 
+    group_by(dominant) %>% 
+    summarise(n = sum(n),
+              percent = round(sum(percent), 0)) %>% 
+    arrange(desc(percent)) %>% 
+    mutate(dominant = paste0(dominant, " (", percent, "%)"))
   
-  filter(pop, area_name == input$ward, gender != "Total") %>% 
-    select(Year = year,
-           `Area code` = area_code,
-           `Area name` = area_name,
-           Geography = geography,
-           Gender = gender,
-           Age = age,
-           Count = count) %>% 
-    group_by(`Area code`) %>% 
-    arrange(Age)
-}, 
-extensions= c('Buttons', "Scroller"), 
-rownames = FALSE,  
-options=list(
-  dom = 'Blfrtip',
-  deferRender = TRUE,
-  scroller = TRUE, 
-  scrollX = TRUE,
-  scrollY = "300px",
-  columnDefs = list(list(className = 'dt-left', targets = 0:6)), 
-  buttons = list('copy', 'csv', 'pdf')))
+  vector <- magrittr::extract2(temp, 'percent') %>% 
+    set_names(temp$dominant)
+  
+  waffle(round((vector/sum(temp$percent)) * 100, 0), rows = 5, size = 1,
+         colors = (brewer.pal(length(vector), "Paired"))) +
+    labs(title = paste0("Main non-English languages spoken in ", input$ward, ", 2011"),
+         subtitle = "1 square = 1% of residents",
+         caption = "Source: 2011 Census  |  @traffordDataLab",
+         x = NULL, 
+         y = NULL, 
+         fill = NULL) +
+    theme_lab() +
+    theme(axis.text = element_blank(),
+          legend.position = "bottom")
+
+})
+
+  
+  
+  
+  
+  
+  
+
+
+
