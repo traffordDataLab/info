@@ -3,6 +3,7 @@
 # load data ----------------------------------------
 population <- read_csv("data/demographics/population.csv")
 languages <- read_csv("data/demographics/languages.csv")
+ethnicity <- read_csv("data/demographics/ethnicity.csv")
 
 # text ----------------------------------------
 output$demographics_text <- renderText({ 
@@ -61,7 +62,7 @@ output$demographics_text <- renderText({
    text5 <- paste0(non_english_spoken, "% of ", input$ward, 
                    "'s residents speak a language other than English as their main language. ")
    
-  HTML(paste0("<h4>Summary statistics</h4><br/><ul><li>", text1, "</li><li>", text2, "</li><li>", text3, 
+  HTML(paste0("<h4 style='text-align: center;'>Summary</h4><br/><ul><li>", text1, "</li><li>", text2, "</li><li>", text3, 
               "</li><li>", text4, "</li><li>", text5, "</li></ul>"))
   
 })
@@ -125,7 +126,7 @@ output$demographics_pyramid <- renderPlot({
           axis.text.x = element_text(size = 12, hjust = 1),
           axis.text.y = element_blank(),
           axis.ticks = element_blank(),
-          plot.subtitle = element_text(size = 14, hjust = 0.5),
+          plot.subtitle = element_text(face = "bold", hjust = 0.5),
           legend.position = "bottom") 
   })
 
@@ -145,12 +146,13 @@ output$demographics_languages <- renderPlot({
     arrange(desc(percent)) %>% 
     mutate(dominant = paste0(dominant, " (", percent, "%)"))
   
-  vector <- magrittr::extract2(temp, 'percent') %>% 
+  parts <- magrittr::extract2(temp, 'percent') %>% 
     set_names(temp$dominant)
   
-  waffle(round((vector/sum(temp$percent)) * 100, 0), rows = 5, size = 1,
-         colors = (brewer.pal(length(vector), "Paired"))) +
-    labs(title = paste0("Main non-English languages spoken in ", input$ward, ", 2011"),
+  waffle(round((parts/sum(temp$percent)) * 100, 0), rows = 10, size = 1,
+         colors = (brewer.pal(length(parts), "Set3"))) +
+    labs(title = NULL,
+         subtitle = paste0("Main non-English languages spoken\nin ", input$ward, ", 2011"),
          subtitle = "1 square = 1% of residents",
          caption = "Source: 2011 Census  |  @traffordDataLab",
          x = NULL, 
@@ -158,11 +160,41 @@ output$demographics_languages <- renderPlot({
          fill = NULL) +
     theme_lab() +
     theme(axis.text = element_blank(),
+          plot.subtitle = element_text(face = "bold", hjust = 0.5),
           legend.position = "bottom")
 
 })
 
+# ethnic groups ----------------------------------------
+output$demographics_ethnicity <- renderPlot({ 
   
+  temp <- ethnicity %>% 
+    filter(area_name == input$ward) %>%
+    mutate(percent = (n/sum(n)))
+  
+  pal <- c("Asian" = "#FF0000", "Black" = "#55FF00", "Mixed" = "#FFAA01", "Other" = "#8A5B47", "White" = "#82B3FF")
+  
+  ggplot(temp, aes(x = area_name, y = percent, fill = fct_reorder(group, percent))) + 
+    geom_col(position = "stack", width = 0.3, alpha = 0.8) +
+    scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
+    scale_fill_manual(values = pal,
+                      guide = guide_legend(keyheight = unit(2, units = "mm"), 
+                                           keywidth = unit(12, units = "mm"), 
+                                           label.position = "top", 
+                                           nrow = 1, 
+                                           reverse = TRUE)) +
+    coord_flip() +
+    labs(x = NULL, y = NULL, fill = NULL, 
+         title = NULL,
+         subtitle = paste0("Self-reported ethnicity of residents\nin ", input$ward, ", 2011"),
+                           caption = "Source: 2011 Census  |  @traffordDataLab") +
+           theme_lab() +
+           theme(panel.grid.major.y = element_blank(),
+                 axis.text.y = element_blank(),
+                 plot.subtitle = element_text(face = "bold", hjust = 0.5),
+                 legend.position = "bottom",
+                 aspect.ratio = 1/8)
+})
   
   
   

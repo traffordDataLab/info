@@ -3,7 +3,6 @@
 tabPanel(title = "Demographics",
          fluidPage(
            fluidRow(
-             br(),
              column(6,
                     uiOutput("demographics_text")
              ),
@@ -11,13 +10,12 @@ tabPanel(title = "Demographics",
                     plotOutput("demographics_pyramid")
              )
            ),
-           br(),
            fluidRow(
              column(6,
                     plotOutput("demographics_languages")
              ),
              column(6,
-                    "Box 4"
+                    plotOutput("demographics_ethnicity")
              )
            )
          ))

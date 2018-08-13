@@ -1,0 +1,106 @@
+geography,period,area_code,area_name,group,n
+Ward,2011,E05000819,Altrincham,White,10425
+Ward,2011,E05000819,Altrincham,Mixed,270
+Ward,2011,E05000819,Altrincham,Asian,610
+Ward,2011,E05000819,Altrincham,Black,95
+Ward,2011,E05000819,Altrincham,Other,77
+Ward,2011,E05000820,Ashton upon Mersey,White,9116
+Ward,2011,E05000820,Ashton upon Mersey,Mixed,170
+Ward,2011,E05000820,Ashton upon Mersey,Asian,260
+Ward,2011,E05000820,Ashton upon Mersey,Black,90
+Ward,2011,E05000820,Ashton upon Mersey,Other,57
+Ward,2011,E05000821,Bowdon,White,8403
+Ward,2011,E05000821,Bowdon,Mixed,174
+Ward,2011,E05000821,Bowdon,Asian,522
+Ward,2011,E05000821,Bowdon,Black,44
+Ward,2011,E05000821,Bowdon,Other,85
+Ward,2011,E05000822,Broadheath,White,11089
+Ward,2011,E05000822,Broadheath,Mixed,302
+Ward,2011,E05000822,Broadheath,Asian,906
+Ward,2011,E05000822,Broadheath,Black,148
+Ward,2011,E05000822,Broadheath,Other,93
+Ward,2011,E05000823,Brooklands,White,9349
+Ward,2011,E05000823,Brooklands,Mixed,217
+Ward,2011,E05000823,Brooklands,Asian,647
+Ward,2011,E05000823,Brooklands,Black,108
+Ward,2011,E05000823,Brooklands,Other,113
+Ward,2011,E05000824,Bucklow-St Martins,White,9720
+Ward,2011,E05000824,Bucklow-St Martins,Mixed,261
+Ward,2011,E05000824,Bucklow-St Martins,Asian,163
+Ward,2011,E05000824,Bucklow-St Martins,Black,174
+Ward,2011,E05000824,Bucklow-St Martins,Other,40
+Ward,2011,E05000825,Clifford,White,4208
+Ward,2011,E05000825,Clifford,Mixed,715
+Ward,2011,E05000825,Clifford,Asian,4275
+Ward,2011,E05000825,Clifford,Black,2261
+Ward,2011,E05000825,Clifford,Other,433
+Ward,2011,E05000826,Davyhulme East,White,9127
+Ward,2011,E05000826,Davyhulme East,Mixed,174
+Ward,2011,E05000826,Davyhulme East,Asian,256
+Ward,2011,E05000826,Davyhulme East,Black,139
+Ward,2011,E05000826,Davyhulme East,Other,26
+Ward,2011,E05000827,Davyhulme West,White,9388
+Ward,2011,E05000827,Davyhulme West,Mixed,142
+Ward,2011,E05000827,Davyhulme West,Asian,181
+Ward,2011,E05000827,Davyhulme West,Black,96
+Ward,2011,E05000827,Davyhulme West,Other,25
+Ward,2011,E05000828,Flixton,White,10373
+Ward,2011,E05000828,Flixton,Mixed,151
+Ward,2011,E05000828,Flixton,Asian,167
+Ward,2011,E05000828,Flixton,Black,73
+Ward,2011,E05000828,Flixton,Other,22
+Ward,2011,E05000829,Gorse Hill,White,9151
+Ward,2011,E05000829,Gorse Hill,Mixed,645
+Ward,2011,E05000829,Gorse Hill,Asian,1146
+Ward,2011,E05000829,Gorse Hill,Black,822
+Ward,2011,E05000829,Gorse Hill,Other,130
+Ward,2011,E05000830,Hale Barns,White,8094
+Ward,2011,E05000830,Hale Barns,Mixed,221
+Ward,2011,E05000830,Hale Barns,Asian,1165
+Ward,2011,E05000830,Hale Barns,Black,63
+Ward,2011,E05000830,Hale Barns,Other,193
+Ward,2011,E05000831,Hale Central,White,9669
+Ward,2011,E05000831,Hale Central,Mixed,237
+Ward,2011,E05000831,Hale Central,Asian,361
+Ward,2011,E05000831,Hale Central,Black,49
+Ward,2011,E05000831,Hale Central,Other,34
+Ward,2011,E05000832,Longford,White,7101
+Ward,2011,E05000832,Longford,Mixed,529
+Ward,2011,E05000832,Longford,Asian,3091
+Ward,2011,E05000832,Longford,Black,975
+Ward,2011,E05000832,Longford,Other,256
+Ward,2011,E05000833,Priory,White,9431
+Ward,2011,E05000833,Priory,Mixed,237
+Ward,2011,E05000833,Priory,Asian,674
+Ward,2011,E05000833,Priory,Black,91
+Ward,2011,E05000833,Priory,Other,48
+Ward,2011,E05000834,St Mary's,White,10320
+Ward,2011,E05000834,St Mary's,Mixed,326
+Ward,2011,E05000834,St Mary's,Asian,685
+Ward,2011,E05000834,St Mary's,Black,273
+Ward,2011,E05000834,St Mary's,Other,171
+Ward,2011,E05000835,Sale Moor,White,9440
+Ward,2011,E05000835,Sale Moor,Mixed,199
+Ward,2011,E05000835,Sale Moor,Asian,430
+Ward,2011,E05000835,Sale Moor,Black,130
+Ward,2011,E05000835,Sale Moor,Other,124
+Ward,2011,E05000836,Stretford,White,8908
+Ward,2011,E05000836,Stretford,Mixed,420
+Ward,2011,E05000836,Stretford,Asian,1189
+Ward,2011,E05000836,Stretford,Black,544
+Ward,2011,E05000836,Stretford,Other,111
+Ward,2011,E05000837,Timperley,White,10499
+Ward,2011,E05000837,Timperley,Mixed,128
+Ward,2011,E05000837,Timperley,Asian,337
+Ward,2011,E05000837,Timperley,Black,52
+Ward,2011,E05000837,Timperley,Other,45
+Ward,2011,E05000838,Urmston,White,10287
+Ward,2011,E05000838,Urmston,Mixed,283
+Ward,2011,E05000838,Urmston,Asian,355
+Ward,2011,E05000838,Urmston,Black,184
+Ward,2011,E05000838,Urmston,Other,32
+Ward,2011,E05000839,Village,White,9736
+Ward,2011,E05000839,Village,Mixed,230
+Ward,2011,E05000839,Village,Asian,553
+Ward,2011,E05000839,Village,Black,129
+Ward,2011,E05000839,Village,Other,85

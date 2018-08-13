@@ -4,6 +4,6 @@ server <- function(input, output, session) {
     shiny::includeHTML(paste0("www/", wards[wards$area_name == input$ward,]$area_code, ".html"))
     })
 
-  source("themes/demographics_server.R", local = TRUE)$value
+  source("tabs/demographics/server_fragment.R", local = TRUE)$value
   
 }
