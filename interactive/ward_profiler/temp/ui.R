@@ -12,23 +12,23 @@ ui <- shinyUI(fluidPage(
                                                                         width = "180px")),
              
 ###############################################################################################################################             
-tabPanel(title = "Housing",
+tabPanel(title = "theme name",
          fluidPage(
            fluidRow(
              column(6,
                     br(),
-                    uiOutput("housing_text")
+                    uiOutput("")
              ),
              column(6,
-                    plotOutput("housing_size")
+                    plotOutput("")
              )
            ),
            fluidRow(
              column(6,
-                    plotOutput("housing_type")
+                    plotOutput("")
              ),
              column(6,
-                    plotOutput("housing_prices")
+                    plotOutput("")
              )
            )
          ))

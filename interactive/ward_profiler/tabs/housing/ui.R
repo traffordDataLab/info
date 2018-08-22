@@ -6,15 +6,15 @@ tabPanel(title = "Housing",
                     uiOutput("housing_text")
              ),
              column(6,
-                    plotOutput("")
+                    plotOutput("housing_size")
              )
            ),
            fluidRow(
              column(6,
-                    plotOutput("")
+                    plotOutput("housing_type")
              ),
              column(6,
-                    plotOutput("")
+                    plotOutput("housing_prices")
              )
            )
          ))
