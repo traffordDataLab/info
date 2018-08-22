@@ -78,9 +78,10 @@ wards_sf %>%
             max_price = as.integer(max(amount)),
             transactions = n()) %>%
   arrange(median_price) %>% 
-  write_csv("house_prices.csv")
+  write_csv("house_prices_aggregated.csv")
 
 # write point data ---------------------------
 wards_sf %>%
-  select(amount, area_code, area_name) %>% 
-  st_write("house_prices.geojson")
+  st_set_geometry(value = NULL) %>% 
+  select(amount, area_code, area_name) %>%
+  write.csv("house_prices.csv")
