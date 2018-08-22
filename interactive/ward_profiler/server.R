@@ -5,5 +5,6 @@ server <- function(input, output, session) {
     })
 
   source("tabs/demographics/server_fragment.R", local = TRUE)$value
+  source("tabs/housing/server_fragment.R", local = TRUE)$value
   
 }

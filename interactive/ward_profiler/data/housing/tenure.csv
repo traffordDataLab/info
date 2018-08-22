@@ -1,0 +1,106 @@
+geography,period,area_code,area_name,type,n
+Ward,2011,E05000819,Altrincham,Owned,3336
+Ward,2011,E05000819,Altrincham,Shared ownership (part owned and part rented),40
+Ward,2011,E05000819,Altrincham,Social rented,490
+Ward,2011,E05000819,Altrincham,Private rented,1180
+Ward,2011,E05000819,Altrincham,Living rent free,59
+Ward,2011,E05000820,Ashton upon Mersey,Owned,3178
+Ward,2011,E05000820,Ashton upon Mersey,Shared ownership (part owned and part rented),22
+Ward,2011,E05000820,Ashton upon Mersey,Social rented,321
+Ward,2011,E05000820,Ashton upon Mersey,Private rented,579
+Ward,2011,E05000820,Ashton upon Mersey,Living rent free,47
+Ward,2011,E05000821,Bowdon,Owned,2793
+Ward,2011,E05000821,Bowdon,Shared ownership (part owned and part rented),22
+Ward,2011,E05000821,Bowdon,Social rented,377
+Ward,2011,E05000821,Bowdon,Private rented,478
+Ward,2011,E05000821,Bowdon,Living rent free,55
+Ward,2011,E05000822,Broadheath,Owned,3806
+Ward,2011,E05000822,Broadheath,Shared ownership (part owned and part rented),80
+Ward,2011,E05000822,Broadheath,Social rented,601
+Ward,2011,E05000822,Broadheath,Private rented,628
+Ward,2011,E05000822,Broadheath,Living rent free,35
+Ward,2011,E05000823,Brooklands,Owned,3438
+Ward,2011,E05000823,Brooklands,Shared ownership (part owned and part rented),6
+Ward,2011,E05000823,Brooklands,Social rented,225
+Ward,2011,E05000823,Brooklands,Private rented,564
+Ward,2011,E05000823,Brooklands,Living rent free,36
+Ward,2011,E05000824,Bucklow-St Martins,Owned,2222
+Ward,2011,E05000824,Bucklow-St Martins,Shared ownership (part owned and part rented),10
+Ward,2011,E05000824,Bucklow-St Martins,Social rented,1773
+Ward,2011,E05000824,Bucklow-St Martins,Private rented,365
+Ward,2011,E05000824,Bucklow-St Martins,Living rent free,53
+Ward,2011,E05000825,Clifford,Owned,1912
+Ward,2011,E05000825,Clifford,Shared ownership (part owned and part rented),24
+Ward,2011,E05000825,Clifford,Social rented,1834
+Ward,2011,E05000825,Clifford,Private rented,835
+Ward,2011,E05000825,Clifford,Living rent free,83
+Ward,2011,E05000826,Davyhulme East,Owned,3123
+Ward,2011,E05000826,Davyhulme East,Shared ownership (part owned and part rented),15
+Ward,2011,E05000826,Davyhulme East,Social rented,467
+Ward,2011,E05000826,Davyhulme East,Private rented,309
+Ward,2011,E05000826,Davyhulme East,Living rent free,39
+Ward,2011,E05000827,Davyhulme West,Owned,3276
+Ward,2011,E05000827,Davyhulme West,Shared ownership (part owned and part rented),9
+Ward,2011,E05000827,Davyhulme West,Social rented,445
+Ward,2011,E05000827,Davyhulme West,Private rented,232
+Ward,2011,E05000827,Davyhulme West,Living rent free,38
+Ward,2011,E05000828,Flixton,Owned,3724
+Ward,2011,E05000828,Flixton,Shared ownership (part owned and part rented),34
+Ward,2011,E05000828,Flixton,Social rented,459
+Ward,2011,E05000828,Flixton,Private rented,324
+Ward,2011,E05000828,Flixton,Living rent free,45
+Ward,2011,E05000829,Gorse Hill,Owned,2997
+Ward,2011,E05000829,Gorse Hill,Shared ownership (part owned and part rented),17
+Ward,2011,E05000829,Gorse Hill,Social rented,1236
+Ward,2011,E05000829,Gorse Hill,Private rented,791
+Ward,2011,E05000829,Gorse Hill,Living rent free,66
+Ward,2011,E05000830,Hale Barns,Owned,3171
+Ward,2011,E05000830,Hale Barns,Shared ownership (part owned and part rented),2
+Ward,2011,E05000830,Hale Barns,Social rented,348
+Ward,2011,E05000830,Hale Barns,Private rented,250
+Ward,2011,E05000830,Hale Barns,Living rent free,38
+Ward,2011,E05000831,Hale Central,Owned,3275
+Ward,2011,E05000831,Hale Central,Shared ownership (part owned and part rented),5
+Ward,2011,E05000831,Hale Central,Social rented,123
+Ward,2011,E05000831,Hale Central,Private rented,741
+Ward,2011,E05000831,Hale Central,Living rent free,37
+Ward,2011,E05000832,Longford,Owned,2881
+Ward,2011,E05000832,Longford,Shared ownership (part owned and part rented),17
+Ward,2011,E05000832,Longford,Social rented,1025
+Ward,2011,E05000832,Longford,Private rented,704
+Ward,2011,E05000832,Longford,Living rent free,59
+Ward,2011,E05000833,Priory,Owned,3055
+Ward,2011,E05000833,Priory,Shared ownership (part owned and part rented),36
+Ward,2011,E05000833,Priory,Social rented,431
+Ward,2011,E05000833,Priory,Private rented,1337
+Ward,2011,E05000833,Priory,Living rent free,35
+Ward,2011,E05000834,St Mary's,Owned,3140
+Ward,2011,E05000834,St Mary's,Shared ownership (part owned and part rented),50
+Ward,2011,E05000834,St Mary's,Social rented,1477
+Ward,2011,E05000834,St Mary's,Private rented,298
+Ward,2011,E05000834,St Mary's,Living rent free,59
+Ward,2011,E05000835,Sale Moor,Owned,3001
+Ward,2011,E05000835,Sale Moor,Shared ownership (part owned and part rented),11
+Ward,2011,E05000835,Sale Moor,Social rented,869
+Ward,2011,E05000835,Sale Moor,Private rented,496
+Ward,2011,E05000835,Sale Moor,Living rent free,41
+Ward,2011,E05000836,Stretford,Owned,2867
+Ward,2011,E05000836,Stretford,Shared ownership (part owned and part rented),28
+Ward,2011,E05000836,Stretford,Social rented,1157
+Ward,2011,E05000836,Stretford,Private rented,621
+Ward,2011,E05000836,Stretford,Living rent free,45
+Ward,2011,E05000837,Timperley,Owned,3894
+Ward,2011,E05000837,Timperley,Shared ownership (part owned and part rented),19
+Ward,2011,E05000837,Timperley,Social rented,56
+Ward,2011,E05000837,Timperley,Private rented,286
+Ward,2011,E05000837,Timperley,Living rent free,20
+Ward,2011,E05000838,Urmston,Owned,3357
+Ward,2011,E05000838,Urmston,Shared ownership (part owned and part rented),79
+Ward,2011,E05000838,Urmston,Social rented,667
+Ward,2011,E05000838,Urmston,Private rented,657
+Ward,2011,E05000838,Urmston,Living rent free,43
+Ward,2011,E05000839,Village,Owned,2994
+Ward,2011,E05000839,Village,Shared ownership (part owned and part rented),44
+Ward,2011,E05000839,Village,Social rented,1104
+Ward,2011,E05000839,Village,Private rented,326
+Ward,2011,E05000839,Village,Living rent free,55
