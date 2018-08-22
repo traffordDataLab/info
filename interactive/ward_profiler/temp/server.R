@@ -3,6 +3,8 @@ tenure <- read_csv("/Users/henrypartridge/Documents/GitHub/info/interactive/ward
 house_prices <- read_csv("/Users/henrypartridge/Documents/GitHub/info/interactive/ward_profiler/data/housing/house_prices.csv")
 house_prices_points <- st_read("/Users/henrypartridge/Documents/GitHub/info/interactive/ward_profiler/data/housing/house_prices.geojson") %>% 
   st_set_geometry(value = NULL)
+housing_type <- read_csv("/Users/henrypartridge/Documents/GitHub/info/interactive/ward_profiler/data/housing/housing_type.csv")
+housing_size <- read_csv("/Users/henrypartridge/Documents/GitHub/info/interactive/ward_profiler/data/housing/housing_size.csv")
 
 shinyServer(function(input, output) {
    
@@ -37,8 +39,7 @@ shinyServer(function(input, output) {
     
   })
   
-  
-  output$housing_map <- renderPlot({
+  output$housing_prices <- renderPlot({
     
     bands <- c("<=£100,000", 
                "£100,001 to £200,000",
@@ -97,5 +98,59 @@ shinyServer(function(input, output) {
             legend.position = "bottom",
             legend.direction = "horizontal")
   })
+  
+  output$housing_type <- renderPlot({
     
+    temp <- filter(housing_type, area_name == input$ward) %>% 
+      mutate(type = factor(type, levels = c("Detached", "Semi-detached", "Terraced", "Flat", "Caravan", ordered = TRUE)),
+             percent = n/sum(n))
+    
+    ggplot(temp, aes(x = type, y = percent, fill = type)) + 
+      geom_col(alpha = 0.8) +
+      geom_text(aes(label = scales::percent(percent)), colour = "#212121", fontface = "bold", size = 3.5, vjust = -0.5) +
+      scale_fill_brewer(palette = "Set2") +
+      scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
+      labs(title = "",
+           subtitle = paste0("Housing types in ", input$ward, ", 2011"),
+           caption = "Source: 2011 Census, ONS  |  @traffordDataLab",
+           x = NULL,
+           y = NULL) +
+      theme_lab() +
+      theme(panel.grid.major = element_blank(),
+            axis.text.y = element_blank(),
+            plot.subtitle = element_text(face = "bold", hjust = 0.5, vjust = 2),
+            legend.position = "none") +
+      expand_limits(y = max(temp$percent * 1.1))
+    
+  })
+  
+  output$housing_size <- renderPlot({
+    
+    temp <- filter(housing_size, area_name == input$ward) %>% 
+      mutate(percent = n/sum(n),
+             bedrooms = factor(bedrooms, levels = as.character(bedrooms)),
+             position = (cumsum(c(0, percent)) + c(percent / 2, .01))[1:nrow(.)])
+    
+    ggplot(temp, aes(x = "", y = percent, fill = bedrooms)) +
+      geom_col(width = 1, color = "#FFFFFF", alpha = 0.8,
+               position = position_stack(reverse = TRUE)) +
+      geom_text_repel(aes(x = 1.4, y = position, label = percent(round(percent, 3))), size = 3, nudge_x = 0.25, segment.color = "#212121", segment.size = 0.1) +
+      coord_polar(theta = "y", start = 0, direction = 1) +
+      scale_fill_brewer(palette = "Set1",
+                        guide = guide_legend(label.position = "right",
+                                             keyheight = unit(5, units = "mm"), 
+                                             keywidth = unit(10, units = "mm"), 
+                                             direction = "vertical")) +
+      labs(title = NULL,
+           subtitle = paste0("Housing size in ", input$ward, ", 2011"),
+           caption = "Source: 2011 Census, ONS  |  @traffordDataLab",
+           x = NULL, 
+           y = NULL, 
+           fill = NULL) +
+      theme_void() +
+      theme(plot.margin = unit(c(1, 1, 1, 1), "cm"),
+            plot.subtitle = element_text(size = 12, colour = "#757575", hjust = 0.5, margin = margin(b = 10),
+                                         face = "bold", vjust = 2))
+    
+  })
 })

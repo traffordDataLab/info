@@ -1,0 +1,127 @@
+period,area_code,area_name,bedrooms,n
+2011,E05000819,Altrincham,No bedrooms,13
+2011,E05000819,Altrincham,1 bedroom,466
+2011,E05000819,Altrincham,2 bedrooms,1584
+2011,E05000819,Altrincham,3 bedrooms,2064
+2011,E05000819,Altrincham,4 bedrooms,722
+2011,E05000819,Altrincham,5 or more bedrooms,256
+2011,E05000820,Ashton upon Mersey,No bedrooms,8
+2011,E05000820,Ashton upon Mersey,1 bedroom,430
+2011,E05000820,Ashton upon Mersey,2 bedrooms,960
+2011,E05000820,Ashton upon Mersey,3 bedrooms,1802
+2011,E05000820,Ashton upon Mersey,4 bedrooms,737
+2011,E05000820,Ashton upon Mersey,5 or more bedrooms,210
+2011,E05000821,Bowdon,No bedrooms,4
+2011,E05000821,Bowdon,1 bedroom,243
+2011,E05000821,Bowdon,2 bedrooms,872
+2011,E05000821,Bowdon,3 bedrooms,977
+2011,E05000821,Bowdon,4 bedrooms,909
+2011,E05000821,Bowdon,5 or more bedrooms,720
+2011,E05000822,Broadheath,No bedrooms,7
+2011,E05000822,Broadheath,1 bedroom,208
+2011,E05000822,Broadheath,2 bedrooms,1317
+2011,E05000822,Broadheath,3 bedrooms,2707
+2011,E05000822,Broadheath,4 bedrooms,770
+2011,E05000822,Broadheath,5 or more bedrooms,141
+2011,E05000823,Brooklands,No bedrooms,3
+2011,E05000823,Brooklands,1 bedroom,330
+2011,E05000823,Brooklands,2 bedrooms,709
+2011,E05000823,Brooklands,3 bedrooms,2189
+2011,E05000823,Brooklands,4 bedrooms,821
+2011,E05000823,Brooklands,5 or more bedrooms,217
+2011,E05000824,Bucklow-St Martins,No bedrooms,7
+2011,E05000824,Bucklow-St Martins,1 bedroom,378
+2011,E05000824,Bucklow-St Martins,2 bedrooms,1333
+2011,E05000824,Bucklow-St Martins,3 bedrooms,2340
+2011,E05000824,Bucklow-St Martins,4 bedrooms,311
+2011,E05000824,Bucklow-St Martins,5 or more bedrooms,54
+2011,E05000825,Clifford,No bedrooms,16
+2011,E05000825,Clifford,1 bedroom,715
+2011,E05000825,Clifford,2 bedrooms,1336
+2011,E05000825,Clifford,3 bedrooms,1880
+2011,E05000825,Clifford,4 bedrooms,551
+2011,E05000825,Clifford,5 or more bedrooms,190
+2011,E05000826,Davyhulme East,No bedrooms,4
+2011,E05000826,Davyhulme East,1 bedroom,253
+2011,E05000826,Davyhulme East,2 bedrooms,490
+2011,E05000826,Davyhulme East,3 bedrooms,2615
+2011,E05000826,Davyhulme East,4 bedrooms,476
+2011,E05000826,Davyhulme East,5 or more bedrooms,115
+2011,E05000827,Davyhulme West,No bedrooms,4
+2011,E05000827,Davyhulme West,1 bedroom,201
+2011,E05000827,Davyhulme West,2 bedrooms,592
+2011,E05000827,Davyhulme West,3 bedrooms,2461
+2011,E05000827,Davyhulme West,4 bedrooms,589
+2011,E05000827,Davyhulme West,5 or more bedrooms,153
+2011,E05000828,Flixton,No bedrooms,2
+2011,E05000828,Flixton,1 bedroom,426
+2011,E05000828,Flixton,2 bedrooms,854
+2011,E05000828,Flixton,3 bedrooms,2501
+2011,E05000828,Flixton,4 bedrooms,639
+2011,E05000828,Flixton,5 or more bedrooms,164
+2011,E05000829,Gorse Hill,No bedrooms,7
+2011,E05000829,Gorse Hill,1 bedroom,432
+2011,E05000829,Gorse Hill,2 bedrooms,1645
+2011,E05000829,Gorse Hill,3 bedrooms,2682
+2011,E05000829,Gorse Hill,4 bedrooms,296
+2011,E05000829,Gorse Hill,5 or more bedrooms,45
+2011,E05000830,Hale Barns,No bedrooms,3
+2011,E05000830,Hale Barns,1 bedroom,182
+2011,E05000830,Hale Barns,2 bedrooms,538
+2011,E05000830,Hale Barns,3 bedrooms,1303
+2011,E05000830,Hale Barns,4 bedrooms,1101
+2011,E05000830,Hale Barns,5 or more bedrooms,682
+2011,E05000831,Hale Central,No bedrooms,3
+2011,E05000831,Hale Central,1 bedroom,171
+2011,E05000831,Hale Central,2 bedrooms,1113
+2011,E05000831,Hale Central,3 bedrooms,1295
+2011,E05000831,Hale Central,4 bedrooms,928
+2011,E05000831,Hale Central,5 or more bedrooms,671
+2011,E05000832,Longford,No bedrooms,13
+2011,E05000832,Longford,1 bedroom,551
+2011,E05000832,Longford,2 bedrooms,864
+2011,E05000832,Longford,3 bedrooms,2561
+2011,E05000832,Longford,4 bedrooms,482
+2011,E05000832,Longford,5 or more bedrooms,215
+2011,E05000833,Priory,No bedrooms,12
+2011,E05000833,Priory,1 bedroom,829
+2011,E05000833,Priory,2 bedrooms,1632
+2011,E05000833,Priory,3 bedrooms,1613
+2011,E05000833,Priory,4 bedrooms,587
+2011,E05000833,Priory,5 or more bedrooms,221
+2011,E05000834,St Mary's,No bedrooms,8
+2011,E05000834,St Mary's,1 bedroom,577
+2011,E05000834,St Mary's,2 bedrooms,1139
+2011,E05000834,St Mary's,3 bedrooms,2219
+2011,E05000834,St Mary's,4 bedrooms,831
+2011,E05000834,St Mary's,5 or more bedrooms,250
+2011,E05000835,Sale Moor,No bedrooms,9
+2011,E05000835,Sale Moor,1 bedroom,418
+2011,E05000835,Sale Moor,2 bedrooms,1005
+2011,E05000835,Sale Moor,3 bedrooms,2364
+2011,E05000835,Sale Moor,4 bedrooms,515
+2011,E05000835,Sale Moor,5 or more bedrooms,107
+2011,E05000836,Stretford,No bedrooms,11
+2011,E05000836,Stretford,1 bedroom,622
+2011,E05000836,Stretford,2 bedrooms,1019
+2011,E05000836,Stretford,3 bedrooms,2381
+2011,E05000836,Stretford,4 bedrooms,518
+2011,E05000836,Stretford,5 or more bedrooms,167
+2011,E05000837,Timperley,No bedrooms,6
+2011,E05000837,Timperley,1 bedroom,72
+2011,E05000837,Timperley,2 bedrooms,507
+2011,E05000837,Timperley,3 bedrooms,2633
+2011,E05000837,Timperley,4 bedrooms,876
+2011,E05000837,Timperley,5 or more bedrooms,181
+2011,E05000838,Urmston,No bedrooms,16
+2011,E05000838,Urmston,1 bedroom,658
+2011,E05000838,Urmston,2 bedrooms,1023
+2011,E05000838,Urmston,3 bedrooms,2226
+2011,E05000838,Urmston,4 bedrooms,664
+2011,E05000838,Urmston,5 or more bedrooms,216
+2011,E05000839,Village,No bedrooms,7
+2011,E05000839,Village,1 bedroom,377
+2011,E05000839,Village,2 bedrooms,1004
+2011,E05000839,Village,3 bedrooms,2256
+2011,E05000839,Village,4 bedrooms,694
+2011,E05000839,Village,5 or more bedrooms,185
