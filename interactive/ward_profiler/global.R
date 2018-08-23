@@ -5,6 +5,7 @@ library(magrittr)
 library(sf)
 library(waffle) 
 library(RColorBrewer)
+library(scales)
 
 # load Lab's ggplot2 theme  ---------------------------
 source("https://github.com/traffordDataLab/assets/raw/master/theme/ggplot2/theme_lab.R")

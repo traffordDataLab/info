@@ -49,9 +49,9 @@ output$housing_type <- renderPlot({
   
   ggplot(temp, aes(x = type, y = percent, fill = type)) + 
     geom_col(alpha = 0.8) +
-    geom_text(aes(label = scales::percent(percent)), colour = "#212121", fontface = "bold", size = 3.5, vjust = -0.5) +
+    geom_text(aes(label = percent(percent)), colour = "#212121", fontface = "bold", size = 3.5, vjust = -0.5) +
     scale_fill_brewer(palette = "Set2") +
-    scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
+    scale_y_continuous(expand = c(0, 0), labels = percent) +
     labs(title = "",
          subtitle = paste0("Housing types in ", input$ward, ", 2011"),
          caption = "Source: 2011 Census, ONS  |  @traffordDataLab",
@@ -142,7 +142,7 @@ output$housing_prices <- renderPlot({
     geom_line(aes(group = band), colour = "#212121", size = 0.2) +
     geom_point(aes(color = geography), alpha = 0.8, size = 3) +
     scale_colour_manual(values = c("#fc6721", "#757575"), drop = FALSE)+
-    scale_x_continuous(expand = c(0.02, 0), labels = scales::percent) +
+    scale_x_continuous(expand = c(0.02, 0), labels = percent) +
     labs(title = "",
          subtitle = paste0("Property transactions in ", input$ward, " by price band, 2017"),
          caption = "Source: Land Registry  |  @traffordDataLab",

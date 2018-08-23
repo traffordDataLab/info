@@ -176,7 +176,7 @@ output$demographics_ethnicity <- renderPlot({
   
   ggplot(temp, aes(x = area_name, y = percent, fill = fct_reorder(group, percent))) + 
     geom_col(position = "stack", width = 0.3, alpha = 0.8) +
-    scale_y_continuous(expand = c(0, 0), labels = scales::percent) +
+    scale_y_continuous(expand = c(0, 0), labels = percent) +
     scale_fill_manual(values = pal,
                       guide = guide_legend(keyheight = unit(2, units = "mm"), 
                                            keywidth = unit(12, units = "mm"), 
