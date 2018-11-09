@@ -49,9 +49,7 @@ img
 }
 </style>
 
-Estimates of the usual resident population for 2017 in the Metropolitan District of Trafford and for 2016 in Electoral Wards, MSOAs, LSOAs and OAs derive from the [Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates).
-
-**NB** Note that age '90' includes those aged 90 years and older.
+Estimates of the usual resident population for 2017 in the Metropolitan District of Trafford and its Electoral Wards, MSOAs, LSOAs and OAs derive from the [Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates).
 
 Five different geographical units are shown in this application:
 

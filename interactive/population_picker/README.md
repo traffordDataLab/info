@@ -1,5 +1,5 @@
 ## Population picker
-[Shiny](https://cran.r-project.org/web/packages/shiny/index.html) app allowing users to interrogate mid-year population estimates at different administrative and statistical geographies.
+[Shiny](https://cran.r-project.org/web/packages/shiny/index.html) app allowing users to interrogate mid-2017 population estimates at different administrative and statistical geographies.
 
 Population estimates derive from the [Office for National Statistics](https://www.ons.gov.uk/peoplepopulationandcommunity/populationandmigration/populationestimates)
 

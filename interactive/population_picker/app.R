@@ -2,62 +2,62 @@
 
 library(shiny) ; library(tidyverse) ; library(sf) ; library(leaflet) ; library(htmlwidgets) ; library(DT) ; library(plotly) ; library(janitor)
 
-pop <- read_csv("data/population_estimates.csv") %>% 
-  select(-All) %>% 
-  gather(age, count, -year, -area_code, -area_name, -geography, -gender) %>% 
+pop <- read_csv("https://github.com/traffordDataLab/open_data/raw/master/mid-2017_population_estimates/mid-2017_population_estimates_all_geographies.csv") %>% 
+  select(-c(all_ages, aged_0_to_15, aged_16_to_64, aged_65_and_over)) %>% 
+  gather(age, count, -date, -area_code, -area_name, -geography, -gender) %>% 
   mutate(age = as.integer(age))
 
-ui <- navbarPage(title = strong("Population Picker"), windowTitle = "Population Picker", fluid = TRUE, collapsible = TRUE,
+ui <- navbarPage(title = strong("Population picker"), windowTitle = "Population picker", fluid = TRUE, collapsible = TRUE,
                  tabPanel("Parameters", "", icon = icon("cog", lib = "font-awesome"),
-                          fluidRow(column(8, offset = 2, align = "center", 
-                                          htmlOutput("title", inline = TRUE))),
-                          br(),
-                          fluidRow(column(10, offset = 1, align = "center", 
+                          fluidRow(column(5, offset = 1, align = "left", 
                                           radioButtons("geography", 
-                                                      label = NULL,
-                                                      choices = list("District" = "la",
-                                                                     "Ward" = "ward",
-                                                                     "MSOA" = "msoa",
-                                                                     "LSOA" = "lsoa",
-                                                                     "OA" = "oa"),
-                                                      selected = "ward",
-                                                      inline = TRUE))),
-                          fluidRow(column(8, offset = 2, align = "center", 
-                                          leafletOutput("map", height = "320px"))),
-                          br(),
-                          fluidRow(column(10, offset = 1, align = "center", 
-                                          sliderInput("age",
-                                                      label = NULL,
-                                                      min = 0,
-                                                      max = 90,
-                                                      value = c(0, 90),
-                                                      step = 1,
-                                                      ticks = TRUE,
-                                                      post = " years")))),
-                 tabPanel("Chart", icon = icon("bar-chart-o", lib = "font-awesome"),
-                          fluidRow(column(8, offset = 2, align = "center",
+                                                       label = NULL,
+                                                       choices = list("District" = "la",
+                                                                      "Ward" = "ward",
+                                                                      "MSOA" = "msoa",
+                                                                      "LSOA" = "lsoa",
+                                                                      "OA" = "oa"),
+                                                       selected = "la",
+                                                       inline = TRUE))),
+                          fluidRow(column(5, offset = 1, align = "left", 
+                                          leafletOutput("map", height = "500px"),
+                                          br()),
+                                   column(5, align = "center",
+                                          htmlOutput("title", inline = TRUE),
                                           plotlyOutput("plot"),
+                                          conditionalPanel(
+                                            condition = "output.plot",
+                                            sliderInput("age",
+                                                        label = NULL,
+                                                        min = 0,
+                                                        max = 90,
+                                                        value = c(0, 90),
+                                                        step = 1,
+                                                        ticks = TRUE,
+                                                        post = " years"),
+                                            tags$small("*'90 years' includes those aged above")),
                                           br(),
                                           tableOutput('table')))),
                  tabPanel("Data", icon = icon("table", lib = "font-awesome"),
-                          fluidRow(column(8, offset = 2, align = "center",
+                          fluidRow(column(10, offset = 1, align = "center",
+                                          br(),
                                           dataTableOutput("data", height = "100%")))),
                  tabPanel("About", icon = icon("info", lib = "font-awesome"),
-                          fluidRow(column(8, offset = 2,
+                          fluidRow(column(10, offset = 1,
                                           includeMarkdown("info.md")))))
 
 server <- function(input, output, session) {
   
   output$title <- renderUI({
     
-    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    validate(need(clickedIds$ids, message = ""))
     
-    HTML(paste0("<span style = 'text-decoration: underline;'>", 
-                prettyNum(sum(area_data()[area_data()$gender == "Total",]$count), big.mark = ",", scientific = FALSE),
+    HTML(paste0("<span style = 'font-weight: bold;'>", 
+                prettyNum(sum(area_data()[area_data()$gender == "Persons",]$count), big.mark = ",", scientific = FALSE),
                 "</span> residents (",
-                round(sum(area_data()[area_data()$gender == "Female",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
+                round(sum(area_data()[area_data()$gender == "Females",]$count)/sum(area_data()[area_data()$gender == "Persons",]$count)*100, 1),
                 "% Female | ",
-                round(sum(area_data()[area_data()$gender == "Male",]$count)/sum(area_data()[area_data()$gender == "Total",]$count)*100, 1),
+                round(sum(area_data()[area_data()$gender == "Males",]$count)/sum(area_data()[area_data()$gender == "Persons",]$count)*100, 1),
                 "% Male)"))
   })
   
@@ -134,10 +134,10 @@ server <- function(input, output, session) {
   
   output$plot <- renderPlotly({
     
-    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    validate(need(clickedIds$ids, message = "Click on the map for population data."))
     
     temp <- area_data() %>% 
-      filter(area_code %in% clickedIds$ids, gender != "Total") %>% 
+      filter(area_code %in% clickedIds$ids, gender != "Persons") %>% 
       mutate(age = as.integer(age),
              ageband = cut(age,
                            breaks = c(0,5,10,15,20,25,30,35,40,45,50,55,60,65,70,75,80,85,90,120),
@@ -150,7 +150,7 @@ server <- function(input, output, session) {
       mutate(percent = round(n/sum(n)*100, 1),
              percent = 
                case_when(
-                 gender == "Male" ~ percent*-1,
+                 gender == "Males" ~ percent*-1,
                  TRUE ~ as.double(percent)))
     
     plot_ly(temp, x = ~percent, y = ~ageband, color = ~gender) %>% 
@@ -158,8 +158,9 @@ server <- function(input, output, session) {
       layout(bargap = 0.1, barmode = 'overlay',
              xaxis = list(tickmode = 'array', tickvals = c(-5, -2.5, 0, 2.5, 5),
                           ticktext = c('5%', '2.5%', '0', '2.5%', '5%'),
-                          title = ""),
-             yaxis = list(title = "")) %>% 
+                          title = "",
+                          fixedrange = TRUE),
+             yaxis = list(title = "", fixedrange = TRUE)) %>% 
       config(displayModeBar = F)
     
   })
@@ -175,20 +176,19 @@ server <- function(input, output, session) {
       spread(gender, n) %>% 
       rename(Area = area_name) %>% 
       adorn_totals("row") %>% 
-      mutate(Female = prettyNum(Female, big.mark = ",", scientific = FALSE),
-             Male = prettyNum(Male, big.mark = ",", scientific = FALSE),
-             Total = prettyNum(Total, big.mark = ",", scientific = FALSE))
+      mutate(Females = prettyNum(Females, big.mark = ",", scientific = FALSE),
+             Males = prettyNum(Males, big.mark = ",", scientific = FALSE),
+             Persons = prettyNum(Persons, big.mark = ",", scientific = FALSE))
     
   })
   
   output$data <- renderDataTable({
     
-    validate(need(clickedIds$ids, message = "Click one or more areas on the map"))
+    validate(need(clickedIds$ids, message = "Click on the map for population data."))
     
     area_data() %>% 
       filter(gender != "Total") %>% 
-      select(Year = year,
-             `Area code` = area_code,
+      select(`Area code` = area_code,
              `Area name` = area_name,
              Geography = geography,
              Gender = gender,
@@ -204,8 +204,8 @@ server <- function(input, output, session) {
     deferRender = TRUE,
     scroller = TRUE, 
     scrollX = TRUE,
-    scrollY = "300px",
-    columnDefs = list(list(className = 'dt-left', targets = 0:6)), 
+    scrollY = "500px",
+    columnDefs = list(list(className = 'dt-left', targets = c(2:3))), 
     buttons = list('copy', 'csv', 'pdf')))
   
                                    }
